@@ -1,0 +1,115 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "limesurvey-connector"
+version = "0.1.0"
+description = "LimeSurvey RemoteControl 2 client, SurveyStructure contract, data dictionaries and response translation, with an optional REST service."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [{ name = "Romel Calero Ramos", email = "rcalero@gmail.com" }]
+keywords = ["limesurvey", "survey", "data-dictionary", "remotecontrol", "fastapi"]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Framework :: FastAPI",
+  "Framework :: Pydantic :: 2",
+  "Typing :: Typed",
+]
+dependencies = [
+  "survey-structure~=2.1.0",
+  "survey-data-dictionary~=2.1.0",
+  "defusedxml>=0.7.1",
+  "citric>=2.3,<2.4",
+]
+
+[project.optional-dependencies]
+api = [
+  "pydantic>=2.11,<3",
+  "fastapi>=0.116",
+  "uvicorn[standard]>=0.35",
+  "redis>=5.0",
+  "pyjwt>=2.10",
+  "python-multipart>=0.0.20",
+]
+pandas = ["pandas>=2.2"]
+
+[project.urls]
+Homepage = "https://github.com/r-calero/limesurvey-connector"
+Repository = "https://github.com/r-calero/limesurvey-connector"
+Issues = "https://github.com/r-calero/limesurvey-connector/issues"
+
+[dependency-groups]
+dev = [
+  "pytest>=8.3",
+  "pytest-cov>=6.0",
+  "ruff>=0.12",
+  "mypy>=1.16",
+  "types-defusedxml>=0.7",
+  "httpx2>=2.13,<3",
+  "fakeredis>=2.30",
+  "pip-audit>=2.9",
+]
+
+[tool.uv]
+default-groups = ["dev"]
+
+[tool.uv.workspace]
+members = ["packages/*"]
+
+[tool.uv.sources]
+survey-structure = { workspace = true }
+survey-data-dictionary = { workspace = true }
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/limesurvey_connector"]
+
+[tool.hatch.build.targets.sdist]
+include = ["/src", "/README.md", "/README.es.md", "/CHANGELOG.md", "/LICENSE"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["conformance/.work"]
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF", "S", "PT"]
+# Line length is enforced by the formatter; long message strings are kept whole.
+ignore = ["E501", "S603", "S607"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["limesurvey_connector", "survey_data_dictionary", "survey_structure", "tests"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "S105", "S106", "S314"]
+"packages/*/tests/**" = ["S101"]
+# test_pattern is the public counterpart of RegExp.prototype.test, not a pytest test.
+"packages/survey-structure/src/survey_structure/patterns.py" = ["PT028"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+files = ["src", "packages/survey-structure/src", "packages/survey-data-dictionary/src"]
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "packages/survey-structure/tests", "packages/survey-data-dictionary/tests"]
+addopts = "-ra --strict-markers"
+markers = [
+  "unit: fast tests without external services",
+  "conformance: parity against the reference implementation goldens",
+  "ts_roundtrip: requires Node to run the TypeScript contract validator",
+  "integration: requires a real LimeSurvey instance",
+]
+
+[tool.coverage.run]
+source = ["limesurvey_connector", "survey_data_dictionary", "survey_structure"]
+branch = true

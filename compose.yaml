@@ -1,0 +1,42 @@
+name: limesurvey-connector
+
+services:
+  redis:
+    image: redis:7-alpine
+    command: ["sh", "-c", 'exec redis-server --requirepass "$${REDIS_PASSWORD}" --appendonly yes']
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?Set REDIS_PASSWORD in .env}
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD-SHELL", 'redis-cli -a "$$REDIS_PASSWORD" ping | grep PONG']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks:
+      - redis-private
+
+  connector:
+    build:
+      context: .
+      args:
+        PYPI_VERSION: ${CONNECTOR_PYPI_VERSION:-}
+    env_file: .env
+    environment:
+      REDIS_URL: redis://:${REDIS_PASSWORD}@redis:6379/0
+    ports:
+      - "${CONNECTOR_BIND_ADDRESS:-127.0.0.1}:${CONNECTOR_PORT:-8000}:8000"
+    depends_on:
+      redis:
+        condition: service_healthy
+    networks:
+      - default
+      - redis-private
+
+volumes:
+  redis-data:
+
+networks:
+  default:
+  redis-private:
+    internal: true

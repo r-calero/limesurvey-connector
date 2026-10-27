@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "survey-structure"
+version = "2.1.0"
+description = "Python port of the survey-structure contract: validation of SurveyStructure 2.0.0 documents with diagnostics identical to the TypeScript package."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [{ name = "Romel Calero Ramos", email = "rcalero@gmail.com" }]
+keywords = ["survey", "questionnaire", "schema", "validation", "limesurvey"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/r-calero/limesurvey-connector/tree/main/packages/survey-structure"
+Repository = "https://github.com/r-calero/limesurvey-connector"
+Upstream = "https://github.com/JJKid/survey-structure"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/survey_structure"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "README.es.md", "LICENSE"]

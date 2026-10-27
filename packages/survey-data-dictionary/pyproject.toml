@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "survey-data-dictionary"
+version = "2.1.0"
+description = "Python port of survey-data-dictionary: data dictionaries in JSON and CSV and translation of response datasets from SurveyStructure."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.12"
+authors = [{ name = "Romel Calero Ramos", email = "rcalero@gmail.com" }]
+keywords = ["survey", "data-dictionary", "codebook", "responses", "limesurvey"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Typing :: Typed",
+]
+dependencies = ["survey-structure~=2.1.0"]
+
+[project.urls]
+Homepage = "https://github.com/r-calero/limesurvey-connector/tree/main/packages/survey-data-dictionary"
+Repository = "https://github.com/r-calero/limesurvey-connector"
+Upstream = "https://github.com/JJKid/survey-data-dictionary"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/survey_data_dictionary"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src", "tests", "README.md", "README.es.md", "LICENSE"]

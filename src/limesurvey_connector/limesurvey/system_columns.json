@@ -1,0 +1,212 @@
+{
+  "description": "LimeSurvey response-table columns that are not survey questions. verifiedHeaders lists visible headers seen in the reference or in a real export; codeVerified marks codes seen in a real export. Columns with a pattern match many codes, and timing columns only appear when the survey saves timings.",
+  "columns": [
+    {
+      "code": "id",
+      "dataType": "number",
+      "labels": {
+        "en": "Response ID",
+        "es": "ID de la respuesta"
+      },
+      "headers": [
+        "Response ID",
+        "ID de la respuesta"
+      ],
+      "role": "response-id",
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Response ID",
+        "ID de la respuesta"
+      ]
+    },
+    {
+      "code": "submitdate",
+      "dataType": "date",
+      "labels": {
+        "en": "Submit date",
+        "es": "Fecha de envío"
+      },
+      "headers": [
+        "Submit date",
+        "Fecha en que se envió"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Submit date",
+        "Fecha en que se envió"
+      ]
+    },
+    {
+      "code": "lastpage",
+      "dataType": "number",
+      "labels": {
+        "en": "Last page",
+        "es": "Última página"
+      },
+      "headers": [
+        "Last page",
+        "Ultima pagina"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Last page",
+        "Ultima pagina"
+      ]
+    },
+    {
+      "code": "startlanguage",
+      "dataType": "string",
+      "labels": {
+        "en": "Start language",
+        "es": "Idioma de inicio"
+      },
+      "headers": [
+        "Start language",
+        "Idioma de Inicio"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Start language",
+        "Idioma de Inicio"
+      ]
+    },
+    {
+      "code": "seed",
+      "dataType": "string",
+      "labels": {
+        "en": "Seed",
+        "es": "Semilla"
+      },
+      "headers": [
+        "Seed"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Seed"
+      ]
+    },
+    {
+      "code": "startdate",
+      "dataType": "date",
+      "labels": {
+        "en": "Start date",
+        "es": "Fecha de inicio"
+      },
+      "headers": [
+        "Start date",
+        "Fecha en que inició"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Start date",
+        "Fecha en que inició"
+      ]
+    },
+    {
+      "code": "datestamp",
+      "dataType": "date",
+      "labels": {
+        "en": "Date last action",
+        "es": "Fecha de la última acción"
+      },
+      "headers": [
+        "Date last action",
+        "Fecha de la ultima accion"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Date last action",
+        "Fecha de la ultima accion"
+      ]
+    },
+    {
+      "code": "token",
+      "dataType": "string",
+      "labels": {
+        "en": "Access code",
+        "es": "Código de acceso"
+      },
+      "headers": [
+        "Access code",
+        "Token",
+        "Código de acceso"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": []
+    },
+    {
+      "code": "ipaddr",
+      "dataType": "string",
+      "labels": {
+        "en": "IP address",
+        "es": "Dirección IP"
+      },
+      "headers": [
+        "IP address",
+        "Dirección IP"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "Dirección IP"
+      ]
+    },
+    {
+      "code": "refurl",
+      "dataType": "string",
+      "labels": {
+        "en": "Referrer URL",
+        "es": "URL de referencia"
+      },
+      "headers": [
+        "Referrer URL",
+        "URL de referencia"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [
+        "URL de referencia"
+      ]
+    },
+    {
+      "code": "interviewtime",
+      "dataType": "number",
+      "labels": {
+        "en": "Total time (seconds)",
+        "es": "Tiempo total (segundos)"
+      },
+      "headers": [
+        "Total time",
+        "Tiempo total"
+      ],
+      "codeVerified": true,
+      "verifiedHeaders": [],
+      "timing": true
+    },
+    {
+      "code": "groupTime",
+      "pattern": "^groupTime(?P<id>\\d+)$",
+      "dataType": "number",
+      "labels": {
+        "en": "Time in group {id} (seconds)",
+        "es": "Tiempo en el grupo {id} (segundos)"
+      },
+      "headers": [],
+      "codeVerified": true,
+      "verifiedHeaders": [],
+      "timing": true
+    },
+    {
+      "code": "questionTime",
+      "pattern": "^(?P<id>[A-Za-z][A-Za-z0-9_]*)Time$",
+      "requiresQuestion": true,
+      "dataType": "number",
+      "labels": {
+        "en": "Time on question {id} (seconds)",
+        "es": "Tiempo en la pregunta {id} (segundos)"
+      },
+      "headers": [],
+      "codeVerified": true,
+      "verifiedHeaders": [],
+      "timing": true
+    }
+  ]
+}
