@@ -2,9 +2,16 @@ import importlib.util
 import json
 from pathlib import Path
 
+import pytest
+
 from tests.support.fake_limesurvey import SURVEY_ID, FakeCitric
 
 SCRIPT = Path(__file__).resolve().parents[2] / "scripts" / "verify_limesurvey.py"
+
+# The script is kept out of the repository; the test runs only where it exists.
+pytestmark = pytest.mark.skipif(
+    not SCRIPT.exists(), reason="scripts/verify_limesurvey.py is not present."
+)
 
 
 def load_script():
