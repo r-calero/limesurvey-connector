@@ -1,0 +1,91 @@
+{
+  "fixture": "fixtures/dictionary/boolean-encodings.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "synthetic",
+    "fields": [
+      {
+        "questionCode": "YN",
+        "questionLabel": "Flag YN",
+        "responseKey": "YN",
+        "dataType": "boolean",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Accepted"
+          },
+          {
+            "code": "N",
+            "label": "Declined"
+          }
+        ],
+        "aliases": [
+          "Flag YN"
+        ]
+      },
+      {
+        "questionCode": "INVERTED",
+        "questionLabel": "Inverted",
+        "responseKey": "INVERTED",
+        "dataType": "boolean",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "false",
+            "label": "Selected"
+          },
+          {
+            "code": "true",
+            "label": "Not selected"
+          }
+        ],
+        "aliases": [
+          "Inverted"
+        ]
+      },
+      {
+        "questionCode": "NUMERIC",
+        "questionLabel": "Numeric",
+        "responseKey": "NUMERIC",
+        "dataType": "boolean",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "1",
+            "label": "Yes"
+          },
+          {
+            "code": "0",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Numeric"
+        ]
+      },
+      {
+        "questionCode": "PLAIN",
+        "questionLabel": "Plain",
+        "responseKey": "PLAIN",
+        "dataType": "boolean",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "true",
+            "label": "Yes"
+          },
+          {
+            "code": "false",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Plain"
+        ]
+      }
+    ],
+    "issues": []
+  }
+}

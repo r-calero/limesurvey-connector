@@ -1,0 +1,8 @@
+{
+  "input": "lss/invalid-document-type.lss",
+  "ok": false,
+  "error": {
+    "type": "SurveyStructureSourceError",
+    "message": "The uploaded XML is not a LimeSurvey survey structure file."
+  }
+}

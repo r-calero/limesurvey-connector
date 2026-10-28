@@ -1,0 +1,860 @@
+{
+  "survey": {
+    "surveyStructureVersion": "2.1.0",
+    "id": "900355",
+    "fields": [
+      {
+        "id": "79647",
+        "code": "Q3",
+        "type": "ranking",
+        "label": "Pregunta 34",
+        "required": false,
+        "order": 0,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "3",
+          "questionId": "79647",
+          "nativeType": "R",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1",
+              "nativeValidation": {
+                "maximumRankingItemsExpression": "3"
+              }
+            }
+          ],
+          "responseAliases": [
+            {
+              "responseItemCode": "1",
+              "aliases": [
+                "Q31",
+                "Pregunta 34 [Rank 1]",
+                "900355X3X796471"
+              ]
+            },
+            {
+              "responseItemCode": "2",
+              "aliases": [
+                "Q32",
+                "Pregunta 34 [Rank 2]",
+                "900355X3X796472"
+              ]
+            },
+            {
+              "responseItemCode": "3",
+              "aliases": [
+                "Q33",
+                "Pregunta 34 [Rank 3]",
+                "900355X3X796473"
+              ]
+            }
+          ]
+        },
+        "groupId": "3",
+        "responseValidation": {
+          "maxSelections": 3
+        },
+        "options": [
+          {
+            "code": "A1",
+            "label": "Opción 23",
+            "order": 0
+          },
+          {
+            "code": "A2",
+            "label": "Opción 24",
+            "order": 1
+          },
+          {
+            "code": "A3",
+            "label": "Opción 25",
+            "order": 2
+          }
+        ]
+      },
+      {
+        "id": "79648",
+        "code": "Q4",
+        "type": "gender",
+        "label": "Pregunta 35",
+        "required": false,
+        "order": 1,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "3",
+          "questionId": "79648",
+          "nativeType": "G",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "rendering": {
+          "widget": "button-group"
+        },
+        "groupId": "3",
+        "options": [
+          {
+            "code": "F",
+            "label": "Femenino",
+            "order": 0
+          },
+          {
+            "code": "M",
+            "label": "Masculino",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "79649",
+        "code": "Q5",
+        "type": "number",
+        "label": "Pregunta 36",
+        "required": false,
+        "order": 2,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "3",
+          "questionId": "79649",
+          "nativeType": "N",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "groupId": "3"
+      },
+      {
+        "id": "79677",
+        "code": "Q12",
+        "type": "single-choice",
+        "label": "Pregunta 62",
+        "required": false,
+        "order": 3,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "3",
+          "questionId": "79677",
+          "nativeType": "!",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "groupId": "3",
+        "other": {
+          "code": "-oth-",
+          "label": "Otro",
+          "textResponseKey": "Q12_other"
+        },
+        "options": [
+          {
+            "code": "A1",
+            "label": "Opción 60",
+            "order": 0
+          },
+          {
+            "code": "A2",
+            "label": "Opción 61",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "11",
+        "code": "Q1",
+        "type": "matrix",
+        "label": "Pregunta 30",
+        "required": true,
+        "order": 4,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "991",
+          "questionId": "11",
+          "nativeType": "F",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1",
+              "unconvertedAttributes": {
+                "statistics_showgraph": "0"
+              }
+            }
+          ]
+        },
+        "groupId": "991",
+        "help": "Ayuda 31",
+        "matrix": {
+          "mode": "single",
+          "rows": [
+            {
+              "code": "SQ001",
+              "label": "Pregunta 43",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Pregunta 44",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Pregunta 45",
+              "order": 2
+            },
+            {
+              "code": "SQ004",
+              "label": "Pregunta 46",
+              "order": 3
+            }
+          ],
+          "columns": [
+            {
+              "code": "A1",
+              "label": "Opción 1",
+              "order": 0
+            },
+            {
+              "code": "A2",
+              "label": "Opción 2",
+              "order": 1
+            },
+            {
+              "code": "A3",
+              "label": "Opción 3",
+              "order": 2
+            },
+            {
+              "code": "A4",
+              "label": "Opción 4",
+              "order": 3
+            },
+            {
+              "code": "A5",
+              "label": "Opción 5",
+              "order": 4
+            },
+            {
+              "code": "A6",
+              "label": "Opción 6",
+              "order": 5
+            },
+            {
+              "code": "A7",
+              "label": "Opción 7",
+              "order": 6
+            },
+            {
+              "code": "A8",
+              "label": "Opción 8",
+              "order": 7
+            },
+            {
+              "code": "A9",
+              "label": "Opción 9",
+              "order": 8
+            }
+          ]
+        }
+      },
+      {
+        "id": "59897",
+        "code": "Q2",
+        "type": "matrix",
+        "label": "Pregunta 32",
+        "required": false,
+        "order": 5,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "991",
+          "questionId": "59897",
+          "nativeType": "1",
+          "responseAliases": [
+            {
+              "responseItemCode": "SQ001_0",
+              "aliases": [
+                "Q2_SQ001#0",
+                "900355X991X59897SQ001#0"
+              ]
+            },
+            {
+              "responseItemCode": "SQ001_1",
+              "aliases": [
+                "Q2_SQ001#1",
+                "900355X991X59897SQ001#1"
+              ]
+            },
+            {
+              "responseItemCode": "SQ002_0",
+              "aliases": [
+                "Q2_SQ002#0",
+                "900355X991X59897SQ002#0"
+              ]
+            },
+            {
+              "responseItemCode": "SQ002_1",
+              "aliases": [
+                "Q2_SQ002#1",
+                "900355X991X59897SQ002#1"
+              ]
+            },
+            {
+              "responseItemCode": "SQ003_0",
+              "aliases": [
+                "Q2_SQ003#0",
+                "900355X991X59897SQ003#0"
+              ]
+            },
+            {
+              "responseItemCode": "SQ003_1",
+              "aliases": [
+                "Q2_SQ003#1",
+                "900355X991X59897SQ003#1"
+              ]
+            }
+          ]
+        },
+        "groupId": "991",
+        "help": "Ayuda 33",
+        "matrix": {
+          "mode": "dual-single",
+          "rows": [
+            {
+              "code": "SQ001",
+              "label": "Pregunta 47",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Pregunta 48",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Pregunta 49",
+              "order": 2
+            }
+          ],
+          "columns": [
+            {
+              "code": "0",
+              "label": "Escala 1",
+              "order": 0,
+              "options": [
+                {
+                  "code": "A1",
+                  "label": "Opción 10",
+                  "order": 0
+                },
+                {
+                  "code": "A2",
+                  "label": "Opción 12",
+                  "order": 1
+                },
+                {
+                  "code": "A3",
+                  "label": "Opción 14",
+                  "order": 2
+                },
+                {
+                  "code": "A4",
+                  "label": "Opción 16",
+                  "order": 3
+                },
+                {
+                  "code": "A5",
+                  "label": "Opción 18",
+                  "order": 4
+                }
+              ]
+            },
+            {
+              "code": "1",
+              "label": "Escala 2",
+              "order": 1,
+              "options": [
+                {
+                  "code": "A1",
+                  "label": "Opción 11",
+                  "order": 0
+                },
+                {
+                  "code": "A2",
+                  "label": "Opción 13",
+                  "order": 1
+                },
+                {
+                  "code": "A3",
+                  "label": "Opción 15",
+                  "order": 2
+                },
+                {
+                  "code": "A4",
+                  "label": "Opción 17",
+                  "order": 3
+                },
+                {
+                  "code": "A5",
+                  "label": "Opción 19",
+                  "order": 4
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "79650",
+        "code": "Q6",
+        "type": "matrix",
+        "label": "Pregunta 37",
+        "required": false,
+        "order": 6,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "991",
+          "questionId": "79650",
+          "nativeType": "E",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "groupId": "991",
+        "matrix": {
+          "mode": "single",
+          "rows": [
+            {
+              "code": "SQ001",
+              "label": "Pregunta 50",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Pregunta 51",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Pregunta 52",
+              "order": 2
+            }
+          ],
+          "columns": [
+            {
+              "code": "I",
+              "label": "Aumenta",
+              "order": 0
+            },
+            {
+              "code": "S",
+              "label": "Igual",
+              "order": 1
+            },
+            {
+              "code": "D",
+              "label": "Disminuye",
+              "order": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "79654",
+        "code": "Q7",
+        "type": "matrix",
+        "label": "Pregunta 38",
+        "required": false,
+        "order": 7,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "991",
+          "questionId": "79654",
+          "nativeType": ":",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "groupId": "991",
+        "matrix": {
+          "mode": "number",
+          "rows": [
+            {
+              "code": "SQ001",
+              "label": "Pregunta 53",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Pregunta 55",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Pregunta 56",
+              "order": 2
+            }
+          ],
+          "columns": [
+            {
+              "code": "SQ001",
+              "label": "Pregunta 54",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Pregunta 57",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Pregunta 58",
+              "order": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "79661",
+        "code": "Q8",
+        "type": "matrix",
+        "label": "Pregunta 39",
+        "required": false,
+        "order": 8,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "991",
+          "questionId": "79661",
+          "nativeType": "H",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "groupId": "991",
+        "matrix": {
+          "mode": "single",
+          "rows": [
+            {
+              "code": "SQ001",
+              "label": "Pregunta 59",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Pregunta 60",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Pregunta 61",
+              "order": 2
+            }
+          ],
+          "columns": [
+            {
+              "code": "A1",
+              "label": "Opción 20",
+              "order": 0
+            },
+            {
+              "code": "A2",
+              "label": "Opción 21",
+              "order": 1
+            },
+            {
+              "code": "A3",
+              "label": "Opción 22",
+              "order": 2
+            }
+          ]
+        }
+      },
+      {
+        "id": "79665",
+        "code": "Q9",
+        "type": "yes-no",
+        "label": "Pregunta 40",
+        "required": false,
+        "order": 9,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "992",
+          "questionId": "79665",
+          "nativeType": "Y",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "((900355X3X79648.NAOK == \"F\"))"
+            }
+          ]
+        },
+        "rendering": {
+          "widget": "button-group"
+        },
+        "groupId": "992",
+        "visibility": {
+          "condition": {
+            "type": "comparison",
+            "responseReference": {
+              "fieldCode": "Q4"
+            },
+            "operator": "equals",
+            "value": "F"
+          }
+        },
+        "options": [
+          {
+            "code": "Y",
+            "label": "Sí",
+            "order": 0
+          },
+          {
+            "code": "N",
+            "label": "No",
+            "order": 1
+          }
+        ]
+      },
+      {
+        "id": "79666",
+        "code": "Q10",
+        "type": "multiple-choice",
+        "label": "Pregunta 41",
+        "required": false,
+        "order": 10,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "992",
+          "questionId": "79666",
+          "nativeType": "M",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "Q9.NAOK==\"Y\""
+            }
+          ]
+        },
+        "groupId": "992",
+        "visibility": {
+          "condition": {
+            "type": "comparison",
+            "responseReference": {
+              "fieldCode": "Q9"
+            },
+            "operator": "equals",
+            "value": "Y"
+          }
+        },
+        "responseEncoding": {
+          "selectedValue": "Y",
+          "unselectedValue": "N",
+          "selectedLabel": "Sí",
+          "unselectedLabel": "No"
+        },
+        "options": [
+          {
+            "code": "SQ001",
+            "label": "Pregunta 62",
+            "order": 0
+          },
+          {
+            "code": "SQ002",
+            "label": "Pregunta 63",
+            "order": 1
+          },
+          {
+            "code": "SQ003",
+            "label": "Pregunta 64",
+            "order": 2
+          },
+          {
+            "code": "SQ004",
+            "label": "Pregunta 65",
+            "order": 3
+          },
+          {
+            "code": "SQ005",
+            "label": "Pregunta 66",
+            "order": 4
+          },
+          {
+            "code": "SQ006",
+            "label": "Pregunta 67",
+            "order": 5
+          }
+        ]
+      },
+      {
+        "id": "79673",
+        "code": "Q11",
+        "type": "multiple-choice-with-comments",
+        "label": "Pregunta 42",
+        "required": false,
+        "order": 11,
+        "source": {
+          "platform": "limesurvey",
+          "surveyId": "900355",
+          "groupId": "992",
+          "questionId": "79673",
+          "nativeType": "P",
+          "originDetails": [
+            {
+              "type": "limesurvey-question",
+              "version": "1.0.0",
+              "questionRelevanceExpression": "1"
+            }
+          ]
+        },
+        "groupId": "992",
+        "responseEncoding": {
+          "selectedValue": "Y",
+          "unselectedValue": "N",
+          "selectedLabel": "Sí",
+          "unselectedLabel": "No"
+        },
+        "options": [
+          {
+            "code": "SQ001",
+            "label": "Pregunta 68",
+            "order": 0,
+            "commentResponseKey": "Q11_SQ001comment"
+          },
+          {
+            "code": "SQ002",
+            "label": "Pregunta 69",
+            "order": 1,
+            "commentResponseKey": "Q11_SQ002comment"
+          },
+          {
+            "code": "SQ003",
+            "label": "Pregunta 70",
+            "order": 2,
+            "commentResponseKey": "Q11_SQ003comment"
+          }
+        ]
+      }
+    ],
+    "source": {
+      "platform": "limesurvey",
+      "format": "lss",
+      "originDetails": [
+        {
+          "type": "limesurvey-survey",
+          "version": "1.0.0",
+          "databaseSchemaVersion": "355"
+        }
+      ]
+    },
+    "title": "Encuesta 71",
+    "language": "es-MX",
+    "availableLanguages": [
+      "es-MX"
+    ],
+    "groups": [
+      {
+        "id": "3",
+        "order": 0,
+        "title": "Grupo 26",
+        "source": {
+          "platform": "limesurvey",
+          "groupId": "3",
+          "originDetails": [
+            {
+              "type": "limesurvey-group",
+              "version": "1.0.0",
+              "groupRelevanceExpression": "1"
+            }
+          ]
+        }
+      },
+      {
+        "id": "991",
+        "order": 1,
+        "title": "Grupo 27",
+        "description": "Descripción 28",
+        "source": {
+          "platform": "limesurvey",
+          "groupId": "991"
+        }
+      },
+      {
+        "id": "992",
+        "order": 2,
+        "title": "Grupo 29",
+        "source": {
+          "platform": "limesurvey",
+          "groupId": "992"
+        }
+      }
+    ],
+    "settings": {
+      "layout": "group",
+      "showWelcome": true,
+      "showProgress": true,
+      "allowPrevious": false,
+      "showGroupName": true,
+      "showGroupDescription": true,
+      "questionIndex": "disabled",
+      "navigationDelay": 0
+    }
+  },
+  "issues": [],
+  "sourceMetrics": {
+    "topLevelQuestions": 12,
+    "childQuestions": 28,
+    "integratedChildren": 28,
+    "detectedTypes": [
+      "!",
+      "1",
+      ":",
+      "E",
+      "F",
+      "G",
+      "H",
+      "M",
+      "N",
+      "P",
+      "R",
+      "Y"
+    ],
+    "conditionsDetected": 2,
+    "validationQuestions": 2
+  }
+}

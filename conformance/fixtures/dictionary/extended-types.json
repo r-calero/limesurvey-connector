@@ -1,0 +1,42 @@
+{
+  "description": "Custom containers, boolean, range, date and matrix modes.",
+  "structureFixture": "structures/extended-types.json",
+  "questionCodes": [
+    "HOUSEHOLD",
+    "SIZE",
+    "GRID"
+  ],
+  "translations": [
+    {
+      "name": "records",
+      "responses": [
+        {
+          "AGREE": true,
+          "SCORE": 7,
+          "VISIT": "2026-09-01T10:00",
+          "HOUSEHOLD_SIZE": 3,
+          "HOUSEHOLD_HEAD": "2",
+          "HOUSEHOLD_INNER_NOTE": "ok",
+          "GRID_R1_C1": 1,
+          "GRID_R1_C2": 0,
+          "TEXTGRID_R1_C1": "texto",
+          "PICK_A": "Y",
+          "EMAIL": "x@y.z"
+        },
+        {
+          "AGREE": false,
+          "SCORE": "7",
+          "HOUSEHOLD": {
+            "SIZE": 1,
+            "INNER": {
+              "NOTE": ""
+            }
+          },
+          "GRID_R1_C1": "1",
+          "PICK_B": true
+        }
+      ]
+    }
+  ],
+  "includeSystemFields": true
+}

@@ -1,0 +1,2 @@
+"survey_id","qid","group_id","question_code","response_key","question_label","data_type","cardinality","aliases","value_code","value_label"
+"900001","100","10","QUESTION_1","QUESTION_1","Pregunta de encuesta 1: contiene una referencia inexistente","string","single","Pregunta de encuesta 1: contiene una referencia inexistente | 900001X10X100","",""

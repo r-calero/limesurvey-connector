@@ -1,0 +1,1043 @@
+[
+  {
+    "url": "https://example.org/a.png",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "ftp://example.org/x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "mailto:ana@example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "example.org/a.png",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "//example.org/a.png",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "https://",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "https:example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://exa mple.org",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[::1]/x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://256.256.256.256",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://0x7f.1/",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "javascript:alert(1)",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "data:image/png;base64,AAAA",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "urn:isbn:0451450523",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "https://ex%41mple.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "https://例え.テスト/画像.png",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://a:b@c:8080/p?q#f",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://example.org:99999",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://example.org:",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "HTTP://EXAMPLE.ORG",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": " https://example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "https://example.org/ ",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "a:",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": ":",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "https://exa\tmple.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "file:///etc/passwd",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "blob:https://example.org/uuid",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://-x.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://x_y.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://%",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://a.b%2",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[1:2::3]:80",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[::1",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "c:\\x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[::]",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[::ffff:1.2.3.4]",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[1:2:3:4:5:6:7:8]",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[1:2:3:4:5:6:7:8:9]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[1::2::3]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[:1]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[1:]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[1:2:3:4:5:6:1.2.3.4]",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[1:2:3:4:5:6:7:1.2.3.4]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[::1.2.3]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[::1.2.3.04]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[::1.2.3.256]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[g::1]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[12345::]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://1.2.3.4.5",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://1.2.3",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://0x100.1",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://4294967295",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://4294967296",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://08",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://0x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://1.2.3.4.",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://1.2.3.4..",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://example.123",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://123.example",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://a@",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://:80",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "foo://:80",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "foo://",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "foo://@host",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "foo://exa mple",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "foo://h%20st",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "foo://[::1]",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "foo://[x]",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "foo://host:abc",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://host:65535",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://host:065535",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://host:+80",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://ho^st",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://ho|st",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://xn--nxasmq6b.com",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://xn--a.com",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://xn--.com",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://ÉXAMPLE.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://ex­ample.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://faß.de",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://a。b.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://%zz.org",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://%41.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://a%00b.org",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "ws://h",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "wss:/h",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "file:",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "file://localhost/x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "file://C:/x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "file://host^/x",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "file:////x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "sc:\\../",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "a+b.c-d:x",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "1a:x",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "a!b:x",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "HTTPS:\\\\example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http:/\\/\\example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://user:p@ss@example.org",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://example.org",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://\u0000x.org",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://exa<mple.org",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://[::1]:",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://[::1]x",
+    "success": false,
+    "issues": [
+      {
+        "path": [
+          "fields",
+          0,
+          "images",
+          0,
+          "url"
+        ],
+        "code": "invalid_string"
+      }
+    ]
+  },
+  {
+    "url": "http://ex.org#frag ment",
+    "success": true,
+    "issues": []
+  },
+  {
+    "url": "http://ex.org/a b?c d",
+    "success": true,
+    "issues": []
+  }
+]

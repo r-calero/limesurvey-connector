@@ -1,0 +1,98 @@
+{
+  "fixture": "limesurvey/lss/visibility-at-least-two-selections.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "900007",
+    "surveyTitle": "Ejemplo sintético de visibilidad por cantidad seleccionada",
+    "language": "es",
+    "fields": [
+      {
+        "questionCode": "QUESTION_1",
+        "questionLabel": "Pregunta de encuesta 1: seleccione opciones de respuesta — Opción 1 de respuesta",
+        "responseKey": "QUESTION_1_RESPONSE_OPTION_1",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Pregunta de encuesta 1: seleccione opciones de respuesta [Opción 1 de respuesta]",
+          "900007X10X300RESPONSE_OPTION_1"
+        ],
+        "parentCode": "QUESTION_1",
+        "qid": "300",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "QUESTION_1",
+        "questionLabel": "Pregunta de encuesta 1: seleccione opciones de respuesta — Opción 2 de respuesta",
+        "responseKey": "QUESTION_1_RESPONSE_OPTION_2",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Pregunta de encuesta 1: seleccione opciones de respuesta [Opción 2 de respuesta]",
+          "900007X10X300RESPONSE_OPTION_2"
+        ],
+        "parentCode": "QUESTION_1",
+        "qid": "300",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "QUESTION_1",
+        "questionLabel": "Pregunta de encuesta 1: seleccione opciones de respuesta — Opción 3 de respuesta",
+        "responseKey": "QUESTION_1_RESPONSE_OPTION_3",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Pregunta de encuesta 1: seleccione opciones de respuesta [Opción 3 de respuesta]",
+          "900007X10X300RESPONSE_OPTION_3"
+        ],
+        "parentCode": "QUESTION_1",
+        "qid": "300",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "QUESTION_2",
+        "questionLabel": "Pregunta de encuesta 2: visible al seleccionar al menos dos opciones en la pregunta 1",
+        "responseKey": "QUESTION_2",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Pregunta de encuesta 2: visible al seleccionar al menos dos opciones en la pregunta 1",
+          "900007X10X304"
+        ],
+        "qid": "304",
+        "groupId": "10"
+      }
+    ],
+    "issues": []
+  }
+}

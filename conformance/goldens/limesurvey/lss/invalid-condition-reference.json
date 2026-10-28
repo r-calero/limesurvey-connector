@@ -1,0 +1,89 @@
+{
+  "input": "lss/invalid-condition-reference.lss",
+  "ok": true,
+  "result": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "900001",
+      "fields": [
+        {
+          "id": "100",
+          "code": "QUESTION_1",
+          "type": "short-text",
+          "label": "Pregunta de encuesta 1: contiene una referencia inexistente",
+          "required": false,
+          "order": 0,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900001",
+            "groupId": "10",
+            "questionId": "100",
+            "nativeType": "S",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "MISSING_QUESTION.NAOK == \"Y\""
+              }
+            ]
+          },
+          "groupId": "10"
+        }
+      ],
+      "source": {
+        "platform": "limesurvey",
+        "format": "lss",
+        "originDetails": [
+          {
+            "type": "limesurvey-survey",
+            "version": "1.0.0",
+            "databaseSchemaVersion": "708"
+          }
+        ]
+      },
+      "title": "Ejemplo sintético con referencia faltante",
+      "language": "es",
+      "availableLanguages": [
+        "es"
+      ],
+      "groups": [
+        {
+          "id": "10",
+          "order": 0,
+          "title": "Grupo de encuesta 1",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "10"
+          }
+        }
+      ],
+      "settings": {
+        "layout": "group",
+        "questionIndex": "disabled",
+        "navigationDelay": 0
+      }
+    },
+    "issues": [
+      {
+        "level": "warning",
+        "code": "MISSING_CONDITION_REFERENCE",
+        "message": "LimeSurvey condition reference \"MISSING_QUESTION\" could not be matched to any imported question or subquestion. The condition was omitted.",
+        "fieldId": "100",
+        "questionCode": "QUESTION_1",
+        "details": {
+          "sourceExpression": "MISSING_QUESTION.NAOK == \"Y\""
+        }
+      }
+    ],
+    "sourceMetrics": {
+      "topLevelQuestions": 1,
+      "childQuestions": 0,
+      "integratedChildren": 0,
+      "detectedTypes": [
+        "S"
+      ],
+      "conditionsDetected": 1,
+      "validationQuestions": 0
+    }
+  }
+}

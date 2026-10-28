@@ -1,0 +1,231 @@
+{
+  "description": "Hand-written survey with the types the LimeSurvey normalizer does not produce.",
+  "valid": true,
+  "value": {
+    "surveyStructureVersion": "2.1.0",
+    "id": "ext-001",
+    "title": "Extended types",
+    "language": "en",
+    "availableLanguages": [
+      "en",
+      "es"
+    ],
+    "groups": [
+      {
+        "id": "g1",
+        "title": "Main",
+        "order": 0
+      }
+    ],
+    "fields": [
+      {
+        "id": "f1",
+        "code": "AGREE",
+        "type": "boolean",
+        "label": "Agrees",
+        "groupId": "g1",
+        "responseEncoding": {
+          "selectedValue": true,
+          "unselectedValue": false,
+          "selectedLabel": "Agreed",
+          "unselectedLabel": "Did not agree"
+        }
+      },
+      {
+        "id": "f2",
+        "code": "SCORE",
+        "type": "range",
+        "label": "Score",
+        "groupId": "g1",
+        "responseValidation": {
+          "min": 0,
+          "max": 10
+        },
+        "defaultValue": 5
+      },
+      {
+        "id": "f3",
+        "code": "VISIT",
+        "type": "date",
+        "label": "Visit date",
+        "dateValueType": "date-time",
+        "rendering": {
+          "dateOrder": "date-time"
+        }
+      },
+      {
+        "id": "f4",
+        "code": "MONTH",
+        "type": "date",
+        "label": "Month",
+        "dateValueType": "month-year"
+      },
+      {
+        "id": "f5",
+        "code": "HOUSEHOLD",
+        "type": "custom",
+        "label": "Household",
+        "childrenFields": [
+          {
+            "id": "f5a",
+            "code": "SIZE",
+            "type": "number",
+            "label": "Size",
+            "parentId": "f5",
+            "responseValidation": {
+              "integer": true,
+              "min": 1
+            }
+          },
+          {
+            "id": "f5b",
+            "code": "HEAD",
+            "type": "single-choice",
+            "label": "Head",
+            "parentId": "f5",
+            "options": [
+              {
+                "code": "1",
+                "label": "Mother"
+              },
+              {
+                "code": "2",
+                "label": "Father"
+              }
+            ]
+          },
+          {
+            "id": "f5c",
+            "code": "INNER",
+            "type": "custom",
+            "label": "Inner",
+            "parentId": "f5",
+            "childrenFields": [
+              {
+                "id": "f5c1",
+                "code": "NOTE",
+                "type": "long-text",
+                "label": "Note",
+                "parentId": "f5c"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "f6",
+        "code": "GRID",
+        "type": "matrix",
+        "label": "Grid",
+        "matrix": {
+          "mode": "multiple",
+          "rows": [
+            {
+              "code": "R1",
+              "label": "Row 1"
+            }
+          ],
+          "columns": [
+            {
+              "code": "C1",
+              "label": "Col 1"
+            },
+            {
+              "code": "C2",
+              "label": "Col 2"
+            }
+          ]
+        },
+        "responseEncoding": {
+          "selectedValue": 1,
+          "unselectedValue": 0
+        }
+      },
+      {
+        "id": "f7",
+        "code": "TEXTGRID",
+        "type": "matrix",
+        "label": "Text grid",
+        "matrix": {
+          "mode": "text",
+          "rows": [
+            {
+              "code": "R1",
+              "label": "Row"
+            }
+          ],
+          "columns": [
+            {
+              "code": "C1",
+              "label": "Col"
+            }
+          ]
+        }
+      },
+      {
+        "id": "f8",
+        "code": "PICK",
+        "type": "multiple-choice",
+        "label": "Pick",
+        "options": [
+          {
+            "code": "A",
+            "label": "Alpha"
+          },
+          {
+            "code": "B",
+            "label": "Beta"
+          }
+        ],
+        "responseValidation": {
+          "minSelections": 1,
+          "maxSelections": 2
+        },
+        "defaultValue": [
+          "A"
+        ]
+      },
+      {
+        "id": "f9",
+        "code": "INFO",
+        "type": "display",
+        "label": "Information"
+      },
+      {
+        "id": "f10",
+        "code": "EMAIL",
+        "type": "short-text",
+        "label": "Email",
+        "responseValidation": {
+          "responseFormatPattern": "[^@]+@[^@]+",
+          "maxLength": 80
+        },
+        "defaultValue": "a@b.c",
+        "visibility": {
+          "condition": {
+            "type": "all",
+            "conditions": [
+              {
+                "type": "answered",
+                "responseReference": {
+                  "fieldCode": "AGREE"
+                }
+              },
+              {
+                "type": "not",
+                "condition": {
+                  "type": "comparison",
+                  "responseReference": {
+                    "fieldCode": "SCORE"
+                  },
+                  "operator": "less-than",
+                  "value": 3
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

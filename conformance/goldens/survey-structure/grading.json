@@ -1,0 +1,891 @@
+{
+  "score": [
+    {
+      "answers": {},
+      "fieldCodes": null,
+      "result": {
+        "earned": 0,
+        "maximum": 11,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "PRIMES",
+            "points": 3,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Primos"
+          },
+          {
+            "fieldCode": "AGE",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "OK",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "No"
+          },
+          {
+            "fieldCode": "WORD",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "answers": {},
+      "fieldCodes": [
+        "CAPITAL",
+        "GRID"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 5,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "No"
+          }
+        ]
+      }
+    },
+    {
+      "answers": {},
+      "fieldCodes": [
+        "WORD"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {},
+      "fieldCodes": [
+        "BOX"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A1",
+        "PRIMES": {
+          "P2": "Y",
+          "P3": "Y",
+          "P4": "N"
+        },
+        "AGE": 21,
+        "OK": true,
+        "GRID": {
+          "R1": "C1",
+          "R2": "C1"
+        },
+        "BOX": {
+          "WORD": "hola"
+        }
+      },
+      "fieldCodes": null,
+      "result": {
+        "earned": 9,
+        "maximum": 11,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 2,
+            "correct": true,
+            "feedback": "Bien"
+          },
+          {
+            "fieldCode": "PRIMES",
+            "points": 3,
+            "earned": 3,
+            "correct": true,
+            "feedback": "Primos"
+          },
+          {
+            "fieldCode": "AGE",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "OK",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "No"
+          },
+          {
+            "fieldCode": "WORD",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A1",
+        "PRIMES": {
+          "P2": "Y",
+          "P3": "Y",
+          "P4": "N"
+        },
+        "AGE": 21,
+        "OK": true,
+        "GRID": {
+          "R1": "C1",
+          "R2": "C1"
+        },
+        "BOX": {
+          "WORD": "hola"
+        }
+      },
+      "fieldCodes": [
+        "CAPITAL",
+        "GRID"
+      ],
+      "result": {
+        "earned": 3,
+        "maximum": 5,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 2,
+            "correct": true,
+            "feedback": "Bien"
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "No"
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A1",
+        "PRIMES": {
+          "P2": "Y",
+          "P3": "Y",
+          "P4": "N"
+        },
+        "AGE": 21,
+        "OK": true,
+        "GRID": {
+          "R1": "C1",
+          "R2": "C1"
+        },
+        "BOX": {
+          "WORD": "hola"
+        }
+      },
+      "fieldCodes": [
+        "WORD"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A1",
+        "PRIMES": {
+          "P2": "Y",
+          "P3": "Y",
+          "P4": "N"
+        },
+        "AGE": 21,
+        "OK": true,
+        "GRID": {
+          "R1": "C1",
+          "R2": "C1"
+        },
+        "BOX": {
+          "WORD": "hola"
+        }
+      },
+      "fieldCodes": [
+        "BOX"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A2",
+        "PRIMES_P2": "Y",
+        "PRIMES_P3": "Y",
+        "PRIMES_P4": "Y",
+        "AGE": "21",
+        "OK": "true",
+        "GRID_R1": "C1",
+        "GRID_R2": "C2",
+        "BOX": {
+          "WORD": "HOLA"
+        }
+      },
+      "fieldCodes": null,
+      "result": {
+        "earned": 3,
+        "maximum": 11,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "PRIMES",
+            "points": 3,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Primos"
+          },
+          {
+            "fieldCode": "AGE",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "OK",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 2,
+            "correct": true
+          },
+          {
+            "fieldCode": "WORD",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A2",
+        "PRIMES_P2": "Y",
+        "PRIMES_P3": "Y",
+        "PRIMES_P4": "Y",
+        "AGE": "21",
+        "OK": "true",
+        "GRID_R1": "C1",
+        "GRID_R2": "C2",
+        "BOX": {
+          "WORD": "HOLA"
+        }
+      },
+      "fieldCodes": [
+        "CAPITAL",
+        "GRID"
+      ],
+      "result": {
+        "earned": 3,
+        "maximum": 5,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 2,
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A2",
+        "PRIMES_P2": "Y",
+        "PRIMES_P3": "Y",
+        "PRIMES_P4": "Y",
+        "AGE": "21",
+        "OK": "true",
+        "GRID_R1": "C1",
+        "GRID_R2": "C2",
+        "BOX": {
+          "WORD": "HOLA"
+        }
+      },
+      "fieldCodes": [
+        "WORD"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "A2",
+        "PRIMES_P2": "Y",
+        "PRIMES_P3": "Y",
+        "PRIMES_P4": "Y",
+        "AGE": "21",
+        "OK": "true",
+        "GRID_R1": "C1",
+        "GRID_R2": "C2",
+        "BOX": {
+          "WORD": "HOLA"
+        }
+      },
+      "fieldCodes": [
+        "BOX"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "",
+        "PRIMES": [
+          "P3",
+          "P2"
+        ],
+        "AGE": 18,
+        "OK": false,
+        "GRID": null,
+        "BOX": "x"
+      },
+      "fieldCodes": null,
+      "result": {
+        "earned": 4,
+        "maximum": 11,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "PRIMES",
+            "points": 3,
+            "earned": 3,
+            "correct": true,
+            "feedback": "Primos"
+          },
+          {
+            "fieldCode": "AGE",
+            "points": 1,
+            "earned": 1,
+            "correct": true
+          },
+          {
+            "fieldCode": "OK",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "No"
+          },
+          {
+            "fieldCode": "WORD",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "",
+        "PRIMES": [
+          "P3",
+          "P2"
+        ],
+        "AGE": 18,
+        "OK": false,
+        "GRID": null,
+        "BOX": "x"
+      },
+      "fieldCodes": [
+        "CAPITAL",
+        "GRID"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 5,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "No"
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "",
+        "PRIMES": [
+          "P3",
+          "P2"
+        ],
+        "AGE": 18,
+        "OK": false,
+        "GRID": null,
+        "BOX": "x"
+      },
+      "fieldCodes": [
+        "WORD"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": "",
+        "PRIMES": [
+          "P3",
+          "P2"
+        ],
+        "AGE": 18,
+        "OK": false,
+        "GRID": null,
+        "BOX": "x"
+      },
+      "fieldCodes": [
+        "BOX"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": null,
+        "PRIMES": {
+          "P2": true,
+          "P3": "Y"
+        },
+        "AGE": 0,
+        "GRID": {
+          "R2": "C2"
+        }
+      },
+      "fieldCodes": null,
+      "result": {
+        "earned": 2,
+        "maximum": 11,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "PRIMES",
+            "points": 3,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Primos"
+          },
+          {
+            "fieldCode": "AGE",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "OK",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 2,
+            "correct": true
+          },
+          {
+            "fieldCode": "WORD",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": null,
+        "PRIMES": {
+          "P2": true,
+          "P3": "Y"
+        },
+        "AGE": 0,
+        "GRID": {
+          "R2": "C2"
+        }
+      },
+      "fieldCodes": [
+        "CAPITAL",
+        "GRID"
+      ],
+      "result": {
+        "earned": 2,
+        "maximum": 5,
+        "items": [
+          {
+            "fieldCode": "CAPITAL",
+            "points": 2,
+            "earned": 0,
+            "correct": false,
+            "feedback": "Mal"
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R1",
+            "points": 1,
+            "earned": 0,
+            "correct": false
+          },
+          {
+            "fieldCode": "GRID",
+            "rowCode": "R2",
+            "points": 2,
+            "earned": 2,
+            "correct": true
+          }
+        ]
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": null,
+        "PRIMES": {
+          "P2": true,
+          "P3": "Y"
+        },
+        "AGE": 0,
+        "GRID": {
+          "R2": "C2"
+        }
+      },
+      "fieldCodes": [
+        "WORD"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    },
+    {
+      "answers": {
+        "CAPITAL": null,
+        "PRIMES": {
+          "P2": true,
+          "P3": "Y"
+        },
+        "AGE": 0,
+        "GRID": {
+          "R2": "C2"
+        }
+      },
+      "fieldCodes": [
+        "BOX"
+      ],
+      "result": {
+        "earned": 0,
+        "maximum": 0,
+        "items": []
+      }
+    }
+  ],
+  "gradeAnswer": [
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          "A"
+        ]
+      },
+      "value": "A",
+      "result": {
+        "points": 1,
+        "earned": 1,
+        "correct": true
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          "A"
+        ]
+      },
+      "value": "",
+      "result": {
+        "points": 1,
+        "earned": 0,
+        "correct": false
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          0
+        ]
+      },
+      "value": 0,
+      "result": {
+        "points": 1,
+        "earned": 0,
+        "correct": false
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          null
+        ]
+      },
+      "value": null,
+      "result": {
+        "points": 1,
+        "earned": 0,
+        "correct": false
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          "A",
+          "B"
+        ]
+      },
+      "value": [
+        "B",
+        "A"
+      ],
+      "multiple": true,
+      "result": {
+        "points": 1,
+        "earned": 1,
+        "correct": true
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          "A"
+        ]
+      },
+      "value": [
+        "A",
+        "A"
+      ],
+      "multiple": true,
+      "result": {
+        "points": 1,
+        "earned": 0,
+        "correct": false
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          "A"
+        ]
+      },
+      "value": {
+        "A": 1,
+        "B": 0
+      },
+      "multiple": true,
+      "selected": 1,
+      "result": {
+        "points": 1,
+        "earned": 1,
+        "correct": true
+      }
+    },
+    {
+      "grading": {
+        "points": 1,
+        "correctAnswers": [
+          "A"
+        ]
+      },
+      "value": "nope",
+      "multiple": true,
+      "result": {
+        "points": 1,
+        "earned": 0,
+        "correct": false
+      }
+    }
+  ]
+}

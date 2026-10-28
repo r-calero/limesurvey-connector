@@ -1,0 +1,47 @@
+{
+  "description": "A question whose code equals a system column keeps that column as an answer.",
+  "structure": {
+    "surveyStructureVersion": "2.1.0",
+    "id": "synthetic",
+    "fields": [
+      {
+        "id": "q0",
+        "code": "seed",
+        "type": "single-choice",
+        "label": "Seed type",
+        "options": [
+          {
+            "code": "S1",
+            "label": "Maize"
+          },
+          {
+            "code": "S2",
+            "label": "Bean"
+          }
+        ]
+      },
+      {
+        "id": "q1",
+        "code": "Q1",
+        "type": "single-choice",
+        "label": "Question 1",
+        "options": [
+          {
+            "code": "A1",
+            "label": "Yes"
+          },
+          {
+            "code": "A2",
+            "label": "No"
+          }
+        ]
+      }
+    ]
+  },
+  "csv": [
+    {
+      "name": "collision",
+      "file": "responses/metadata-collision.csv"
+    }
+  ]
+}

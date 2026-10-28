@@ -1,0 +1,229 @@
+{
+  "isNumericText": [
+    {
+      "value": "007",
+      "result": true
+    },
+    {
+      "value": "1.",
+      "result": true
+    },
+    {
+      "value": ".5",
+      "result": true
+    },
+    {
+      "value": "-0",
+      "result": true
+    },
+    {
+      "value": "+1e3",
+      "result": true
+    },
+    {
+      "value": "1e400",
+      "result": false
+    },
+    {
+      "value": " 12 ",
+      "result": true
+    },
+    {
+      "value": "\t3\n",
+      "result": true
+    },
+    {
+      "value": " 3",
+      "result": false
+    },
+    {
+      "value": "1,5",
+      "result": false
+    },
+    {
+      "value": "",
+      "result": false
+    },
+    {
+      "value": " ",
+      "result": false
+    },
+    {
+      "value": "0x10",
+      "result": false
+    },
+    {
+      "value": "Infinity",
+      "result": false
+    },
+    {
+      "value": "NaN",
+      "result": false
+    },
+    {
+      "value": "1e",
+      "result": false
+    },
+    {
+      "value": ".",
+      "result": false
+    },
+    {
+      "value": "-.5e-2",
+      "result": true
+    },
+    {
+      "value": "12a",
+      "result": false
+    }
+  ],
+  "numberCharacterLength": [
+    {
+      "value": 0,
+      "text": "0",
+      "result": 1
+    },
+    {
+      "value": 0,
+      "text": "0",
+      "result": 1
+    },
+    {
+      "value": 1,
+      "text": "1",
+      "result": 1
+    },
+    {
+      "value": -1,
+      "text": "-1",
+      "result": 2
+    },
+    {
+      "value": 0.1,
+      "text": "0.1",
+      "result": 3
+    },
+    {
+      "value": 123.456,
+      "text": "123.456",
+      "result": 7
+    },
+    {
+      "value": 1e+21,
+      "text": "1e+21",
+      "result": 22
+    },
+    {
+      "value": 1e-7,
+      "text": "1e-7",
+      "result": 9
+    },
+    {
+      "value": 1.5e-10,
+      "text": "1.5e-10",
+      "result": 13
+    },
+    {
+      "value": -2.5e+25,
+      "text": "-2.5e+25",
+      "result": 27
+    },
+    {
+      "value": 123456789012345680000,
+      "text": "123456789012345680000",
+      "result": 21
+    },
+    {
+      "value": 5e-324,
+      "text": "5e-324",
+      "result": 326
+    },
+    {
+      "value": 1.7976931348623157e+308,
+      "text": "1.7976931348623157e+308",
+      "result": 309
+    },
+    {
+      "value": 0.000001,
+      "text": "0.000001",
+      "result": 8
+    },
+    {
+      "value": 100000000000000000000,
+      "text": "100000000000000000000",
+      "result": 21
+    }
+  ],
+  "isMonthDay": [
+    {
+      "value": "02-29",
+      "result": true
+    },
+    {
+      "value": "02-30",
+      "result": false
+    },
+    {
+      "value": "04-31",
+      "result": false
+    },
+    {
+      "value": "12-31",
+      "result": true
+    },
+    {
+      "value": "00-10",
+      "result": false
+    },
+    {
+      "value": "13-01",
+      "result": false
+    },
+    {
+      "value": "1-01",
+      "result": false
+    },
+    {
+      "value": "01-1",
+      "result": false
+    },
+    {
+      "value": "01-01",
+      "result": true
+    },
+    {
+      "value": 1201,
+      "result": false
+    },
+    {
+      "value": null,
+      "result": false
+    }
+  ],
+  "monthDayCount": [
+    {
+      "month": 0,
+      "result": 0
+    },
+    {
+      "month": 1,
+      "result": 31
+    },
+    {
+      "month": 2,
+      "result": 29
+    },
+    {
+      "month": 4,
+      "result": 30
+    },
+    {
+      "month": 12,
+      "result": 31
+    },
+    {
+      "month": 13,
+      "result": 0
+    }
+  ]
+}

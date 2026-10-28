@@ -1,0 +1,8 @@
+{
+  "input": "lss/invalid-missing-survey-row.lss",
+  "ok": false,
+  "error": {
+    "type": "SurveyStructureSourceError",
+    "message": "LSS file does not contain a surveys row."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "input": "lss/invalid-dtd-declaration.lss",
+  "ok": false,
+  "error": {
+    "type": "SurveyStructureSourceError",
+    "message": "LSS files with DTD, external entities, or entity expansion are not accepted."
+  }
+}

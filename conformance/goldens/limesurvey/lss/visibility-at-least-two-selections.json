@@ -1,0 +1,135 @@
+{
+  "input": "lss/visibility-at-least-two-selections.lss",
+  "ok": true,
+  "result": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "900007",
+      "fields": [
+        {
+          "id": "300",
+          "code": "QUESTION_1",
+          "type": "multiple-choice",
+          "label": "Pregunta de encuesta 1: seleccione opciones de respuesta",
+          "required": false,
+          "order": 0,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900007",
+            "groupId": "10",
+            "questionId": "300",
+            "nativeType": "M",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1"
+              }
+            ]
+          },
+          "groupId": "10",
+          "responseEncoding": {
+            "selectedValue": "Y",
+            "unselectedValue": "N",
+            "selectedLabel": "Sí",
+            "unselectedLabel": "No"
+          },
+          "options": [
+            {
+              "code": "RESPONSE_OPTION_1",
+              "label": "Opción 1 de respuesta",
+              "order": 0
+            },
+            {
+              "code": "RESPONSE_OPTION_2",
+              "label": "Opción 2 de respuesta",
+              "order": 1
+            },
+            {
+              "code": "RESPONSE_OPTION_3",
+              "label": "Opción 3 de respuesta",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "304",
+          "code": "QUESTION_2",
+          "type": "long-text",
+          "label": "Pregunta de encuesta 2: visible al seleccionar al menos dos opciones en la pregunta 1",
+          "required": false,
+          "order": 1,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900007",
+            "groupId": "10",
+            "questionId": "304",
+            "nativeType": "T",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "count(that.QUESTION_1.NAOK) >= 2"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "selection-count",
+              "responseReference": {
+                "fieldCode": "QUESTION_1"
+              },
+              "operator": "greater-than-or-equal",
+              "value": 2
+            }
+          }
+        }
+      ],
+      "source": {
+        "platform": "limesurvey",
+        "format": "lss",
+        "originDetails": [
+          {
+            "type": "limesurvey-survey",
+            "version": "1.0.0",
+            "databaseSchemaVersion": "708"
+          }
+        ]
+      },
+      "title": "Ejemplo sintético de visibilidad por cantidad seleccionada",
+      "language": "es",
+      "availableLanguages": [
+        "es"
+      ],
+      "groups": [
+        {
+          "id": "10",
+          "order": 0,
+          "title": "Grupo de encuesta 1",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "10"
+          }
+        }
+      ],
+      "settings": {
+        "layout": "group",
+        "questionIndex": "disabled",
+        "navigationDelay": 0
+      }
+    },
+    "issues": [],
+    "sourceMetrics": {
+      "topLevelQuestions": 2,
+      "childQuestions": 3,
+      "integratedChildren": 3,
+      "detectedTypes": [
+        "M",
+        "T"
+      ],
+      "conditionsDetected": 1,
+      "validationQuestions": 0
+    }
+  }
+}

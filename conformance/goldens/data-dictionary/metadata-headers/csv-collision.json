@@ -1,0 +1,116 @@
+{
+  "change": "system-columns",
+  "ok": true,
+  "result": {
+    "canonical": {
+      "responses": [
+        {
+          "submitdate": "2026-09-01 10:00:00",
+          "seed": "S2",
+          "Q1": "A1"
+        },
+        {
+          "submitdate": "",
+          "seed": "S1",
+          "Q1": "A2"
+        }
+      ],
+      "issues": [],
+      "columns": [
+        null,
+        "submitdate",
+        "seed",
+        "Q1"
+      ],
+      "unmappedValues": [
+        [],
+        []
+      ],
+      "responseIds": [
+        "7",
+        "8"
+      ],
+      "headers": [
+        "id",
+        "submitdate",
+        "seed",
+        "Q1"
+      ]
+    },
+    "translated": {
+      "responses": [
+        {
+          "responseIndex": 1,
+          "responseId": "7",
+          "fields": [
+            {
+              "responseKey": "submitdate",
+              "questionCode": "submitdate",
+              "questionLabel": "Submit date",
+              "dataType": "date",
+              "sourceValue": "2026-09-01 10:00:00",
+              "displayValue": "2026-09-01 10:00:00",
+              "missing": false
+            },
+            {
+              "responseKey": "seed",
+              "questionCode": "seed",
+              "questionLabel": "Seed type",
+              "dataType": "code",
+              "sourceValue": "S2",
+              "displayValue": "Bean",
+              "missing": false
+            },
+            {
+              "responseKey": "Q1",
+              "questionCode": "Q1",
+              "questionLabel": "Question 1",
+              "dataType": "code",
+              "sourceValue": "A1",
+              "displayValue": "Yes",
+              "missing": false
+            }
+          ],
+          "unmappedValues": [],
+          "issues": []
+        },
+        {
+          "responseIndex": 2,
+          "responseId": "8",
+          "fields": [
+            {
+              "responseKey": "submitdate",
+              "questionCode": "submitdate",
+              "questionLabel": "Submit date",
+              "dataType": "date",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "seed",
+              "questionCode": "seed",
+              "questionLabel": "Seed type",
+              "dataType": "code",
+              "sourceValue": "S1",
+              "displayValue": "Maize",
+              "missing": false
+            },
+            {
+              "responseKey": "Q1",
+              "questionCode": "Q1",
+              "questionLabel": "Question 1",
+              "dataType": "code",
+              "sourceValue": "A2",
+              "displayValue": "No",
+              "missing": false
+            }
+          ],
+          "unmappedValues": [],
+          "issues": []
+        }
+      ],
+      "issues": []
+    }
+  }
+}

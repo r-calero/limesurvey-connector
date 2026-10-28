@@ -1,0 +1,89 @@
+[
+  {
+    "questionCode": "PRIORIDAD",
+    "questionLabel": "Ordene sus prioridades — Posición 1",
+    "responseKey": "PRIORIDAD_1",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "P1",
+        "label": "Salud"
+      },
+      {
+        "code": "P2",
+        "label": "Empleo"
+      },
+      {
+        "code": "P3",
+        "label": "Vivienda"
+      }
+    ],
+    "aliases": [
+      "PRIORIDAD1",
+      "Ordene sus prioridades [Rank 1]",
+      "910001X10X1181"
+    ],
+    "parentCode": "PRIORIDAD",
+    "qid": "118",
+    "groupId": "10"
+  },
+  {
+    "questionCode": "PRIORIDAD",
+    "questionLabel": "Ordene sus prioridades — Posición 2",
+    "responseKey": "PRIORIDAD_2",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "P1",
+        "label": "Salud"
+      },
+      {
+        "code": "P2",
+        "label": "Empleo"
+      },
+      {
+        "code": "P3",
+        "label": "Vivienda"
+      }
+    ],
+    "aliases": [
+      "PRIORIDAD2",
+      "Ordene sus prioridades [Rank 2]",
+      "910001X10X1182"
+    ],
+    "parentCode": "PRIORIDAD",
+    "qid": "118",
+    "groupId": "10"
+  },
+  {
+    "questionCode": "PRIORIDAD",
+    "questionLabel": "Ordene sus prioridades — Posición 3",
+    "responseKey": "PRIORIDAD_3",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "P1",
+        "label": "Salud"
+      },
+      {
+        "code": "P2",
+        "label": "Empleo"
+      },
+      {
+        "code": "P3",
+        "label": "Vivienda"
+      }
+    ],
+    "aliases": [
+      "PRIORIDAD3",
+      "Ordene sus prioridades [Rank 3]",
+      "910001X10X1183"
+    ],
+    "parentCode": "PRIORIDAD",
+    "qid": "118",
+    "groupId": "10"
+  }
+]

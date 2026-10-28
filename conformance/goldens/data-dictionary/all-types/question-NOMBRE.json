@@ -1,0 +1,15 @@
+[
+  {
+    "questionCode": "NOMBRE",
+    "questionLabel": "Nombre completo",
+    "responseKey": "NOMBRE",
+    "dataType": "string",
+    "cardinality": "single",
+    "aliases": [
+      "Nombre completo",
+      "910001X10X100"
+    ],
+    "qid": "100",
+    "groupId": "10"
+  }
+]

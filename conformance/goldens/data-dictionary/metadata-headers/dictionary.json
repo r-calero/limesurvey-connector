@@ -1,0 +1,51 @@
+{
+  "fixture": "fixtures/dictionary/metadata-headers.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "synthetic",
+    "fields": [
+      {
+        "questionCode": "seed",
+        "questionLabel": "Seed type",
+        "responseKey": "seed",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "S1",
+            "label": "Maize"
+          },
+          {
+            "code": "S2",
+            "label": "Bean"
+          }
+        ],
+        "aliases": [
+          "Seed type"
+        ]
+      },
+      {
+        "questionCode": "Q1",
+        "questionLabel": "Question 1",
+        "responseKey": "Q1",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "A1",
+            "label": "Yes"
+          },
+          {
+            "code": "A2",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Question 1"
+        ]
+      }
+    ],
+    "issues": []
+  }
+}

@@ -1,0 +1,671 @@
+[
+  {
+    "name": "simple",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "crlf",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\r\n"
+  },
+  {
+    "name": "cr only",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\r"
+  },
+  {
+    "name": "no trailing newline",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "semicolon guessed",
+    "data": [
+      [
+        "a",
+        "b",
+        "c"
+      ],
+      [
+        "1",
+        "2",
+        "3"
+      ],
+      [
+        "4",
+        "5",
+        "6"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ";",
+    "linebreak": "\n"
+  },
+  {
+    "name": "tab guessed",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": "\t",
+    "linebreak": "\n"
+  },
+  {
+    "name": "pipe guessed",
+    "data": [
+      [
+        "a",
+        "b",
+        "c"
+      ],
+      [
+        "1",
+        "2",
+        "3"
+      ]
+    ],
+    "errors": [],
+    "delimiter": "|",
+    "linebreak": "\n"
+  },
+  {
+    "name": "comma vs semicolon tie",
+    "data": [
+      [
+        "a",
+        "b;c"
+      ],
+      [
+        "1",
+        "2;3"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "single column",
+    "data": [
+      [
+        "a"
+      ],
+      [
+        "b"
+      ],
+      [
+        "c"
+      ]
+    ],
+    "errors": [
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "empty input",
+    "data": [],
+    "errors": [
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "only newline",
+    "data": [],
+    "errors": [
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "empty lines skipped",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "whitespace line kept",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "  "
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "quoted delimiter",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "x,y",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "quoted newline",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "line1\nline2",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "escaped quotes",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "say \"hi\"",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "quote at eof",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "spaces after closing quote",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "x",
+        "2"
+      ],
+      [
+        "y"
+      ]
+    ],
+    "errors": [
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "unterminated quote",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "x,2\n"
+      ]
+    ],
+    "errors": [
+      {
+        "type": "Quotes",
+        "code": "MissingQuotes",
+        "message": "Quoted field unterminated",
+        "row": 1,
+        "index": 5
+      },
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "invalid trailing quote",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "x\"y,2\n"
+      ]
+    ],
+    "errors": [
+      {
+        "type": "Quotes",
+        "code": "InvalidQuotes",
+        "message": "Trailing quote on quoted field is malformed",
+        "row": 1,
+        "index": 5
+      },
+      {
+        "type": "Quotes",
+        "code": "MissingQuotes",
+        "message": "Quoted field unterminated",
+        "row": 1,
+        "index": 5
+      },
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "quote inside unquoted field",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "x\"y",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "bom header",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "explicit delimiter",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ";",
+    "linebreak": "\n"
+  },
+  {
+    "name": "explicit delimiter mismatch",
+    "data": [
+      [
+        "a,b"
+      ],
+      [
+        "1,2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ";",
+    "linebreak": "\n"
+  },
+  {
+    "name": "ragged rows",
+    "data": [
+      [
+        "a",
+        "b",
+        "c"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "mixed line endings",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2\n3",
+        "4"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\r\n"
+  },
+  {
+    "name": "crlf inside quotes",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "x\r\ny",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\r\n"
+  },
+  {
+    "name": "record separator",
+    "data": [
+      [
+        "a",
+        "b"
+      ],
+      [
+        "1",
+        "2"
+      ]
+    ],
+    "errors": [],
+    "delimiter": "\u001e",
+    "linebreak": "\n"
+  },
+  {
+    "name": "unicode",
+    "data": [
+      [
+        "nombre",
+        "región"
+      ],
+      [
+        "Ána",
+        "Sur"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "empty fields",
+    "data": [
+      [
+        "",
+        "",
+        ""
+      ],
+      [
+        "",
+        "",
+        ""
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "trailing delimiter",
+    "data": [
+      [
+        "a",
+        "b",
+        ""
+      ],
+      [
+        "1",
+        "2",
+        ""
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "quoted empty",
+    "data": [
+      [
+        "",
+        ""
+      ],
+      [
+        "a",
+        ""
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "many rows preview",
+    "data": [
+      [
+        "0",
+        "1"
+      ],
+      [
+        "1",
+        "2"
+      ],
+      [
+        "2",
+        "3"
+      ],
+      [
+        "3",
+        "4"
+      ],
+      [
+        "4",
+        "5"
+      ],
+      [
+        "5",
+        "6"
+      ],
+      [
+        "6",
+        "7"
+      ],
+      [
+        "7",
+        "8"
+      ],
+      [
+        "8",
+        "9"
+      ],
+      [
+        "9",
+        "10"
+      ],
+      [
+        "10",
+        "11"
+      ],
+      [
+        "11",
+        "12"
+      ],
+      [
+        "12",
+        "13"
+      ],
+      [
+        "13",
+        "14"
+      ],
+      [
+        "14",
+        "15"
+      ]
+    ],
+    "errors": [],
+    "delimiter": ",",
+    "linebreak": "\n"
+  },
+  {
+    "name": "undetectable",
+    "data": [
+      [
+        "abc"
+      ],
+      [
+        "def"
+      ]
+    ],
+    "errors": [
+      {
+        "type": "Delimiter",
+        "code": "UndetectableDelimiter",
+        "message": "Unable to auto-detect delimiting character; defaulted to ','"
+      }
+    ],
+    "delimiter": ",",
+    "linebreak": "\n"
+  }
+]

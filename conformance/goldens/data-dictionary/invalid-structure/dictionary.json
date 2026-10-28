@@ -1,0 +1,36 @@
+{
+  "fixture": "fixtures/dictionary/invalid-structure.json",
+  "ok": false,
+  "error": {
+    "name": "ZodError",
+    "message": "[\n  {\n    \"code\": \"custom\",\n    \"path\": [\n      \"fields\",\n      1\n    ],\n    \"message\": \"Response key \\\"Q1\\\" is produced more than once and would overwrite an answer.\",\n    \"params\": {\n      \"reason\": \"duplicate-response-key\",\n      \"fieldCode\": \"Q1\",\n      \"responseKey\": \"Q1\"\n    }\n  },\n  {\n    \"code\": \"custom\",\n    \"path\": [\n      \"fields\",\n      1,\n      \"code\"\n    ],\n    \"message\": \"Field code Q1 is duplicated.\",\n    \"params\": {\n      \"reason\": \"duplicate-field-code\",\n      \"fieldCode\": \"Q1\"\n    }\n  }\n]",
+    "issues": [
+      {
+        "code": "custom",
+        "path": [
+          "fields",
+          1
+        ],
+        "message": "Response key \"Q1\" is produced more than once and would overwrite an answer.",
+        "params": {
+          "reason": "duplicate-response-key",
+          "fieldCode": "Q1",
+          "responseKey": "Q1"
+        }
+      },
+      {
+        "code": "custom",
+        "path": [
+          "fields",
+          1,
+          "code"
+        ],
+        "message": "Field code Q1 is duplicated.",
+        "params": {
+          "reason": "duplicate-field-code",
+          "fieldCode": "Q1"
+        }
+      }
+    ]
+  }
+}

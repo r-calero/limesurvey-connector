@@ -1,0 +1,294 @@
+[
+  {
+    "tag": "es",
+    "valid": true
+  },
+  {
+    "tag": "en",
+    "valid": true
+  },
+  {
+    "tag": "es-MX",
+    "valid": true
+  },
+  {
+    "tag": "es_MX",
+    "valid": false
+  },
+  {
+    "tag": "x-survey",
+    "valid": true
+  },
+  {
+    "tag": "x",
+    "valid": false
+  },
+  {
+    "tag": "und",
+    "valid": true
+  },
+  {
+    "tag": "root",
+    "valid": false
+  },
+  {
+    "tag": "zh-Hant-TW",
+    "valid": true
+  },
+  {
+    "tag": "sr-Latn-RS",
+    "valid": true
+  },
+  {
+    "tag": "de-CH-1996",
+    "valid": true
+  },
+  {
+    "tag": "de-CH-1996-1996",
+    "valid": false
+  },
+  {
+    "tag": "en-US-u-ca-gregory",
+    "valid": true
+  },
+  {
+    "tag": "en-u-ca",
+    "valid": true
+  },
+  {
+    "tag": "en-t-es",
+    "valid": true
+  },
+  {
+    "tag": "en-t-es-m0-t0",
+    "valid": false
+  },
+  {
+    "tag": "en-a-bbb-a-ccc",
+    "valid": false
+  },
+  {
+    "tag": "en-a-bbb-b-ccc",
+    "valid": true
+  },
+  {
+    "tag": "en-x-private",
+    "valid": true
+  },
+  {
+    "tag": "en-x-private-a-b",
+    "valid": true
+  },
+  {
+    "tag": "i-klingon",
+    "valid": false
+  },
+  {
+    "tag": "en-GB-oed",
+    "valid": false
+  },
+  {
+    "tag": "abcd",
+    "valid": false
+  },
+  {
+    "tag": "abcde",
+    "valid": true
+  },
+  {
+    "tag": "en-123",
+    "valid": true
+  },
+  {
+    "tag": "en-1234",
+    "valid": true
+  },
+  {
+    "tag": "en-US-POSIX",
+    "valid": true
+  },
+  {
+    "tag": "EN-us",
+    "valid": true
+  },
+  {
+    "tag": "zh-min-nan",
+    "valid": false
+  },
+  {
+    "tag": "sgn-BE-FR",
+    "valid": false
+  },
+  {
+    "tag": "es-419",
+    "valid": true
+  },
+  {
+    "tag": "es-4190",
+    "valid": true
+  },
+  {
+    "tag": "qaa",
+    "valid": true
+  },
+  {
+    "tag": "e",
+    "valid": false
+  },
+  {
+    "tag": "",
+    "valid": false
+  },
+  {
+    "tag": "-en",
+    "valid": false
+  },
+  {
+    "tag": "en-",
+    "valid": false
+  },
+  {
+    "tag": "en--US",
+    "valid": false
+  },
+  {
+    "tag": "art-lojban",
+    "valid": true
+  },
+  {
+    "tag": "cel-gaulish",
+    "valid": true
+  },
+  {
+    "tag": "en-u",
+    "valid": false
+  },
+  {
+    "tag": "en-t",
+    "valid": false
+  },
+  {
+    "tag": "en-a",
+    "valid": false
+  },
+  {
+    "tag": "en-u-attr",
+    "valid": true
+  },
+  {
+    "tag": "en-u-ca-gregory-ca-buddhist",
+    "valid": true
+  },
+  {
+    "tag": "x-a-b-c",
+    "valid": true
+  },
+  {
+    "tag": "x-toolongvalue",
+    "valid": false
+  },
+  {
+    "tag": "en-US-x-a",
+    "valid": true
+  },
+  {
+    "tag": "ja-Latn-hepburn-heploc",
+    "valid": true
+  },
+  {
+    "tag": "en-Latn-US-valencia",
+    "valid": true
+  },
+  {
+    "tag": "en-Qaaa",
+    "valid": true
+  },
+  {
+    "tag": "de-1996-1996",
+    "valid": false
+  },
+  {
+    "tag": "tlh",
+    "valid": true
+  },
+  {
+    "tag": "zh-cmn-Hans",
+    "valid": false
+  },
+  {
+    "tag": "cmn-Hans-CN",
+    "valid": true
+  },
+  {
+    "tag": "ar-001",
+    "valid": true
+  },
+  {
+    "tag": "Latn",
+    "valid": false
+  },
+  {
+    "tag": "en-US-u-attr-ca-gregory",
+    "valid": true
+  },
+  {
+    "tag": "en-t-m0-t0",
+    "valid": false
+  },
+  {
+    "tag": "en-t-es-Latn",
+    "valid": true
+  },
+  {
+    "tag": "en-t-m0",
+    "valid": false
+  },
+  {
+    "tag": "en-u-ca-x",
+    "valid": false
+  },
+  {
+    "tag": "en-1abc",
+    "valid": true
+  },
+  {
+    "tag": "en-abcdefghi",
+    "valid": false
+  },
+  {
+    "tag": "es-ES-valencia-VALENCIA",
+    "valid": false
+  },
+  {
+    "tag": "en-u-cu-usd-eur",
+    "valid": true
+  },
+  {
+    "tag": "es-x-",
+    "valid": false
+  },
+  {
+    "tag": "de-t-en-US-h0-hybrid",
+    "valid": true
+  },
+  {
+    "tag": "en-US-u-va-posix",
+    "valid": true
+  },
+  {
+    "tag": "en-b-ccc-bbb-a-aaa-x-x",
+    "valid": true
+  },
+  {
+    "tag": "en-US-t-es-419-u-nu-latn",
+    "valid": true
+  },
+  {
+    "tag": "zzzzzzzzz",
+    "valid": false
+  },
+  {
+    "tag": "abcdefgh",
+    "valid": true
+  }
+]

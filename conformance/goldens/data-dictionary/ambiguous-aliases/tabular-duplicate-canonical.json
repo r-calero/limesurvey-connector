@@ -1,0 +1,55 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {}
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "message": "Dataset header ANSWER has an ambiguous or conflicting mapping. Its values were preserved without choosing by position.",
+        "responseKey": "ANSWER",
+        "details": {
+          "columnIndex": 0,
+          "candidates": [
+            "ANSWER"
+          ]
+        }
+      },
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "message": "Dataset header ANSWER has an ambiguous or conflicting mapping. Its values were preserved without choosing by position.",
+        "responseKey": "ANSWER",
+        "details": {
+          "columnIndex": 1,
+          "candidates": [
+            "ANSWER"
+          ]
+        }
+      }
+    ],
+    "columns": [
+      null,
+      null
+    ],
+    "unmappedValues": [
+      [
+        {
+          "sourceKey": "ANSWER",
+          "sourceValue": "one",
+          "columnIndex": 0
+        },
+        {
+          "sourceKey": "ANSWER",
+          "sourceValue": "two",
+          "columnIndex": 1
+        }
+      ]
+    ],
+    "responseIds": [
+      null
+    ]
+  }
+}

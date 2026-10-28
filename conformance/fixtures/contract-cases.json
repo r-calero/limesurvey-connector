@@ -1,0 +1,2880 @@
+{
+  "description": "Edge cases evaluated by the reference implementation.",
+  "cases": [
+    {
+      "name": "order 1.0",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "order": 1.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "order 1.5",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "order": 1.5
+          }
+        ]
+      }
+    },
+    {
+      "name": "order -1",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "order": -1
+          }
+        ]
+      }
+    },
+    {
+      "name": "order true",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "order": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "order \"1\"",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "order": "1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "order null",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "order": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing id",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing code",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing type",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "missing label",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "field is null",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          null
+        ]
+      }
+    },
+    {
+      "name": "field is string",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          "Q01"
+        ]
+      }
+    },
+    {
+      "name": "fields is object",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": {}
+      }
+    },
+    {
+      "name": "root is array",
+      "contract": "SurveyStructure",
+      "value": []
+    },
+    {
+      "name": "survey structure version 2",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": 2,
+        "id": "edge",
+        "fields": []
+      }
+    },
+    {
+      "name": "missing survey structure version",
+      "contract": "SurveyStructure",
+      "value": {
+        "id": "edge",
+        "fields": []
+      }
+    },
+    {
+      "name": "unknown keys with numeric names",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "b": 1,
+            "2": 1,
+            "a": 1,
+            "1": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "text with options and matrix",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "options": [],
+            "matrix": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "choice option code with whitespace and unknown key",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": " A1",
+                "label": "x"
+              }
+            ],
+            "extra": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "choice option missing label",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "matrix number with dual columns",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q3",
+            "code": "Q03",
+            "type": "matrix",
+            "label": "Matriz",
+            "matrix": {
+              "mode": "number",
+              "rows": [
+                {
+                  "code": "R1",
+                  "label": "F1"
+                },
+                {
+                  "code": "1",
+                  "label": "F2"
+                }
+              ],
+              "columns": [
+                {
+                  "code": "0",
+                  "label": "x",
+                  "options": []
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "matrix unknown mode",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q3",
+            "code": "Q03",
+            "type": "matrix",
+            "label": "Matriz",
+            "matrix": {
+              "mode": "grid",
+              "rows": [
+                {
+                  "code": "R1",
+                  "label": "F1"
+                },
+                {
+                  "code": "1",
+                  "label": "F2"
+                }
+              ],
+              "columns": [
+                {
+                  "code": "A1",
+                  "label": "C1"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "matrix default with numeric row keys",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q3",
+            "code": "Q03",
+            "type": "matrix",
+            "label": "Matriz",
+            "matrix": {
+              "mode": "single",
+              "rows": [
+                {
+                  "code": "R1",
+                  "label": "F1"
+                },
+                {
+                  "code": "1",
+                  "label": "F2"
+                }
+              ],
+              "columns": [
+                {
+                  "code": "A1",
+                  "label": "C1"
+                }
+              ]
+            },
+            "defaultValue": {
+              "2": "A1",
+              "1": "A9",
+              "R1": "A1",
+              "0": "B"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "dual matrix three columns",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q3",
+            "code": "Q03",
+            "type": "matrix",
+            "label": "Matriz",
+            "matrix": {
+              "mode": "dual-single",
+              "rows": [
+                {
+                  "code": "R1",
+                  "label": "r"
+                }
+              ],
+              "columns": [
+                {
+                  "code": "0",
+                  "label": "s",
+                  "options": [
+                    {
+                      "code": "A",
+                      "label": "a"
+                    }
+                  ]
+                },
+                {
+                  "code": "1",
+                  "label": "s",
+                  "options": [
+                    {
+                      "code": "A",
+                      "label": "a"
+                    }
+                  ]
+                },
+                {
+                  "code": "2",
+                  "label": "s",
+                  "options": [
+                    {
+                      "code": "A",
+                      "label": "a"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "dual matrix empty scale",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q3",
+            "code": "Q03",
+            "type": "matrix",
+            "label": "Matriz",
+            "matrix": {
+              "mode": "dual-single",
+              "rows": [
+                {
+                  "code": "R1",
+                  "label": "r"
+                }
+              ],
+              "columns": [
+                {
+                  "code": "0",
+                  "label": "s",
+                  "options": []
+                },
+                {
+                  "code": "1",
+                  "label": "t",
+                  "options": [
+                    {
+                      "code": "A",
+                      "label": "a"
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "field extension {\"type\": \"limesurvey-question\", \"version\": \"1.0.0\"}",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "source": {
+              "platform": "limesurvey",
+              "originDetails": [
+                {
+                  "type": "limesurvey-question",
+                  "version": "1.0.0"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "field extension {\"type\": \"limesurvey-question\", \"version\": \"2.0.0\"}",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "source": {
+              "platform": "limesurvey",
+              "originDetails": [
+                {
+                  "type": "limesurvey-question",
+                  "version": "2.0.0"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "field extension {\"type\": \"other\"}",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "source": {
+              "platform": "limesurvey",
+              "originDetails": [
+                {
+                  "type": "other"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "field extension {\"version\": \"1.0.0\"}",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "source": {
+              "platform": "limesurvey",
+              "originDetails": [
+                {
+                  "version": "1.0.0"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "field extension \"limesurvey-question\"",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "source": {
+              "platform": "limesurvey",
+              "originDetails": [
+                "limesurvey-question"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "field extension {\"type\": \"limesurvey-question\", \"version\": \"1.0.0\", \"nativeValidation\": {\"x\": \"1\"}}",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "source": {
+              "platform": "limesurvey",
+              "originDetails": [
+                {
+                  "type": "limesurvey-question",
+                  "version": "1.0.0",
+                  "nativeValidation": {
+                    "x": "1"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "platform 'limesurvey'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey"
+        }
+      }
+    },
+    {
+      "name": "platform 'LimeSurvey'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "LimeSurvey"
+        }
+      }
+    },
+    {
+      "name": "platform 'lime-survey'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "lime-survey"
+        }
+      }
+    },
+    {
+      "name": "platform 'lime--survey'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "lime--survey"
+        }
+      }
+    },
+    {
+      "name": "platform '1lime'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "1lime"
+        }
+      }
+    },
+    {
+      "name": "platform ''",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": ""
+        }
+      }
+    },
+    {
+      "name": "platform 'lime_survey'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "lime_survey"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30T10:00:00Z",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30T10:00:00Z"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30T10:00:00+02:00",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30T10:00:00+02:00"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30T10:00Z",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30T10:00Z"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30T10:00:00",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30T10:00:00"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-02-30T10:00:00Z",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-02-30T10:00:00Z"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30T10:00:00.123+0200",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30T10:00:00.123+0200"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2024-02-29T23:59:59.5-05:00",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2024-02-29T23:59:59.5-05:00"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30 10:00:00Z",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30 10:00:00Z"
+        }
+      }
+    },
+    {
+      "name": "importedAt 2026-09-30T24:00:00Z",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "source": {
+          "platform": "limesurvey",
+          "importedAt": "2026-09-30T24:00:00Z"
+        }
+      }
+    },
+    {
+      "name": "code '\\ufeffQ1'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "﻿Q1",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q1\\xa0'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q1 ",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q1\\x85'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q1",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q1\\x1c'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q1\u001c",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q 1'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q 1",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q1\\u2028'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q1 ",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code '\\u3000Q1'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "　Q1",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "code 'Q\\n1'",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q\n1",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ]
+      }
+    },
+    {
+      "name": "emoji default within maxLength 2",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "responseValidation": {
+              "maxLength": 2
+            },
+            "defaultValue": "😀"
+          }
+        ]
+      }
+    },
+    {
+      "name": "emoji default exceeds maxLength 1",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "responseValidation": {
+              "maxLength": 1
+            },
+            "defaultValue": "😀"
+          }
+        ]
+      }
+    },
+    {
+      "name": "emoji default meets minLength 2",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "responseValidation": {
+              "minLength": 2
+            },
+            "defaultValue": "😀"
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding 1 1.0",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": 1,
+              "unselectedValue": 1.0
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding true 1",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": true,
+              "unselectedValue": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding \"1\" 1",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": "1",
+              "unselectedValue": 1
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding 0 false",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": 0,
+              "unselectedValue": false
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding \"Y\" \"Y\"",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": "Y",
+              "unselectedValue": "Y"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding null \"N\"",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": null,
+              "unselectedValue": "N"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "encoding [] \"N\"",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ],
+            "responseEncoding": {
+              "selectedValue": [],
+              "unselectedValue": "N"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value 1 on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value 1.5 on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": 1.5
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value \"1\" on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": "1"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value true on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": true
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value null on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": null
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value [1] on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": [
+                  1
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "comparison value {\"a\": 1} on number",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "number",
+            "label": "Pregunta"
+          },
+          {
+            "id": "q9",
+            "code": "Q09",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "comparison",
+                "responseReference": {
+                  "fieldCode": "Q01"
+                },
+                "operator": "equals",
+                "value": {
+                  "a": 1
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "selection count fractional",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q2",
+            "code": "Q02",
+            "type": "multiple-choice",
+            "label": "Elija",
+            "options": [
+              {
+                "code": "A1",
+                "label": "Uno"
+              },
+              {
+                "code": "A2",
+                "label": "Dos"
+              }
+            ]
+          },
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "selection-count",
+                "responseReference": {
+                  "fieldCode": "Q02"
+                },
+                "operator": "equals",
+                "value": 1.5
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "condition unknown type",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "regex"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "condition nested invalid",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "visibility": {
+              "condition": {
+                "type": "all",
+                "conditions": [
+                  {
+                    "type": "not",
+                    "condition": {
+                      "type": "answered"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "group order missing",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "groups": [
+          {
+            "id": "g1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "group title empty uses empty owner",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "groups": [
+          {
+            "id": "g1",
+            "title": "",
+            "order": 0,
+            "visibility": {
+              "condition": {
+                "type": "answered",
+                "responseReference": {
+                  "fieldCode": "NOPE"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "date default formats",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "d0",
+            "code": "D0",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "date",
+            "defaultValue": "2026-09-30"
+          },
+          {
+            "id": "d1",
+            "code": "D1",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "date",
+            "defaultValue": "2026-13-01"
+          },
+          {
+            "id": "d2",
+            "code": "D2",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "month-year",
+            "defaultValue": "2026-00"
+          },
+          {
+            "id": "d3",
+            "code": "D3",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "date-time",
+            "defaultValue": "2026-09-30T10:00:00+25:00"
+          },
+          {
+            "id": "d4",
+            "code": "D4",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "date-time",
+            "defaultValue": "2026-09-30T23:59:59.999Z"
+          },
+          {
+            "id": "d5",
+            "code": "D5",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "time",
+            "defaultValue": "24:00"
+          },
+          {
+            "id": "d6",
+            "code": "D6",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "time",
+            "defaultValue": "23:59:60"
+          },
+          {
+            "id": "d7",
+            "code": "D7",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "year",
+            "defaultValue": "0000"
+          },
+          {
+            "id": "d8",
+            "code": "D8",
+            "type": "date",
+            "label": "Pregunta",
+            "dateValueType": "year",
+            "defaultValue": "2026"
+          }
+        ]
+      }
+    },
+    {
+      "name": "custom empty children",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "custom",
+            "label": "Pregunta",
+            "childrenFields": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "settings navigation delay",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "settings": {
+          "navigationDelay": -1,
+          "layout": "page"
+        }
+      }
+    },
+    {
+      "name": "messages record non string",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta",
+            "responseValidation": {
+              "messages": {
+                "min": 1,
+                "2": "x"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "availableLanguages mixed",
+      "contract": "SurveyStructure",
+      "value": {
+        "surveyStructureVersion": "2.1.0",
+        "id": "edge",
+        "fields": [
+          {
+            "id": "q1",
+            "code": "Q01",
+            "type": "short-text",
+            "label": "Pregunta"
+          }
+        ],
+        "language": "es",
+        "availableLanguages": [
+          "es",
+          "es_MX",
+          "",
+          5
+        ]
+      }
+    },
+    {
+      "name": "load result issue unknown code",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        },
+        "issues": [
+          {
+            "level": "warning",
+            "code": "NOPE",
+            "message": "m",
+            "details": {
+              "sourceType": "|"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "load result issue missing code",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        },
+        "issues": [
+          {
+            "level": "warning",
+            "message": "m",
+            "details": {
+              "sourceType": "|"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "load result invalid validation object value",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        },
+        "issues": [
+          {
+            "level": "error",
+            "code": "INVALID_VALIDATION",
+            "message": "m",
+            "details": {
+              "rule": "min",
+              "sourceValue": {
+                "a": 1
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "load result plain code with details",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        },
+        "issues": [
+          {
+            "level": "error",
+            "code": "EMPTY_OPTIONS",
+            "message": "",
+            "details": {}
+          }
+        ]
+      }
+    },
+    {
+      "name": "load result response state",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        },
+        "issues": [],
+        "responseState": {
+          "active": true,
+          "canSaveResponses": false,
+          "submitMode": "submit",
+          "warningCodes": [],
+          "didNotSaveCode": 5
+        }
+      }
+    },
+    {
+      "name": "load result response state null code",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        },
+        "issues": [],
+        "responseState": {
+          "active": true,
+          "canSaveResponses": false,
+          "submitMode": "submit",
+          "warningCodes": [],
+          "didNotSaveCode": null
+        }
+      }
+    },
+    {
+      "name": "load result missing issues",
+      "contract": "SurveyLoadResult",
+      "value": {
+        "survey": {
+          "surveyStructureVersion": "2.1.0",
+          "id": "edge",
+          "fields": [
+            {
+              "id": "q1",
+              "code": "Q01",
+              "type": "short-text",
+              "label": "Pregunta"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "legacy 2.0.0 document",
+      "contract": "SurveyStructure",
+      "value": {
+        "contractVersion": "2.0.0",
+        "id": "edge",
+        "fields": []
+      }
+    }
+  ],
+  "languageTags": [
+    "es",
+    "en",
+    "es-MX",
+    "es_MX",
+    "x-survey",
+    "x",
+    "und",
+    "root",
+    "zh-Hant-TW",
+    "sr-Latn-RS",
+    "de-CH-1996",
+    "de-CH-1996-1996",
+    "en-US-u-ca-gregory",
+    "en-u-ca",
+    "en-t-es",
+    "en-t-es-m0-t0",
+    "en-a-bbb-a-ccc",
+    "en-a-bbb-b-ccc",
+    "en-x-private",
+    "en-x-private-a-b",
+    "i-klingon",
+    "en-GB-oed",
+    "abcd",
+    "abcde",
+    "en-123",
+    "en-1234",
+    "en-US-POSIX",
+    "EN-us",
+    "zh-min-nan",
+    "sgn-BE-FR",
+    "es-419",
+    "es-4190",
+    "qaa",
+    "e",
+    "",
+    "-en",
+    "en-",
+    "en--US",
+    "art-lojban",
+    "cel-gaulish",
+    "en-u",
+    "en-t",
+    "en-a",
+    "en-u-attr",
+    "en-u-ca-gregory-ca-buddhist",
+    "x-a-b-c",
+    "x-toolongvalue",
+    "en-US-x-a",
+    "ja-Latn-hepburn-heploc",
+    "en-Latn-US-valencia",
+    "en-Qaaa",
+    "de-1996-1996",
+    "tlh",
+    "zh-cmn-Hans",
+    "cmn-Hans-CN",
+    "ar-001",
+    "Latn",
+    "en-US-u-attr-ca-gregory",
+    "en-t-m0-t0",
+    "en-t-es-Latn",
+    "en-t-m0",
+    "en-u-ca-x",
+    "en-1abc",
+    "en-abcdefghi",
+    "es-ES-valencia-VALENCIA",
+    "en-u-cu-usd-eur",
+    "es-x-",
+    "de-t-en-US-h0-hybrid",
+    "en-US-u-va-posix",
+    "en-b-ccc-bbb-a-aaa-x-x",
+    "en-US-t-es-419-u-nu-latn",
+    "zzzzzzzzz",
+    "abcdefgh"
+  ],
+  "patterns": [
+    "[a-z]+",
+    "^\\d{3}$",
+    "\\d+",
+    "\\s+",
+    "\\S+",
+    "[\\s]+",
+    "[\\S]",
+    ".+",
+    "a.c",
+    "\\w+@\\w+",
+    "(?:ab)+",
+    "(?=a)a",
+    "(?!b)a",
+    "(?<=a)b",
+    "(?<!a)b",
+    "(?<n>a)",
+    "\\k<n>",
+    "(a)\\1",
+    "[^]",
+    "[]",
+    "a{2,3}",
+    "a{2,}",
+    "a{,3}",
+    "a{",
+    "a}",
+    "{",
+    "}",
+    "]",
+    "[",
+    "(",
+    ")",
+    "a**",
+    "a+?",
+    "a++",
+    "a?+",
+    "a{2}+",
+    "\\A",
+    "\\Z",
+    "\\z",
+    "\\a",
+    "\\e",
+    "\\q",
+    "\\cA",
+    "\\x41",
+    "\\x4",
+    "\\u0041",
+    "\\u004",
+    "\\0",
+    "\\/",
+    "\\-",
+    "\\.",
+    "(?i)a",
+    "(?P<n>a)",
+    "(?#c)",
+    "(?>a)",
+    "[\\w-z]",
+    "[a-\\w]",
+    "[[a]]",
+    "[a&&b]",
+    "[a--b]",
+    "\\p{L}",
+    "\\N",
+    "\\U",
+    "$",
+    "^$",
+    "a|b",
+    "^a|b$",
+    "a$",
+    "\\$",
+    "a\\",
+    "Ñ+",
+    "[á-ú]+",
+    "\\bword\\b",
+    "[\\b]",
+    "\\B",
+    "\\t\\n",
+    "(a|b)*c",
+    "x*?",
+    "a{3,2}",
+    "[z-a]",
+    "[^\\s]+",
+    "\\W",
+    "\\D",
+    "[\\d\\s]+",
+    "a{1}?",
+    "(?:)",
+    "()",
+    "a||b",
+    "\\1(a)",
+    "\\2(a)",
+    "[\\]]",
+    "[\\\\]",
+    "(?<n>a)\\k<n>",
+    "(?<n>a)|b\\k<n>",
+    "\\k<n>(?<n>a)",
+    "(?<a$>x)",
+    "(?<n>a)\\k<m>",
+    "(a)|b\\1",
+    "(a\\1)",
+    "(?:(a)|b\\1)+",
+    "(a)*\\1",
+    "(a)(?:b\\1)*",
+    "\\12",
+    "(a)\\12",
+    "\\01",
+    "\\08",
+    "\\8",
+    "\\377",
+    "\\400",
+    "[\\1]",
+    "[\\8]",
+    "[\\0]",
+    "\\c",
+    "\\c1",
+    "[\\c1]",
+    "[\\c_]",
+    "\\cz",
+    "[\\w-.]+",
+    "[.-\\d]",
+    "[\\s-a]",
+    "[^a\\S]",
+    "[a\\S]",
+    "[^\\S]",
+    "[\\S\\d]",
+    "\\x4g",
+    "\\u00e1",
+    "\\u{61}",
+    "{2}",
+    "a|{2}",
+    "(?:{2})",
+    "^*",
+    "a|*",
+    "(?=a)*a",
+    "a{2}?",
+    "😀",
+    "^.$",
+    "^..$",
+    "[😀]",
+    "\\p{L}+",
+    "\\k",
+    "a\\k<b>",
+    "[\\-]",
+    "[a\\-z]",
+    "\\ñ",
+    "(?<n>a)(?<n>b)",
+    "(?:a|)",
+    "x{2,1}",
+    "a{1,2}{3}",
+    "^k$",
+    "^[a-z]$",
+    "^s$",
+    "^a$",
+    "^b$",
+    "a.b",
+    "^line2$",
+    "line1$",
+    "^ä",
+    "[^a]",
+    "\\w",
+    "^i$",
+    "K"
+  ],
+  "patternValues": [
+    "",
+    "a",
+    "abc",
+    "123",
+    "١٢",
+    "a b",
+    "a\n",
+    "Z",
+    "word",
+    "áé",
+    " ",
+    "😀",
+    "\u0001",
+    "\n",
+    "ab",
+    "aa",
+    "b",
+    "p{L}",
+    "k",
+    "K",
+    "K",
+    "s",
+    "S",
+    "ſ",
+    "a\rb",
+    "a b",
+    "a\nb",
+    "line1\r\nline2",
+    "ÄÖ",
+    "äö",
+    "İ",
+    "ı"
+  ],
+  "patternFlagSets": [
+    "",
+    "i",
+    "m",
+    "s"
+  ],
+  "urls": [
+    "https://example.org/a.png",
+    "http://example.org",
+    "ftp://example.org/x",
+    "mailto:ana@example.org",
+    "example.org/a.png",
+    "//example.org/a.png",
+    "https://",
+    "https:example.org",
+    "http://exa mple.org",
+    "http://[::1]/x",
+    "http://256.256.256.256",
+    "http://0x7f.1/",
+    "javascript:alert(1)",
+    "data:image/png;base64,AAAA",
+    "urn:isbn:0451450523",
+    "https://ex%41mple.org",
+    "https://例え.テスト/画像.png",
+    "http://a:b@c:8080/p?q#f",
+    "http://example.org:99999",
+    "http://example.org:",
+    "HTTP://EXAMPLE.ORG",
+    " https://example.org",
+    "https://example.org/ ",
+    "a:",
+    ":",
+    "",
+    "https://exa\tmple.org",
+    "file:///etc/passwd",
+    "blob:https://example.org/uuid",
+    "http://-x.org",
+    "http://x_y.org",
+    "http://%",
+    "http://a.b%2",
+    "http://[1:2::3]:80",
+    "http://[::1",
+    "c:\\x",
+    "http://[::]",
+    "http://[::ffff:1.2.3.4]",
+    "http://[1:2:3:4:5:6:7:8]",
+    "http://[1:2:3:4:5:6:7:8:9]",
+    "http://[1::2::3]",
+    "http://[:1]",
+    "http://[1:]",
+    "http://[1:2:3:4:5:6:1.2.3.4]",
+    "http://[1:2:3:4:5:6:7:1.2.3.4]",
+    "http://[::1.2.3]",
+    "http://[::1.2.3.04]",
+    "http://[::1.2.3.256]",
+    "http://[g::1]",
+    "http://[12345::]",
+    "http://1.2.3.4.5",
+    "http://1.2.3",
+    "http://0x100.1",
+    "http://4294967295",
+    "http://4294967296",
+    "http://08",
+    "http://0x",
+    "http://1.2.3.4.",
+    "http://1.2.3.4..",
+    "http://example.123",
+    "http://123.example",
+    "http://a@",
+    "http://:80",
+    "foo://:80",
+    "foo://",
+    "foo://@host",
+    "foo://exa mple",
+    "foo://h%20st",
+    "foo://[::1]",
+    "foo://[x]",
+    "foo://host:abc",
+    "http://host:65535",
+    "http://host:065535",
+    "http://host:+80",
+    "http://ho^st",
+    "http://ho|st",
+    "http://xn--nxasmq6b.com",
+    "http://xn--a.com",
+    "http://xn--.com",
+    "http://ÉXAMPLE.org",
+    "http://ex­ample.org",
+    "http://faß.de",
+    "http://a。b.org",
+    "http://%zz.org",
+    "http://%41.org",
+    "http://a%00b.org",
+    "ws://h",
+    "wss:/h",
+    "file:",
+    "file://localhost/x",
+    "file://C:/x",
+    "file://host^/x",
+    "file:////x",
+    "sc:\\../",
+    "a+b.c-d:x",
+    "1a:x",
+    "a!b:x",
+    "HTTPS:\\\\example.org",
+    "http:/\\/\\example.org",
+    "http://user:p@ss@example.org",
+    "http://example.org",
+    "http://\u0000x.org",
+    "http://exa<mple.org",
+    "http://[::1]:",
+    "http://[::1]x",
+    "http://ex.org#frag ment",
+    "http://ex.org/a b?c d"
+  ],
+  "dateBounds": [
+    "2026-01-31",
+    "2026-02-29",
+    "2024-02-29",
+    "0000-01-01",
+    "0001-01-01",
+    "9999-12-31",
+    "2026-13-01",
+    "2026-1-01",
+    "20260101",
+    "2026-00-10",
+    "1900-02-29",
+    "2000-02-29"
+  ],
+  "numericTexts": [
+    "007",
+    "1.",
+    ".5",
+    "-0",
+    "+1e3",
+    "1e400",
+    " 12 ",
+    "\t3\n",
+    " 3",
+    "1,5",
+    "",
+    " ",
+    "0x10",
+    "Infinity",
+    "NaN",
+    "1e",
+    ".",
+    "-.5e-2",
+    "12a"
+  ],
+  "numbers": [
+    0,
+    -0.0,
+    1,
+    -1,
+    0.1,
+    123.456,
+    1e+21,
+    1e-07,
+    1.5e-10,
+    -2.5e+25,
+    123456789012345680000,
+    5e-324,
+    1.7976931348623157e+308,
+    1e-06,
+    1e+20
+  ],
+  "monthDays": [
+    "02-29",
+    "02-30",
+    "04-31",
+    "12-31",
+    "00-10",
+    "13-01",
+    "1-01",
+    "01-1",
+    "01-01",
+    1201,
+    null
+  ],
+  "grading": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "quiz",
+      "fields": [
+        {
+          "id": "1",
+          "code": "CAPITAL",
+          "type": "single-choice",
+          "label": "Capital",
+          "options": [
+            {
+              "code": "A1",
+              "label": "CDMX"
+            },
+            {
+              "code": "A2",
+              "label": "GDL"
+            }
+          ],
+          "grading": {
+            "points": 2,
+            "correctAnswers": [
+              "A1"
+            ],
+            "whenRight": "Bien",
+            "whenWrong": "Mal"
+          }
+        },
+        {
+          "id": "2",
+          "code": "PRIMES",
+          "type": "multiple-choice",
+          "label": "Primes",
+          "options": [
+            {
+              "code": "P2",
+              "label": "2"
+            },
+            {
+              "code": "P3",
+              "label": "3"
+            },
+            {
+              "code": "P4",
+              "label": "4"
+            }
+          ],
+          "responseEncoding": {
+            "selectedValue": "Y",
+            "unselectedValue": "N"
+          },
+          "grading": {
+            "points": 3,
+            "correctAnswers": [
+              "P2",
+              "P3"
+            ],
+            "generalFeedback": "Primos"
+          }
+        },
+        {
+          "id": "3",
+          "code": "AGE",
+          "type": "number",
+          "label": "Age",
+          "grading": {
+            "points": 1,
+            "correctAnswers": [
+              18,
+              21
+            ]
+          }
+        },
+        {
+          "id": "4",
+          "code": "OK",
+          "type": "boolean",
+          "label": "Ok",
+          "grading": {
+            "points": 1,
+            "correctAnswers": [
+              true
+            ]
+          }
+        },
+        {
+          "id": "5",
+          "code": "GRID",
+          "type": "matrix",
+          "label": "Grid",
+          "matrix": {
+            "mode": "single",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "R1",
+                "grading": {
+                  "points": 1,
+                  "correctAnswers": [
+                    "C1"
+                  ]
+                }
+              },
+              {
+                "code": "R2",
+                "label": "R2",
+                "grading": {
+                  "points": 2,
+                  "correctAnswers": [
+                    "C2"
+                  ],
+                  "whenWrong": "No"
+                }
+              },
+              {
+                "code": "R3",
+                "label": "R3"
+              }
+            ],
+            "columns": [
+              {
+                "code": "C1",
+                "label": "C1"
+              },
+              {
+                "code": "C2",
+                "label": "C2"
+              }
+            ]
+          }
+        },
+        {
+          "id": "6",
+          "code": "BOX",
+          "type": "custom",
+          "label": "Box",
+          "childrenFields": [
+            {
+              "id": "7",
+              "code": "WORD",
+              "type": "short-text",
+              "label": "Word",
+              "grading": {
+                "points": 1,
+                "correctAnswers": [
+                  "hola",
+                  "Hola"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "answers": [
+      {},
+      {
+        "CAPITAL": "A1",
+        "PRIMES": {
+          "P2": "Y",
+          "P3": "Y",
+          "P4": "N"
+        },
+        "AGE": 21,
+        "OK": true,
+        "GRID": {
+          "R1": "C1",
+          "R2": "C1"
+        },
+        "BOX": {
+          "WORD": "hola"
+        }
+      },
+      {
+        "CAPITAL": "A2",
+        "PRIMES_P2": "Y",
+        "PRIMES_P3": "Y",
+        "PRIMES_P4": "Y",
+        "AGE": "21",
+        "OK": "true",
+        "GRID_R1": "C1",
+        "GRID_R2": "C2",
+        "BOX": {
+          "WORD": "HOLA"
+        }
+      },
+      {
+        "CAPITAL": "",
+        "PRIMES": [
+          "P3",
+          "P2"
+        ],
+        "AGE": 18.0,
+        "OK": false,
+        "GRID": null,
+        "BOX": "x"
+      },
+      {
+        "CAPITAL": null,
+        "PRIMES": {
+          "P2": true,
+          "P3": "Y"
+        },
+        "AGE": -0.0,
+        "GRID": {
+          "R2": "C2"
+        }
+      }
+    ],
+    "fieldCodes": [
+      null,
+      [
+        "CAPITAL",
+        "GRID"
+      ],
+      [
+        "WORD"
+      ],
+      [
+        "BOX"
+      ]
+    ],
+    "gradeAnswer": [
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            "A"
+          ]
+        },
+        "value": "A"
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            "A"
+          ]
+        },
+        "value": ""
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            0
+          ]
+        },
+        "value": -0.0
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            null
+          ]
+        },
+        "value": null
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            "A",
+            "B"
+          ]
+        },
+        "value": [
+          "B",
+          "A"
+        ],
+        "multiple": true
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            "A"
+          ]
+        },
+        "value": [
+          "A",
+          "A"
+        ],
+        "multiple": true
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            "A"
+          ]
+        },
+        "value": {
+          "A": 1,
+          "B": 0
+        },
+        "multiple": true,
+        "selected": 1
+      },
+      {
+        "grading": {
+          "points": 1,
+          "correctAnswers": [
+            "A"
+          ]
+        },
+        "value": "nope",
+        "multiple": true
+      }
+    ]
+  }
+}

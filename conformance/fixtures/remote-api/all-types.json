@@ -1,0 +1,692 @@
+{
+  "description": "RemoteControl 2 responses for the synthetic all-types survey, as Citric returns them.",
+  "surveyId": 910001,
+  "surveyProperties": {
+    "sid": "910001",
+    "language": "es",
+    "format": "G",
+    "showprogress": "Y",
+    "allowprev": "Y",
+    "active": "Y",
+    "additional_languages": "en"
+  },
+  "languageProperties": {
+    "surveyls_title": "Encuesta sintética de cuidados",
+    "surveyls_description": "Cubre los tipos de pregunta soportados"
+  },
+  "groups": [
+    {
+      "gid": "10",
+      "group_name": "Datos generales",
+      "group_order": "0"
+    },
+    {
+      "gid": "20",
+      "group_name": "Hogar",
+      "group_order": "1",
+      "grelevance": "CONSIENTE == \"Y\""
+    }
+  ],
+  "questionsByGroup": {
+    "10": [
+      {
+        "qid": "100",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "NOMBRE",
+        "type": "S",
+        "question": "<p>Nombre <b>completo</b></p>",
+        "question_order": "0",
+        "mandatory": "Y",
+        "relevance": "1"
+      },
+      {
+        "qid": "101",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "COMENTARIO",
+        "type": "T",
+        "question": "Comentario libre",
+        "question_order": "1",
+        "mandatory": "N",
+        "help": "Escriba con detalle",
+        "relevance": "1"
+      },
+      {
+        "qid": "102",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "EDAD",
+        "type": "N",
+        "question": "Edad en años",
+        "question_order": "2",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "103",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "NACIMIENTO",
+        "type": "D",
+        "question": "Fecha de nacimiento",
+        "question_order": "3",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "104",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "CONSIENTE",
+        "type": "Y",
+        "question": "¿Acepta participar?",
+        "question_order": "4",
+        "mandatory": "Y",
+        "relevance": "1"
+      },
+      {
+        "qid": "105",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "GENERO",
+        "type": "G",
+        "question": "Género",
+        "question_order": "5",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "106",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "ESTADO",
+        "type": "L",
+        "question": "Estado civil",
+        "question_order": "6",
+        "mandatory": "N",
+        "other": "Y",
+        "relevance": "CONSIENTE == \"Y\""
+      },
+      {
+        "qid": "107",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "REGION",
+        "type": "!",
+        "question": "Región",
+        "question_order": "7",
+        "mandatory": "N",
+        "relevance": "EDAD >= 18 and (GENERO == \"F\" or GENERO == \"M\")"
+      },
+      {
+        "qid": "108",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "SERVICIO",
+        "type": "O",
+        "question": "Servicio principal",
+        "question_order": "8",
+        "mandatory": "N",
+        "relevance": "strlen(NOMBRE) > 3"
+      },
+      {
+        "qid": "109",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "APOYOS",
+        "type": "M",
+        "question": "Apoyos recibidos",
+        "question_order": "9",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1091",
+        "gid": "10",
+        "parent_qid": "109",
+        "title": "SQ001",
+        "type": "T",
+        "question": "Económico",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1092",
+        "gid": "10",
+        "parent_qid": "109",
+        "title": "SQ002",
+        "type": "T",
+        "question": "Alimentario",
+        "question_order": "1",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1093",
+        "gid": "10",
+        "parent_qid": "109",
+        "title": "SQ003",
+        "type": "T",
+        "question": "Psicológico",
+        "question_order": "2",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "110",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "CUIDADOS",
+        "type": "P",
+        "question": "Cuidados brindados",
+        "question_order": "10",
+        "mandatory": "N",
+        "other": "Y",
+        "relevance": "1"
+      },
+      {
+        "qid": "1101",
+        "gid": "10",
+        "parent_qid": "110",
+        "title": "SQ001",
+        "type": "T",
+        "question": "Higiene",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1102",
+        "gid": "10",
+        "parent_qid": "110",
+        "title": "SQ002",
+        "type": "T",
+        "question": "Alimentación",
+        "question_order": "1",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "111",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "SATISF",
+        "type": "F",
+        "question": "Satisfacción",
+        "question_order": "11",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1111",
+        "gid": "10",
+        "parent_qid": "111",
+        "title": "R1",
+        "type": "T",
+        "question": "Atención",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1112",
+        "gid": "10",
+        "parent_qid": "111",
+        "title": "R2",
+        "type": "T",
+        "question": "Tiempo de espera",
+        "question_order": "1",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "112",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "HORAS",
+        "type": ":",
+        "question": "Horas por día",
+        "question_order": "12",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1121",
+        "gid": "10",
+        "parent_qid": "112",
+        "title": "R1",
+        "type": "T",
+        "question": "Lunes",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1122",
+        "gid": "10",
+        "parent_qid": "112",
+        "title": "R2",
+        "type": "T",
+        "question": "Martes",
+        "question_order": "1",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1123",
+        "gid": "10",
+        "parent_qid": "112",
+        "title": "C1",
+        "type": "T",
+        "question": "Mañana",
+        "question_order": "2",
+        "scale_id": "1",
+        "relevance": "1"
+      },
+      {
+        "qid": "1124",
+        "gid": "10",
+        "parent_qid": "112",
+        "title": "C2",
+        "type": "T",
+        "question": "Tarde",
+        "question_order": "3",
+        "scale_id": "1",
+        "relevance": "1"
+      },
+      {
+        "qid": "113",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "TAREAS",
+        "type": ":",
+        "question": "Tareas realizadas",
+        "question_order": "13",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1131",
+        "gid": "10",
+        "parent_qid": "113",
+        "title": "R1",
+        "type": "T",
+        "question": "Cocinar",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1132",
+        "gid": "10",
+        "parent_qid": "113",
+        "title": "C1",
+        "type": "T",
+        "question": "Sola",
+        "question_order": "1",
+        "scale_id": "1",
+        "relevance": "1"
+      },
+      {
+        "qid": "1133",
+        "gid": "10",
+        "parent_qid": "113",
+        "title": "C2",
+        "type": "T",
+        "question": "Acompañada",
+        "question_order": "2",
+        "scale_id": "1",
+        "relevance": "1"
+      },
+      {
+        "qid": "114",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "NOTAS",
+        "type": ";",
+        "question": "Notas por periodo",
+        "question_order": "14",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1141",
+        "gid": "10",
+        "parent_qid": "114",
+        "title": "R1",
+        "type": "T",
+        "question": "Primer periodo",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1142",
+        "gid": "10",
+        "parent_qid": "114",
+        "title": "C1",
+        "type": "T",
+        "question": "Observación",
+        "question_order": "1",
+        "scale_id": "1",
+        "relevance": "1"
+      },
+      {
+        "qid": "115",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "DUAL",
+        "type": "1",
+        "question": "Importancia y satisfacción",
+        "question_order": "15",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1151",
+        "gid": "10",
+        "parent_qid": "115",
+        "title": "R1",
+        "type": "T",
+        "question": "Transporte",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "116",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "ESCALA",
+        "type": "B",
+        "question": "Calificación del 1 al 10",
+        "question_order": "16",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1161",
+        "gid": "10",
+        "parent_qid": "116",
+        "title": "R1",
+        "type": "T",
+        "question": "Servicio",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "117",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "CONTACTO",
+        "type": "Q",
+        "question": "Datos de contacto",
+        "question_order": "17",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "1171",
+        "gid": "10",
+        "parent_qid": "117",
+        "title": "TEL",
+        "type": "T",
+        "question": "Teléfono",
+        "question_order": "0",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "1172",
+        "gid": "10",
+        "parent_qid": "117",
+        "title": "CORREO",
+        "type": "T",
+        "question": "Correo",
+        "question_order": "1",
+        "scale_id": "0",
+        "relevance": "1"
+      },
+      {
+        "qid": "118",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "PRIORIDAD",
+        "type": "R",
+        "question": "Ordene sus prioridades",
+        "question_order": "18",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "119",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "AVISO",
+        "type": "X",
+        "question": "Gracias por su participación",
+        "question_order": "19",
+        "mandatory": "N",
+        "relevance": "count(that.APOYOS) >= 2"
+      },
+      {
+        "qid": "120",
+        "gid": "10",
+        "parent_qid": "0",
+        "title": "NO_SOPORTADA",
+        "type": "|",
+        "question": "Carga de archivo",
+        "question_order": "20",
+        "mandatory": "N",
+        "relevance": "1"
+      }
+    ],
+    "20": [
+      {
+        "qid": "200",
+        "gid": "20",
+        "parent_qid": "0",
+        "title": "HIJOS",
+        "type": "N",
+        "question": "Número de hijos",
+        "question_order": "0",
+        "mandatory": "N",
+        "relevance": "1"
+      },
+      {
+        "qid": "201",
+        "gid": "20",
+        "parent_qid": "0",
+        "title": "HIJOS_EDAD",
+        "type": "S",
+        "question": "Edad del hijo menor",
+        "question_order": "1",
+        "mandatory": "N",
+        "relevance": "HIJOS > 0"
+      }
+    ]
+  },
+  "questionProperties": {
+    "100": {},
+    "101": {},
+    "102": {
+      "attributes": {
+        "min_num_value_n": "0",
+        "max_num_value_n": "120"
+      }
+    },
+    "103": {
+      "attributes": {
+        "date_time_format": "dd/mm/yyyy"
+      }
+    },
+    "104": {},
+    "105": {},
+    "106": {
+      "answeroptions": {
+        "1": {
+          "answer": "Soltero",
+          "order": 0
+        },
+        "2": {
+          "answer": "Casado",
+          "order": 1
+        },
+        "3": {
+          "answer": "Unión libre",
+          "order": 2
+        }
+      }
+    },
+    "107": {
+      "answeroptions": {
+        "N": {
+          "answer": "Norte",
+          "order": 0
+        },
+        "C": {
+          "answer": "Centro",
+          "order": 1
+        },
+        "S": {
+          "answer": "Sur",
+          "order": 2
+        }
+      }
+    },
+    "108": {
+      "answeroptions": {
+        "A1": {
+          "answer": "Salud",
+          "order": 0
+        },
+        "A2": {
+          "answer": "Educación",
+          "order": 1
+        }
+      }
+    },
+    "109": {},
+    "1091": {},
+    "1092": {},
+    "1093": {},
+    "110": {},
+    "1101": {},
+    "1102": {},
+    "111": {
+      "answeroptions": {
+        "A1": {
+          "answer": "De acuerdo",
+          "order": 0
+        },
+        "A2": {
+          "answer": "Neutral",
+          "order": 1
+        },
+        "A3": {
+          "answer": "En desacuerdo",
+          "order": 2
+        }
+      }
+    },
+    "1111": {},
+    "1112": {},
+    "112": {
+      "attributes": {
+        "multiflexible_min": "0",
+        "multiflexible_max": "24"
+      }
+    },
+    "1121": {},
+    "1122": {},
+    "1123": {},
+    "1124": {},
+    "113": {
+      "attributes": {
+        "multiflexible_checkbox": "1"
+      }
+    },
+    "1131": {},
+    "1132": {},
+    "1133": {},
+    "114": {},
+    "1141": {},
+    "1142": {},
+    "115": {
+      "attributes": {
+        "dualscale_headerA": "Importancia",
+        "dualscale_headerB": "Satisfacción"
+      },
+      "answeroptions_multiscale": {
+        "0": {
+          "I1": {
+            "answer": "Baja",
+            "order": 0
+          },
+          "I2": {
+            "answer": "Alta",
+            "order": 1
+          }
+        },
+        "1": {
+          "S1": {
+            "answer": "Poca",
+            "order": 0
+          },
+          "S2": {
+            "answer": "Mucha",
+            "order": 1
+          }
+        }
+      }
+    },
+    "1151": {},
+    "116": {},
+    "1161": {},
+    "117": {},
+    "1171": {},
+    "1172": {},
+    "118": {
+      "answeroptions": {
+        "P1": {
+          "answer": "Salud",
+          "order": 0
+        },
+        "P2": {
+          "answer": "Empleo",
+          "order": 1
+        },
+        "P3": {
+          "answer": "Vivienda",
+          "order": 2
+        }
+      }
+    },
+    "119": {},
+    "120": {},
+    "200": {},
+    "201": {}
+  },
+  "responses": [
+    {
+      "id": "1",
+      "submitdate": "2026-09-01 10:00:00",
+      "lastpage": "3",
+      "startlanguage": "es",
+      "NOMBRE": "Ana",
+      "CONSIENTE": "Y",
+      "SATISF_R1": "A1"
+    },
+    {
+      "id": "2",
+      "submitdate": null,
+      "lastpage": "1",
+      "startlanguage": "es",
+      "NOMBRE": "Luis",
+      "CONSIENTE": "N"
+    }
+  ]
+}

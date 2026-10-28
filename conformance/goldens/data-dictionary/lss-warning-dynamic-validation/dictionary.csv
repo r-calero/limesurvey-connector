@@ -1,0 +1,4 @@
+"survey_id","qid","group_id","question_code","response_key","question_label","data_type","cardinality","aliases","value_code","value_label"
+"900006","200","10","QUESTION_1","QUESTION_1","Pregunta de encuesta 1: indique la cantidad mínima requerida","number","single","Pregunta de encuesta 1: indique la cantidad mínima requerida | 900006X10X200","",""
+"900006","201","10","QUESTION_2","QUESTION_2_RESPONSE_OPTION_1","Pregunta de encuesta 2: seleccione opciones de respuesta — Opción 1 de respuesta","boolean","multiple","Pregunta de encuesta 2: seleccione opciones de respuesta [Opción 1 de respuesta] | 900006X10X201RESPONSE_OPTION_1","Y","Sí"
+"900006","201","10","QUESTION_2","QUESTION_2_RESPONSE_OPTION_1","Pregunta de encuesta 2: seleccione opciones de respuesta — Opción 1 de respuesta","boolean","multiple","Pregunta de encuesta 2: seleccione opciones de respuesta [Opción 1 de respuesta] | 900006X10X201RESPONSE_OPTION_1","N","No"

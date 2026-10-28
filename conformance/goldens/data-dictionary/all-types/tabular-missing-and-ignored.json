@@ -1,0 +1,24 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {
+        "NOMBRE": null,
+        "EDAD": "40"
+      }
+    ],
+    "issues": [],
+    "columns": [
+      null,
+      "NOMBRE",
+      null,
+      "EDAD"
+    ],
+    "unmappedValues": [
+      []
+    ],
+    "responseIds": [
+      "7"
+    ]
+  }
+}

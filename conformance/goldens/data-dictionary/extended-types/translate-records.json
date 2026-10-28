@@ -1,0 +1,280 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {
+        "responseIndex": 1,
+        "fields": [
+          {
+            "responseKey": "AGREE",
+            "questionCode": "AGREE",
+            "questionLabel": "Agrees",
+            "dataType": "boolean",
+            "sourceValue": true,
+            "displayValue": "Agreed",
+            "missing": false
+          },
+          {
+            "responseKey": "SCORE",
+            "questionCode": "SCORE",
+            "questionLabel": "Score",
+            "dataType": "number",
+            "sourceValue": 7,
+            "displayValue": 7,
+            "missing": false
+          },
+          {
+            "responseKey": "VISIT",
+            "questionCode": "VISIT",
+            "questionLabel": "Visit date",
+            "dataType": "date",
+            "sourceValue": "2026-09-01T10:00",
+            "displayValue": "2026-09-01T10:00",
+            "missing": false
+          },
+          {
+            "responseKey": "HOUSEHOLD_SIZE",
+            "questionCode": "SIZE",
+            "questionLabel": "Size",
+            "dataType": "number",
+            "sourceValue": 3,
+            "displayValue": 3,
+            "missing": false
+          },
+          {
+            "responseKey": "HOUSEHOLD_HEAD",
+            "questionCode": "HEAD",
+            "questionLabel": "Head",
+            "dataType": "code",
+            "sourceValue": "2",
+            "displayValue": "Father",
+            "missing": false
+          },
+          {
+            "responseKey": "HOUSEHOLD_INNER_NOTE",
+            "questionCode": "NOTE",
+            "questionLabel": "Note",
+            "dataType": "string",
+            "sourceValue": "ok",
+            "displayValue": "ok",
+            "missing": false
+          },
+          {
+            "responseKey": "GRID_R1_C1",
+            "questionCode": "GRID",
+            "questionLabel": "Grid — Row 1 — Col 1",
+            "dataType": "boolean",
+            "sourceValue": 1,
+            "displayValue": "Yes",
+            "missing": false
+          },
+          {
+            "responseKey": "GRID_R1_C2",
+            "questionCode": "GRID",
+            "questionLabel": "Grid — Row 1 — Col 2",
+            "dataType": "boolean",
+            "sourceValue": 0,
+            "displayValue": "No",
+            "missing": false
+          },
+          {
+            "responseKey": "TEXTGRID_R1_C1",
+            "questionCode": "TEXTGRID",
+            "questionLabel": "Text grid — Row — Col",
+            "dataType": "string",
+            "sourceValue": "texto",
+            "displayValue": "texto",
+            "missing": false
+          },
+          {
+            "responseKey": "PICK_A",
+            "questionCode": "PICK",
+            "questionLabel": "Pick — Alpha",
+            "dataType": "boolean",
+            "sourceValue": "Y",
+            "displayValue": "Y",
+            "missing": false
+          },
+          {
+            "responseKey": "EMAIL",
+            "questionCode": "EMAIL",
+            "questionLabel": "Email",
+            "dataType": "string",
+            "sourceValue": "x@y.z",
+            "displayValue": "x@y.z",
+            "missing": false
+          },
+          {
+            "responseKey": "MONTH",
+            "questionCode": "MONTH",
+            "questionLabel": "Month",
+            "dataType": "date",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "PICK_B",
+            "questionCode": "PICK",
+            "questionLabel": "Pick — Beta",
+            "dataType": "boolean",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          }
+        ],
+        "unmappedValues": [],
+        "issues": [
+          {
+            "level": "warning",
+            "code": "UNKNOWN_RESPONSE_VALUE",
+            "message": "Value Y is not defined for PICK_A.",
+            "questionCode": "PICK",
+            "responseKey": "PICK_A",
+            "details": {
+              "sourceValue": "Y"
+            },
+            "responseIndex": 1
+          }
+        ]
+      },
+      {
+        "responseIndex": 2,
+        "fields": [
+          {
+            "responseKey": "AGREE",
+            "questionCode": "AGREE",
+            "questionLabel": "Agrees",
+            "dataType": "boolean",
+            "sourceValue": false,
+            "displayValue": "Did not agree",
+            "missing": false
+          },
+          {
+            "responseKey": "SCORE",
+            "questionCode": "SCORE",
+            "questionLabel": "Score",
+            "dataType": "number",
+            "sourceValue": "7",
+            "displayValue": "7",
+            "missing": false
+          },
+          {
+            "responseKey": "HOUSEHOLD_SIZE",
+            "questionCode": "SIZE",
+            "questionLabel": "Size",
+            "dataType": "number",
+            "sourceValue": 1,
+            "displayValue": 1,
+            "missing": false
+          },
+          {
+            "responseKey": "HOUSEHOLD_INNER_NOTE",
+            "questionCode": "NOTE",
+            "questionLabel": "Note",
+            "dataType": "string",
+            "sourceValue": "",
+            "displayValue": "",
+            "missing": true
+          },
+          {
+            "responseKey": "GRID_R1_C1",
+            "questionCode": "GRID",
+            "questionLabel": "Grid — Row 1 — Col 1",
+            "dataType": "boolean",
+            "sourceValue": "1",
+            "displayValue": "Yes",
+            "missing": false
+          },
+          {
+            "responseKey": "PICK_B",
+            "questionCode": "PICK",
+            "questionLabel": "Pick — Beta",
+            "dataType": "boolean",
+            "sourceValue": true,
+            "displayValue": "Yes",
+            "missing": false
+          },
+          {
+            "responseKey": "VISIT",
+            "questionCode": "VISIT",
+            "questionLabel": "Visit date",
+            "dataType": "date",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "MONTH",
+            "questionCode": "MONTH",
+            "questionLabel": "Month",
+            "dataType": "date",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "HOUSEHOLD_HEAD",
+            "questionCode": "HEAD",
+            "questionLabel": "Head",
+            "dataType": "code",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "GRID_R1_C2",
+            "questionCode": "GRID",
+            "questionLabel": "Grid — Row 1 — Col 2",
+            "dataType": "boolean",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "TEXTGRID_R1_C1",
+            "questionCode": "TEXTGRID",
+            "questionLabel": "Text grid — Row — Col",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "PICK_A",
+            "questionCode": "PICK",
+            "questionLabel": "Pick — Alpha",
+            "dataType": "boolean",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "EMAIL",
+            "questionCode": "EMAIL",
+            "questionLabel": "Email",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          }
+        ],
+        "unmappedValues": [],
+        "issues": []
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "UNKNOWN_RESPONSE_VALUE",
+        "message": "Value Y is not defined for PICK_A.",
+        "questionCode": "PICK",
+        "responseKey": "PICK_A",
+        "details": {
+          "sourceValue": "Y"
+        },
+        "responseIndex": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "input": "lss/display-message-question.lss",
+  "ok": true,
+  "result": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "900008",
+      "fields": [
+        {
+          "id": "100",
+          "code": "QUESTION_1",
+          "type": "display",
+          "label": "Pregunta de encuesta 1: texto informativo que no espera una respuesta.",
+          "required": false,
+          "order": 0,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900008",
+            "groupId": "10",
+            "questionId": "100",
+            "nativeType": "X",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1"
+              }
+            ]
+          },
+          "groupId": "10"
+        }
+      ],
+      "source": {
+        "platform": "limesurvey",
+        "format": "lss",
+        "originDetails": [
+          {
+            "type": "limesurvey-survey",
+            "version": "1.0.0",
+            "databaseSchemaVersion": "708"
+          }
+        ]
+      },
+      "title": "Ejemplo sintético de texto informativo",
+      "language": "es",
+      "availableLanguages": [
+        "es"
+      ],
+      "groups": [
+        {
+          "id": "10",
+          "order": 0,
+          "title": "Grupo de encuesta 1",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "10"
+          }
+        }
+      ],
+      "settings": {
+        "layout": "group",
+        "questionIndex": "disabled",
+        "navigationDelay": 0
+      }
+    },
+    "issues": [],
+    "sourceMetrics": {
+      "topLevelQuestions": 1,
+      "childQuestions": 0,
+      "integratedChildren": 0,
+      "detectedTypes": [
+        "X"
+      ],
+      "conditionsDetected": 0,
+      "validationQuestions": 0
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "fixture": "limesurvey/lss/invalid-condition-reference.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "900001",
+    "surveyTitle": "Ejemplo sintético con referencia faltante",
+    "language": "es",
+    "fields": [
+      {
+        "questionCode": "QUESTION_1",
+        "questionLabel": "Pregunta de encuesta 1: contiene una referencia inexistente",
+        "responseKey": "QUESTION_1",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Pregunta de encuesta 1: contiene una referencia inexistente",
+          "900001X10X100"
+        ],
+        "qid": "100",
+        "groupId": "10"
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "LimeSurvey condition reference \"MISSING_QUESTION\" could not be matched to any imported question or subquestion. The condition was omitted.",
+        "questionCode": "QUESTION_1",
+        "details": {
+          "sourceCode": "MISSING_CONDITION_REFERENCE",
+          "fieldId": "100",
+          "sourceExpression": "MISSING_QUESTION.NAOK == \"Y\""
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "policy": "responseFormatPattern is ECMAScript source and patternFlags a subset of ims; the pattern is tested as written, without anchors. It is translated to an equivalent Python expression evaluated on UTF-16 code units. Patterns that Python cannot match identically are rejected; every accepted pattern is valid ECMAScript with the same meaning.",
+  "cases": [
+    {
+      "pattern": "(?<=a+)b",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "Python only supports fixed-width look-behind."
+    },
+    {
+      "pattern": "(?:(a)|b\\1)+",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "ECMAScript clears a capture at each repetition of its enclosing group; Python keeps the previous value."
+    },
+    {
+      "pattern": "(?<a$>x)",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "Python group names cannot contain $."
+    },
+    {
+      "pattern": "(?i)abc",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "(?>a)",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "a++",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "(?P<name>a)",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "(?P=name)",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "(a)(?(1)b|c)",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "(?#comment)a",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "{2}",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    },
+    {
+      "pattern": "a{2}+",
+      "ecmascript": false,
+      "python": "rejected",
+      "divergent": false,
+      "note": "Invalid in ECMAScript; rejected in both."
+    }
+  ],
+  "translated": [
+    {
+      "pattern": "(?<n>a)\\k<n>",
+      "ecmascript": true,
+      "note": "Named groups and references become (?P<n>...) and (?P=n)."
+    },
+    {
+      "pattern": "(a)|b\\1",
+      "ecmascript": true,
+      "note": "A reference to a group that did not participate matches the empty string: (?(1)\\1)."
+    },
+    {
+      "pattern": "\\1(a)",
+      "ecmascript": true,
+      "note": "A reference before its group closes matches the empty string: (?:)."
+    },
+    {
+      "pattern": "[^]",
+      "ecmascript": true,
+      "note": "Any character: [\\s\\S]. The empty class [] never matches: (?!)."
+    },
+    {
+      "pattern": "[\\w-.]",
+      "ecmascript": true,
+      "note": "A dash next to a class escape is a literal dash."
+    },
+    {
+      "pattern": "\\cA",
+      "ecmascript": true,
+      "note": "Control escapes become the control character."
+    },
+    {
+      "pattern": "\\12",
+      "ecmascript": true,
+      "note": "Numbers above the group count are legacy octal escapes; \\8 and \\9 are digits."
+    },
+    {
+      "pattern": "\\A",
+      "ecmascript": true,
+      "note": "Identity escapes of letters (\\A, \\Z, \\z, \\a, \\e, \\p, \\N, \\U, incomplete \\x and \\u) are the letter itself."
+    },
+    {
+      "pattern": "[\\S]",
+      "ecmascript": true,
+      "note": "\\S inside a class is expanded with an alternation."
+    },
+    {
+      "pattern": "a{,3}",
+      "ecmascript": true,
+      "note": "A brace that is not a quantifier is a literal brace."
+    },
+    {
+      "pattern": "\\B",
+      "ecmascript": true,
+      "note": "\\B is expanded because before Python 3.14 it never matches an empty string."
+    },
+    {
+      "pattern": ".",
+      "ecmascript": true,
+      "note": "Excludes \\n, \\r, \\u2028 and \\u2029; $ is end of input."
+    },
+    {
+      "pattern": "\\s",
+      "ecmascript": true,
+      "note": "The ECMAScript whitespace set, including U+00A0 and U+FEFF; \\d and \\w stay ASCII."
+    },
+    {
+      "pattern": "😀",
+      "ecmascript": true,
+      "note": "Astral characters are two UTF-16 code units, as in ECMAScript without the u flag."
+    }
+  ],
+  "flagged": [
+    {
+      "pattern": "(a)\\1",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "(?<n>a)\\k<n>",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "(a)*\\1",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "\\1(a)",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "(a\\1)",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "(a)|b\\1",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "(?<n>a)|b\\k<n>",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "(a)(?:b\\1)*",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    },
+    {
+      "pattern": "\\k<n>(?<n>a)",
+      "flags": "i",
+      "ecmascript": true,
+      "python": "rejected",
+      "divergent": true,
+      "note": "With the i flag ECMAScript compares a backreference by canonical case; Python backreferences compare exactly."
+    }
+  ],
+  "urls": {
+    "policy": "images[].url follows Zod's url(), which accepts what new URL() parses (WHATWG URL Standard, no base).",
+    "divergence": "Domains with non-ASCII characters are mapped with Python's IDNA 2003 codec instead of UTS #46, so a few unusual internationalized hosts may be accepted or rejected differently."
+  }
+}

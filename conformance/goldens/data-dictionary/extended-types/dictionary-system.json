@@ -1,0 +1,323 @@
+{
+  "change": "system-columns",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "ext-001",
+    "surveyTitle": "Extended types",
+    "language": "en",
+    "fields": [
+      {
+        "questionCode": "id",
+        "questionLabel": "Response ID",
+        "responseKey": "id",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Response ID",
+          "ID de la respuesta"
+        ]
+      },
+      {
+        "questionCode": "submitdate",
+        "questionLabel": "Submit date",
+        "responseKey": "submitdate",
+        "dataType": "date",
+        "cardinality": "single",
+        "aliases": [
+          "Submit date",
+          "Fecha en que se envió"
+        ]
+      },
+      {
+        "questionCode": "lastpage",
+        "questionLabel": "Last page",
+        "responseKey": "lastpage",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Last page",
+          "Ultima pagina"
+        ]
+      },
+      {
+        "questionCode": "startlanguage",
+        "questionLabel": "Start language",
+        "responseKey": "startlanguage",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Start language",
+          "Idioma de Inicio"
+        ]
+      },
+      {
+        "questionCode": "seed",
+        "questionLabel": "Seed",
+        "responseKey": "seed",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Seed"
+        ]
+      },
+      {
+        "questionCode": "startdate",
+        "questionLabel": "Start date",
+        "responseKey": "startdate",
+        "dataType": "date",
+        "cardinality": "single",
+        "aliases": [
+          "Start date",
+          "Fecha en que inició"
+        ]
+      },
+      {
+        "questionCode": "datestamp",
+        "questionLabel": "Date last action",
+        "responseKey": "datestamp",
+        "dataType": "date",
+        "cardinality": "single",
+        "aliases": [
+          "Date last action",
+          "Fecha de la ultima accion"
+        ]
+      },
+      {
+        "questionCode": "token",
+        "questionLabel": "Access code",
+        "responseKey": "token",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Access code",
+          "Token",
+          "Código de acceso"
+        ]
+      },
+      {
+        "questionCode": "ipaddr",
+        "questionLabel": "IP address",
+        "responseKey": "ipaddr",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "IP address",
+          "Dirección IP"
+        ]
+      },
+      {
+        "questionCode": "refurl",
+        "questionLabel": "Referrer URL",
+        "responseKey": "refurl",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Referrer URL",
+          "URL de referencia"
+        ]
+      },
+      {
+        "questionCode": "AGREE",
+        "questionLabel": "Agrees",
+        "responseKey": "AGREE",
+        "dataType": "boolean",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "true",
+            "label": "Agreed"
+          },
+          {
+            "code": "false",
+            "label": "Did not agree"
+          }
+        ],
+        "aliases": [
+          "Agrees"
+        ],
+        "groupId": "g1"
+      },
+      {
+        "questionCode": "SCORE",
+        "questionLabel": "Score",
+        "responseKey": "SCORE",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Score"
+        ],
+        "groupId": "g1"
+      },
+      {
+        "questionCode": "VISIT",
+        "questionLabel": "Visit date",
+        "responseKey": "VISIT",
+        "dataType": "date",
+        "cardinality": "single",
+        "aliases": [
+          "Visit date"
+        ]
+      },
+      {
+        "questionCode": "MONTH",
+        "questionLabel": "Month",
+        "responseKey": "MONTH",
+        "dataType": "date",
+        "cardinality": "single",
+        "aliases": [
+          "Month"
+        ]
+      },
+      {
+        "questionCode": "SIZE",
+        "questionLabel": "Size",
+        "responseKey": "HOUSEHOLD_SIZE",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Size"
+        ]
+      },
+      {
+        "questionCode": "HEAD",
+        "questionLabel": "Head",
+        "responseKey": "HOUSEHOLD_HEAD",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "1",
+            "label": "Mother"
+          },
+          {
+            "code": "2",
+            "label": "Father"
+          }
+        ],
+        "aliases": [
+          "Head"
+        ]
+      },
+      {
+        "questionCode": "NOTE",
+        "questionLabel": "Note",
+        "responseKey": "HOUSEHOLD_INNER_NOTE",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Note"
+        ]
+      },
+      {
+        "questionCode": "GRID",
+        "questionLabel": "Grid — Row 1 — Col 1",
+        "responseKey": "GRID_R1_C1",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "1",
+            "label": "Yes"
+          },
+          {
+            "code": "0",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Grid [Row 1] [Col 1]",
+          "Grid [Row 1][Col 1]"
+        ],
+        "parentCode": "GRID_R1"
+      },
+      {
+        "questionCode": "GRID",
+        "questionLabel": "Grid — Row 1 — Col 2",
+        "responseKey": "GRID_R1_C2",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "1",
+            "label": "Yes"
+          },
+          {
+            "code": "0",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Grid [Row 1] [Col 2]",
+          "Grid [Row 1][Col 2]"
+        ],
+        "parentCode": "GRID_R1"
+      },
+      {
+        "questionCode": "TEXTGRID",
+        "questionLabel": "Text grid — Row — Col",
+        "responseKey": "TEXTGRID_R1_C1",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Text grid [Row] [Col]",
+          "Text grid [Row][Col]"
+        ],
+        "parentCode": "TEXTGRID_R1"
+      },
+      {
+        "questionCode": "PICK",
+        "questionLabel": "Pick — Alpha",
+        "responseKey": "PICK_A",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "true",
+            "label": "Yes"
+          },
+          {
+            "code": "false",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Pick [Alpha]"
+        ],
+        "parentCode": "PICK"
+      },
+      {
+        "questionCode": "PICK",
+        "questionLabel": "Pick — Beta",
+        "responseKey": "PICK_B",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "true",
+            "label": "Yes"
+          },
+          {
+            "code": "false",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Pick [Beta]"
+        ],
+        "parentCode": "PICK"
+      },
+      {
+        "questionCode": "EMAIL",
+        "questionLabel": "Email",
+        "responseKey": "EMAIL",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Email"
+        ]
+      }
+    ],
+    "issues": []
+  }
+}

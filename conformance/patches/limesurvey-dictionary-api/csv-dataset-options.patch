@@ -1,0 +1,25 @@
+--- a/src/csv-dataset.ts
++++ b/src/csv-dataset.ts
+@@ -43,6 +43,8 @@
+     missingValues?: string[];
+     format?: LimeSurveyCsvFormat;
+     responseIdHeader?: string;
++    defaultIgnoredHeaders?: string[];
++    responseIdHeaders?: string[];
+   } = {},
+ ): CsvDatasetResult {
+   const parsed = Papa.parse<string[]>(csv, {
+@@ -64,11 +66,11 @@
+     dictionary,
+     headers,
+     rows,
+-    [...DEFAULT_IGNORED_HEADERS, ...(options.ignoredHeaders ?? [])],
++    [...(options.defaultIgnoredHeaders ?? DEFAULT_IGNORED_HEADERS), ...(options.ignoredHeaders ?? [])],
+     options.missingValues ?? ['N/A'],
+     options.responseIdHeader
+       ? [options.responseIdHeader]
+-      : ['Response ID', 'ID de la respuesta'],
++      : options.responseIdHeaders ?? ['Response ID', 'ID de la respuesta'],
+   );
+   const formatIssue = validateDeclaredFormat(format, headers, dictionary, mapping.columns);
+   return { ...mapping, issues: [...formatIssue, ...mapping.issues], headers };

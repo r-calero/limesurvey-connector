@@ -1,0 +1,183 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {
+        "responseIndex": 1,
+        "fields": [
+          {
+            "responseKey": "ANSWER",
+            "questionCode": "ANSWER",
+            "questionLabel": "Label",
+            "dataType": "string",
+            "sourceValue": "canonical answer",
+            "displayValue": "canonical answer",
+            "missing": false
+          },
+          {
+            "responseKey": "FIRST",
+            "questionCode": "FIRST",
+            "questionLabel": "Shared",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "SECOND",
+            "questionCode": "SECOND",
+            "questionLabel": "Shared",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "A_B",
+            "questionCode": "A_B",
+            "questionLabel": "A_B",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          }
+        ],
+        "unmappedValues": [
+          {
+            "sourceKey": "Shared",
+            "sourceValue": "who?"
+          },
+          {
+            "sourceKey": "Label",
+            "sourceValue": "alias answer"
+          }
+        ],
+        "issues": [
+          {
+            "level": "warning",
+            "code": "AMBIGUOUS_RESPONSE_ALIAS",
+            "message": "Response alias Shared matches multiple dictionary fields.",
+            "responseKey": "Shared",
+            "details": {
+              "candidates": [
+                "FIRST",
+                "SECOND"
+              ]
+            },
+            "responseIndex": 1
+          },
+          {
+            "level": "warning",
+            "code": "AMBIGUOUS_RESPONSE_ALIAS",
+            "responseKey": "Label",
+            "message": "The canonical input \"ANSWER\" takes priority. This alias value was preserved without overwriting it.",
+            "responseIndex": 1
+          }
+        ]
+      },
+      {
+        "responseIndex": 2,
+        "fields": [
+          {
+            "responseKey": "FIRST",
+            "questionCode": "FIRST",
+            "questionLabel": "Shared",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "SECOND",
+            "questionCode": "SECOND",
+            "questionLabel": "Shared",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "ANSWER",
+            "questionCode": "ANSWER",
+            "questionLabel": "Label",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          },
+          {
+            "responseKey": "A_B",
+            "questionCode": "A_B",
+            "questionLabel": "A_B",
+            "dataType": "string",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          }
+        ],
+        "unmappedValues": [
+          {
+            "sourceKey": "A_B",
+            "sourceValue": "flat"
+          },
+          {
+            "sourceKey": "A_B",
+            "sourceValue": "nested"
+          }
+        ],
+        "issues": [
+          {
+            "level": "warning",
+            "code": "AMBIGUOUS_RESPONSE_ALIAS",
+            "responseKey": "A_B",
+            "message": "More than one input value becomes \"A_B\" after flattening. Each value was preserved without choosing one.",
+            "responseIndex": 2
+          },
+          {
+            "level": "warning",
+            "code": "AMBIGUOUS_RESPONSE_ALIAS",
+            "responseKey": "A_B",
+            "message": "More than one input value becomes \"A_B\" after flattening. Each value was preserved without choosing one.",
+            "responseIndex": 2
+          }
+        ]
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "message": "Response alias Shared matches multiple dictionary fields.",
+        "responseKey": "Shared",
+        "details": {
+          "candidates": [
+            "FIRST",
+            "SECOND"
+          ]
+        },
+        "responseIndex": 1
+      },
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "responseKey": "Label",
+        "message": "The canonical input \"ANSWER\" takes priority. This alias value was preserved without overwriting it.",
+        "responseIndex": 1
+      },
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "responseKey": "A_B",
+        "message": "More than one input value becomes \"A_B\" after flattening. Each value was preserved without choosing one.",
+        "responseIndex": 2
+      },
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "responseKey": "A_B",
+        "message": "More than one input value becomes \"A_B\" after flattening. Each value was preserved without choosing one.",
+        "responseIndex": 2
+      }
+    ]
+  }
+}

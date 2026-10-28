@@ -1,0 +1,46 @@
+[
+  {
+    "questionCode": "GRID",
+    "questionLabel": "Grid — Row 1 — Col 1",
+    "responseKey": "GRID_R1_C1",
+    "dataType": "boolean",
+    "cardinality": "multiple",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "0",
+        "label": "No"
+      }
+    ],
+    "aliases": [
+      "Grid [Row 1] [Col 1]",
+      "Grid [Row 1][Col 1]"
+    ],
+    "parentCode": "GRID_R1"
+  },
+  {
+    "questionCode": "GRID",
+    "questionLabel": "Grid — Row 1 — Col 2",
+    "responseKey": "GRID_R1_C2",
+    "dataType": "boolean",
+    "cardinality": "multiple",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes"
+      },
+      {
+        "code": "0",
+        "label": "No"
+      }
+    ],
+    "aliases": [
+      "Grid [Row 1] [Col 2]",
+      "Grid [Row 1][Col 2]"
+    ],
+    "parentCode": "GRID_R1"
+  }
+]

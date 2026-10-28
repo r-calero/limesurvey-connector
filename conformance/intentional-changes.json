@@ -1,0 +1,84 @@
+{
+  "changes": [
+    {
+      "id": "system-columns",
+      "area": "limesurvey responses and dictionaries",
+      "reference": "limesurvey-dictionary-api always drops the visible LimeSurvey metadata headers (Submit date, Last page, Start language, Seed, Start date, Date last action and their Spanish labels) and only takes the response id from 'Response ID' or 'ID de la respuesta'. Code-form headers from sgqa or vv exports (id, submitdate, ...) and columns such as token, ipaddr, refurl or interviewtime are reported as UNKNOWN_RESPONSE_KEY. Dictionaries only describe questions.",
+      "connector": [
+        "No column is dropped by default; only ignoredHeaders from the request or the per-survey configuration are dropped.",
+        "LimeSurvey system columns (src/limesurvey_connector/limesurvey/system_columns.json) are recognized by code or visible header. When they are present in a dataset, the translation dictionary gains one typed entry per column, so they are translated like any field and produce no warning.",
+        "'Response ID', 'ID de la respuesta' and 'id' fill responseId.",
+        "Dictionary option includeSystemFields (default false) adds an entry for every system column, including id, before the question fields.",
+        "Timing columns (interviewtime, groupTime<group id>, <question code>Time) are recognized when present and added to a dictionary only with includeTimingFields."
+      ],
+      "guard": "A system column whose code equals a dictionary responseKey is not added: the survey field wins and 'id' is then not used as a response-id header.",
+      "verification": "The reference still maps and translates. The generator adds the system entries to the dictionary it passes to the reference, and calls csvToCanonicalResponses with two options added by patches/limesurvey-dictionary-api/csv-dataset-options.patch (defaultIgnoredHeaders, responseIdHeaders); without those options the patched function behaves exactly as the original. Entries added by includeSystemFields come from the catalog, not from the reference.",
+      "openPoints": [
+        "Visible headers of token and of timing columns, and English labels, are not yet confirmed by a real export."
+      ],
+      "verifiedBy": [
+        "reference-goldens",
+        "tests"
+      ]
+    },
+    {
+      "id": "dual-scale-question-level",
+      "area": "limesurvey normalization",
+      "reference": "The normalizer looks for answeroptions_multiscale only under result, but the RemoteControl loader merges get_question_properties at the question level, so dual-scale questions are always omitted through RemoteControl 2.",
+      "connector": "answeroptions_multiscale is also read at the question level.",
+      "verifiedBy": [
+        "reference-goldens"
+      ],
+      "verification": "patches/limesurvey-rc2-api/question-level-multiscale.patch adds an option, off by default, with which the reference loader produces goldens/limesurvey/remote-api/*.dual-scale-question-level.json."
+    },
+    {
+      "id": "dual-scale-by-scale-id",
+      "area": "limesurvey normalization",
+      "reference": "Older LimeSurvey versions (3.x) return dual-scale answer options keyed by code with a scale_id; the reference cannot split them.",
+      "connector": "Options are grouped by scale_id. When both scales share codes LimeSurvey returns only one of them; the question is then omitted with a message that points to the .lss file.",
+      "verifiedBy": [
+        "tests"
+      ]
+    },
+    {
+      "id": "lss-dbversion-355",
+      "area": "lss import",
+      "reference": "Only DBVersion 348, 623, 643 and 708 are accepted.",
+      "connector": "DBVersion 355 (LimeSurvey 3.x) is accepted as well; a real export imported completely, including both scales of a dual-scale question.",
+      "verifiedBy": [
+        "connector-goldens",
+        "tests"
+      ]
+    },
+    {
+      "id": "limesurvey-column-names",
+      "area": "dictionaries and responses",
+      "reference": "limesurvey-rc2-api writes the \"other\" text as Qother and the list-with-comment comment as Qcomment, while LimeSurvey exports Q_other and Q_comment (vv names, Q12[other] in code headings); the reference dictionary cannot derive an SGQA alias for Qother. Option comments without an explicit key are named Q_SQ001_comment, and bracketed code headings (Q1[SQ001], Q2[SQ001][1], Q12[other]) are not recognized.",
+      "connector": "The normalizer writes LimeSurvey's own names as explicit response keys: Q_other, Q_comment, Q_SQ001comment and Q_othercomment. Dictionaries built from other structures are renamed the same way, keeping the previous key as an alias, and bracketed headings in CSV exports and JSON records are converted before mapping (dual scales [1]/[2] become _0/_1).",
+      "verifiedBy": [
+        "connector-goldens",
+        "tests"
+      ]
+    },
+    {
+      "id": "json-export-unwrap",
+      "area": "response export",
+      "reference": "The RemoteControl JSON export {\"responses\": [{\"<id>\": {...}}]} is passed through, so every record is a single object keyed by its id.",
+      "connector": "Records are unwrapped, their keys use underscore names and the wrapper keys become responseIds.",
+      "verifiedBy": [
+        "connector-goldens",
+        "tests"
+      ]
+    },
+    {
+      "id": "vv-export-layout",
+      "area": "limesurvey responses",
+      "reference": "vv header lines end with a tab, so the reference reads an empty last header and reports SOURCE_PARSE_ISSUE for every row; the {question_not_shown} placeholder that vv writes for questions hidden by relevance is translated as a value (UNKNOWN_RESPONSE_VALUE for coded fields).",
+      "connector": "With format vv, an empty last header is dropped when no row has a value in it. {question_not_shown} is translated as missing (displayValue null, missing true) and keeps the placeholder as sourceValue, without warnings.",
+      "verifiedBy": [
+        "connector-goldens",
+        "tests"
+      ]
+    }
+  ]
+}

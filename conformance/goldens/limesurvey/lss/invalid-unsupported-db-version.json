@@ -1,0 +1,8 @@
+{
+  "input": "lss/invalid-unsupported-db-version.lss",
+  "ok": false,
+  "error": {
+    "type": "SurveyStructureSourceError",
+    "message": "Unsupported LSS DBVersion 999. Accepted versions: 348, 623, 643, 708."
+  }
+}

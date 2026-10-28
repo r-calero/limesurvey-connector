@@ -1,0 +1,57 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {}
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "message": "Dataset header Shared has an ambiguous or conflicting mapping. Its values were preserved without choosing by position.",
+        "responseKey": "Shared",
+        "details": {
+          "columnIndex": 0,
+          "candidates": [
+            "FIRST",
+            "SECOND"
+          ]
+        }
+      },
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "message": "Dataset header Shared has an ambiguous or conflicting mapping. Its values were preserved without choosing by position.",
+        "responseKey": "Shared",
+        "details": {
+          "columnIndex": 1,
+          "candidates": [
+            "FIRST",
+            "SECOND"
+          ]
+        }
+      }
+    ],
+    "columns": [
+      null,
+      null
+    ],
+    "unmappedValues": [
+      [
+        {
+          "sourceKey": "Shared",
+          "sourceValue": "first",
+          "columnIndex": 0
+        },
+        {
+          "sourceKey": "Shared",
+          "sourceValue": "second",
+          "columnIndex": 1
+        }
+      ]
+    ],
+    "responseIds": [
+      null
+    ]
+  }
+}

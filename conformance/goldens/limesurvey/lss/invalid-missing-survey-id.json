@@ -1,0 +1,8 @@
+{
+  "input": "lss/invalid-missing-survey-id.lss",
+  "ok": false,
+  "error": {
+    "type": "SurveyStructureSourceError",
+    "message": "LimeSurvey source does not contain a survey id."
+  }
+}

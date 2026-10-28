@@ -1,0 +1,1415 @@
+{
+  "input": "remote-api/all-types.json",
+  "change": "dual-scale-question-level",
+  "ok": true,
+  "result": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "910001",
+      "fields": [
+        {
+          "id": "100",
+          "code": "NOMBRE",
+          "type": "short-text",
+          "label": "Nombre completo",
+          "required": true,
+          "order": 0,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "100",
+            "nativeType": "S",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "101",
+          "code": "COMENTARIO",
+          "type": "long-text",
+          "label": "Comentario libre",
+          "required": false,
+          "order": 1,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "101",
+            "nativeType": "T",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "help": "Escriba con detalle",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "102",
+          "code": "EDAD",
+          "type": "number",
+          "label": "Edad en años",
+          "required": false,
+          "order": 2,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "102",
+            "nativeType": "N",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)",
+                "nativeValidation": {
+                  "minimumNumericAnswerValueExpression": "0",
+                  "maximumNumericAnswerValueExpression": "120"
+                }
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "responseValidation": {
+            "min": 0,
+            "max": 120
+          }
+        },
+        {
+          "id": "103",
+          "code": "NACIMIENTO",
+          "type": "date",
+          "label": "Fecha de nacimiento",
+          "required": false,
+          "order": 3,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "103",
+            "nativeType": "D",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)",
+                "dateTimeFormat": "dd/mm/yyyy"
+              }
+            ]
+          },
+          "dateValueType": "date",
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "104",
+          "code": "CONSIENTE",
+          "type": "yes-no",
+          "label": "¿Acepta participar?",
+          "required": true,
+          "order": 4,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "104",
+            "nativeType": "Y",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "rendering": {
+            "widget": "button-group"
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "options": [
+            {
+              "code": "Y",
+              "label": "Sí",
+              "order": 0
+            },
+            {
+              "code": "N",
+              "label": "No",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "id": "105",
+          "code": "GENERO",
+          "type": "gender",
+          "label": "Género",
+          "required": false,
+          "order": 5,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "105",
+            "nativeType": "G",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "rendering": {
+            "widget": "button-group"
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "options": [
+            {
+              "code": "F",
+              "label": "Femenino",
+              "order": 0
+            },
+            {
+              "code": "M",
+              "label": "Masculino",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "id": "106",
+          "code": "ESTADO",
+          "type": "single-choice",
+          "label": "Estado civil",
+          "required": false,
+          "order": 6,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "106",
+            "nativeType": "L",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "CONSIENTE == \"Y\"",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "comparison",
+              "responseReference": {
+                "fieldCode": "CONSIENTE"
+              },
+              "operator": "equals",
+              "value": "Y"
+            }
+          },
+          "other": {
+            "code": "-oth-",
+            "label": "Otro",
+            "textResponseKey": "ESTADOother"
+          },
+          "options": [
+            {
+              "code": "1",
+              "label": "Soltero",
+              "order": 0
+            },
+            {
+              "code": "2",
+              "label": "Casado",
+              "order": 1
+            },
+            {
+              "code": "3",
+              "label": "Unión libre",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "107",
+          "code": "REGION",
+          "type": "single-choice",
+          "label": "Región",
+          "required": false,
+          "order": 7,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "107",
+            "nativeType": "!",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "EDAD >= 18 and (GENERO == \"F\" or GENERO == \"M\")",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "comparison",
+                  "responseReference": {
+                    "fieldCode": "EDAD"
+                  },
+                  "operator": "greater-than-or-equal",
+                  "value": 18
+                },
+                {
+                  "type": "any",
+                  "conditions": [
+                    {
+                      "type": "comparison",
+                      "responseReference": {
+                        "fieldCode": "GENERO"
+                      },
+                      "operator": "equals",
+                      "value": "F"
+                    },
+                    {
+                      "type": "comparison",
+                      "responseReference": {
+                        "fieldCode": "GENERO"
+                      },
+                      "operator": "equals",
+                      "value": "M"
+                    }
+                  ]
+                }
+              ]
+            }
+          },
+          "options": [
+            {
+              "code": "N",
+              "label": "Norte",
+              "order": 0
+            },
+            {
+              "code": "C",
+              "label": "Centro",
+              "order": 1
+            },
+            {
+              "code": "S",
+              "label": "Sur",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "108",
+          "code": "SERVICIO",
+          "type": "list-with-comment",
+          "label": "Servicio principal",
+          "required": false,
+          "order": 8,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "108",
+            "nativeType": "O",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "strlen(NOMBRE) > 3",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "commentResponseKey": "SERVICIOcomment",
+          "options": [
+            {
+              "code": "A1",
+              "label": "Salud",
+              "order": 0
+            },
+            {
+              "code": "A2",
+              "label": "Educación",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "id": "109",
+          "code": "APOYOS",
+          "type": "multiple-choice",
+          "label": "Apoyos recibidos",
+          "required": false,
+          "order": 9,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "109",
+            "nativeType": "M",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "responseEncoding": {
+            "selectedValue": "Y",
+            "unselectedValue": "N",
+            "selectedLabel": "Sí",
+            "unselectedLabel": "No"
+          },
+          "options": [
+            {
+              "code": "SQ001",
+              "label": "Económico",
+              "order": 0
+            },
+            {
+              "code": "SQ002",
+              "label": "Alimentario",
+              "order": 1
+            },
+            {
+              "code": "SQ003",
+              "label": "Psicológico",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "110",
+          "code": "CUIDADOS",
+          "type": "multiple-choice-with-comments",
+          "label": "Cuidados brindados",
+          "required": false,
+          "order": 10,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "110",
+            "nativeType": "P",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "other": {
+            "code": "-oth-",
+            "label": "Otro",
+            "textResponseKey": "CUIDADOSother",
+            "commentResponseKey": "CUIDADOS_othercomment"
+          },
+          "responseEncoding": {
+            "selectedValue": "Y",
+            "unselectedValue": "N",
+            "selectedLabel": "Sí",
+            "unselectedLabel": "No"
+          },
+          "options": [
+            {
+              "code": "SQ001",
+              "label": "Higiene",
+              "order": 0,
+              "commentResponseKey": "CUIDADOS_SQ001comment"
+            },
+            {
+              "code": "SQ002",
+              "label": "Alimentación",
+              "order": 1,
+              "commentResponseKey": "CUIDADOS_SQ002comment"
+            }
+          ]
+        },
+        {
+          "id": "111",
+          "code": "SATISF",
+          "type": "matrix",
+          "label": "Satisfacción",
+          "required": false,
+          "order": 11,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "111",
+            "nativeType": "F",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "matrix": {
+            "mode": "single",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "Atención",
+                "order": 0
+              },
+              {
+                "code": "R2",
+                "label": "Tiempo de espera",
+                "order": 1
+              }
+            ],
+            "columns": [
+              {
+                "code": "A1",
+                "label": "De acuerdo",
+                "order": 0
+              },
+              {
+                "code": "A2",
+                "label": "Neutral",
+                "order": 1
+              },
+              {
+                "code": "A3",
+                "label": "En desacuerdo",
+                "order": 2
+              }
+            ]
+          }
+        },
+        {
+          "id": "112",
+          "code": "HORAS",
+          "type": "matrix",
+          "label": "Horas por día",
+          "required": false,
+          "order": 12,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "112",
+            "nativeType": ":",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)",
+                "nativeValidation": {
+                  "minimumCellValueExpression": "0",
+                  "maximumCellValueExpression": "24"
+                }
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "matrix": {
+            "mode": "number",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "Lunes",
+                "order": 0
+              },
+              {
+                "code": "R2",
+                "label": "Martes",
+                "order": 1
+              }
+            ],
+            "columns": [
+              {
+                "code": "C1",
+                "label": "Mañana",
+                "order": 0
+              },
+              {
+                "code": "C2",
+                "label": "Tarde",
+                "order": 1
+              }
+            ]
+          },
+          "responseValidation": {
+            "min": 0,
+            "max": 24
+          }
+        },
+        {
+          "id": "113",
+          "code": "TAREAS",
+          "type": "matrix",
+          "label": "Tareas realizadas",
+          "required": false,
+          "order": 13,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "113",
+            "nativeType": ":",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "matrix": {
+            "mode": "multiple",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "Cocinar",
+                "order": 0
+              }
+            ],
+            "columns": [
+              {
+                "code": "C1",
+                "label": "Sola",
+                "order": 0
+              },
+              {
+                "code": "C2",
+                "label": "Acompañada",
+                "order": 1
+              }
+            ]
+          },
+          "responseEncoding": {
+            "selectedValue": "1",
+            "unselectedValue": "0",
+            "selectedLabel": "Sí",
+            "unselectedLabel": "No"
+          }
+        },
+        {
+          "id": "114",
+          "code": "NOTAS",
+          "type": "matrix",
+          "label": "Notas por periodo",
+          "required": false,
+          "order": 14,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "114",
+            "nativeType": ";",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "matrix": {
+            "mode": "text",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "Primer periodo",
+                "order": 0
+              }
+            ],
+            "columns": [
+              {
+                "code": "C1",
+                "label": "Observación",
+                "order": 0
+              }
+            ]
+          }
+        },
+        {
+          "id": "115",
+          "code": "DUAL",
+          "type": "matrix",
+          "label": "Importancia y satisfacción",
+          "required": false,
+          "order": 15,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "115",
+            "nativeType": "1",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ],
+            "responseAliases": [
+              {
+                "responseItemCode": "R1_0",
+                "aliases": [
+                  "DUAL_R1#0",
+                  "910001X10X115R1#0"
+                ]
+              },
+              {
+                "responseItemCode": "R1_1",
+                "aliases": [
+                  "DUAL_R1#1",
+                  "910001X10X115R1#1"
+                ]
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "matrix": {
+            "mode": "dual-single",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "Transporte",
+                "order": 0
+              }
+            ],
+            "columns": [
+              {
+                "code": "0",
+                "label": "Importancia",
+                "order": 0,
+                "options": [
+                  {
+                    "code": "I1",
+                    "label": "Baja",
+                    "order": 0
+                  },
+                  {
+                    "code": "I2",
+                    "label": "Alta",
+                    "order": 1
+                  }
+                ]
+              },
+              {
+                "code": "1",
+                "label": "Satisfacción",
+                "order": 1,
+                "options": [
+                  {
+                    "code": "S1",
+                    "label": "Poca",
+                    "order": 0
+                  },
+                  {
+                    "code": "S2",
+                    "label": "Mucha",
+                    "order": 1
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "116",
+          "code": "ESCALA",
+          "type": "matrix",
+          "label": "Calificación del 1 al 10",
+          "required": false,
+          "order": 16,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "116",
+            "nativeType": "B",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "matrix": {
+            "mode": "single",
+            "rows": [
+              {
+                "code": "R1",
+                "label": "Servicio",
+                "order": 0
+              }
+            ],
+            "columns": [
+              {
+                "code": "1",
+                "label": "1",
+                "order": 0
+              },
+              {
+                "code": "2",
+                "label": "2",
+                "order": 1
+              },
+              {
+                "code": "3",
+                "label": "3",
+                "order": 2
+              },
+              {
+                "code": "4",
+                "label": "4",
+                "order": 3
+              },
+              {
+                "code": "5",
+                "label": "5",
+                "order": 4
+              },
+              {
+                "code": "6",
+                "label": "6",
+                "order": 5
+              },
+              {
+                "code": "7",
+                "label": "7",
+                "order": 6
+              },
+              {
+                "code": "8",
+                "label": "8",
+                "order": 7
+              },
+              {
+                "code": "9",
+                "label": "9",
+                "order": 8
+              },
+              {
+                "code": "10",
+                "label": "10",
+                "order": 9
+              }
+            ]
+          }
+        },
+        {
+          "id": "117",
+          "code": "CONTACTO",
+          "type": "multiple-input",
+          "label": "Datos de contacto",
+          "required": false,
+          "order": 17,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "117",
+            "nativeType": "Q",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "subquestions": [
+            {
+              "id": "1171",
+              "code": "TEL",
+              "label": "Teléfono",
+              "order": 0
+            },
+            {
+              "id": "1172",
+              "code": "CORREO",
+              "label": "Correo",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "id": "118",
+          "code": "PRIORIDAD",
+          "type": "ranking",
+          "label": "Ordene sus prioridades",
+          "required": false,
+          "order": 18,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "118",
+            "nativeType": "R",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ],
+            "responseAliases": [
+              {
+                "responseItemCode": "1",
+                "aliases": [
+                  "PRIORIDAD1",
+                  "Ordene sus prioridades [Rank 1]",
+                  "910001X10X1181"
+                ]
+              },
+              {
+                "responseItemCode": "2",
+                "aliases": [
+                  "PRIORIDAD2",
+                  "Ordene sus prioridades [Rank 2]",
+                  "910001X10X1182"
+                ]
+              },
+              {
+                "responseItemCode": "3",
+                "aliases": [
+                  "PRIORIDAD3",
+                  "Ordene sus prioridades [Rank 3]",
+                  "910001X10X1183"
+                ]
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "constant",
+                  "value": true
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          },
+          "options": [
+            {
+              "code": "P1",
+              "label": "Salud",
+              "order": 0
+            },
+            {
+              "code": "P2",
+              "label": "Empleo",
+              "order": 1
+            },
+            {
+              "code": "P3",
+              "label": "Vivienda",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "119",
+          "code": "AVISO",
+          "type": "display",
+          "label": "Gracias por su participación",
+          "required": false,
+          "order": 19,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "10",
+            "questionId": "119",
+            "nativeType": "X",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "count(that.APOYOS) >= 2",
+                "questionAndGroupRelevanceExpression": "(1) AND (1)"
+              }
+            ]
+          },
+          "groupId": "10",
+          "visibility": {
+            "condition": {
+              "type": "selection-count",
+              "responseReference": {
+                "fieldCode": "APOYOS"
+              },
+              "operator": "greater-than-or-equal",
+              "value": 2
+            }
+          }
+        },
+        {
+          "id": "200",
+          "code": "HIJOS",
+          "type": "number",
+          "label": "Número de hijos",
+          "required": false,
+          "order": 20,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "20",
+            "questionId": "200",
+            "nativeType": "N",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "1",
+                "questionAndGroupRelevanceExpression": "(CONSIENTE == \"Y\") AND (1)"
+              }
+            ]
+          },
+          "groupId": "20",
+          "visibility": {
+            "condition": {
+              "type": "all",
+              "conditions": [
+                {
+                  "type": "comparison",
+                  "responseReference": {
+                    "fieldCode": "CONSIENTE"
+                  },
+                  "operator": "equals",
+                  "value": "Y"
+                },
+                {
+                  "type": "constant",
+                  "value": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "201",
+          "code": "HIJOS_EDAD",
+          "type": "short-text",
+          "label": "Edad del hijo menor",
+          "required": false,
+          "order": 21,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "910001",
+            "groupId": "20",
+            "questionId": "201",
+            "nativeType": "S",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "questionRelevanceExpression": "HIJOS > 0",
+                "questionAndGroupRelevanceExpression": "(CONSIENTE == \"Y\") AND (1)"
+              }
+            ]
+          },
+          "groupId": "20",
+          "visibility": {
+            "condition": {
+              "type": "comparison",
+              "responseReference": {
+                "fieldCode": "HIJOS"
+              },
+              "operator": "greater-than",
+              "value": 0
+            }
+          }
+        }
+      ],
+      "source": {
+        "platform": "limesurvey",
+        "format": "remotecontrol"
+      },
+      "title": "Encuesta sintética de cuidados",
+      "description": "Cubre los tipos de pregunta soportados",
+      "language": "es",
+      "availableLanguages": [
+        "es",
+        "en"
+      ],
+      "groups": [
+        {
+          "id": "10",
+          "order": 0,
+          "title": "Datos generales",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "10"
+          }
+        },
+        {
+          "id": "20",
+          "order": 1,
+          "title": "Hogar",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "20",
+            "originDetails": [
+              {
+                "type": "limesurvey-group",
+                "version": "1.0.0",
+                "groupRelevanceExpression": "CONSIENTE == \"Y\""
+              }
+            ]
+          },
+          "visibility": {
+            "condition": {
+              "type": "comparison",
+              "responseReference": {
+                "fieldCode": "CONSIENTE"
+              },
+              "operator": "equals",
+              "value": "Y"
+            }
+          }
+        }
+      ],
+      "settings": {
+        "layout": "group",
+        "showProgress": true,
+        "allowPrevious": true,
+        "questionIndex": "disabled",
+        "navigationDelay": 0
+      }
+    },
+    "issues": [
+      {
+        "level": "warning",
+        "code": "UNSUPPORTED_SOURCE_EXPRESSION",
+        "message": "Unsupported LimeSurvey condition: strlen(NOMBRE) > 3",
+        "fieldId": "108",
+        "questionCode": "SERVICIO",
+        "details": {
+          "sourceExpression": "strlen(NOMBRE) > 3"
+        }
+      },
+      {
+        "level": "warning",
+        "code": "UNSUPPORTED_TYPE",
+        "message": "LimeSurvey question type | is not supported and was skipped.",
+        "fieldId": "120",
+        "questionCode": "NO_SOPORTADA",
+        "details": {
+          "sourceType": "|"
+        }
+      }
+    ],
+    "sourceMetrics": {
+      "topLevelQuestions": 23,
+      "childQuestions": 20,
+      "integratedChildren": 20,
+      "detectedTypes": [
+        "!",
+        "1",
+        ":",
+        ";",
+        "B",
+        "D",
+        "F",
+        "G",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "X",
+        "Y",
+        "|"
+      ],
+      "conditionsDetected": 24,
+      "validationQuestions": 4
+    },
+    "responseState": {
+      "active": true,
+      "canSaveResponses": true,
+      "submitMode": "submit",
+      "warningCodes": [],
+      "didNotSaveCode": null,
+      "language": "es"
+    }
+  }
+}

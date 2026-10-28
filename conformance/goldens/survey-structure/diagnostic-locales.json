@@ -1,0 +1,34 @@
+[
+  {
+    "locale": "es",
+    "resolved": "es"
+  },
+  {
+    "locale": "es-MX",
+    "resolved": "es"
+  },
+  {
+    "locale": "es_ES",
+    "resolved": "es"
+  },
+  {
+    "locale": "en",
+    "resolved": "en"
+  },
+  {
+    "locale": "en-US",
+    "resolved": "en"
+  },
+  {
+    "locale": "fr",
+    "resolved": "en"
+  },
+  {
+    "locale": "",
+    "resolved": "en"
+  },
+  {
+    "locale": null,
+    "resolved": "en"
+  }
+]

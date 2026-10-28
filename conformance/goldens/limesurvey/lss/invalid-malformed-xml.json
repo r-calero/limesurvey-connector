@@ -1,0 +1,8 @@
+{
+  "input": "lss/invalid-malformed-xml.lss",
+  "ok": false,
+  "error": {
+    "type": "SurveyStructureSourceError",
+    "message": "Invalid LSS XML: no element found: line 10, column 0."
+  }
+}

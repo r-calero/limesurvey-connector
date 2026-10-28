@@ -1,0 +1,7 @@
+"response_index","response_id","mapped","response_key","question_code","question_label","source_value","display_value","missing"
+"1","7","true","submitdate","submitdate","Submit date","2026-09-01 10:00:00","2026-09-01 10:00:00","false"
+"1","7","true","seed","seed","Seed type","S2","Bean","false"
+"1","7","true","Q1","Q1","Question 1","A1","Yes","false"
+"2","8","true","submitdate","submitdate","Submit date","","","true"
+"2","8","true","seed","seed","Seed type","S1","Maize","false"
+"2","8","true","Q1","Q1","Question 1","A2","No","false"

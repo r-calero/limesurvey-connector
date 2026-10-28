@@ -1,0 +1,2818 @@
+{
+  "$ref": "#/definitions/SurveyLoadResult",
+  "definitions": {
+    "SurveyLoadResult": {
+      "type": "object",
+      "properties": {
+        "survey": {
+          "type": "object",
+          "properties": {
+            "surveyStructureVersion": {
+              "type": "string",
+              "const": "2.1.0"
+            },
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "title": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string",
+              "minLength": 1
+            },
+            "availableLanguages": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/language"
+              }
+            },
+            "groups": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "order": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "randomizationGroup": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "visibility": {
+                    "type": "object",
+                    "properties": {
+                      "condition": {
+                        "anyOf": [
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "comparison"
+                              },
+                              "responseReference": {
+                                "type": "object",
+                                "properties": {
+                                  "fieldCode": {
+                                    "type": "string",
+                                    "minLength": 1,
+                                    "pattern": "^\\S(?:[\\s\\S]*\\S)?$"
+                                  },
+                                  "responseItemCode": {
+                                    "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                  }
+                                },
+                                "required": [
+                                  "fieldCode"
+                                ],
+                                "additionalProperties": false
+                              },
+                              "operator": {
+                                "type": "string",
+                                "enum": [
+                                  "equals",
+                                  "not-equals",
+                                  "greater-than",
+                                  "greater-than-or-equal",
+                                  "less-than",
+                                  "less-than-or-equal"
+                                ]
+                              },
+                              "value": {
+                                "anyOf": [
+                                  {
+                                    "anyOf": [
+                                      {
+                                        "type": "string"
+                                      },
+                                      {
+                                        "type": "number"
+                                      },
+                                      {
+                                        "type": "boolean"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "type": "null"
+                                  }
+                                ]
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "responseReference",
+                              "operator",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "answered",
+                                  "not-answered"
+                                ]
+                              },
+                              "responseReference": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "responseReference"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "pattern-match"
+                              },
+                              "responseReference": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference"
+                              },
+                              "pattern": {
+                                "type": "string"
+                              },
+                              "patternFlags": {
+                                "type": "string",
+                                "pattern": "^(?!.*(.).*\\1)[ims]*$"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "responseReference",
+                              "pattern"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "selection-count"
+                              },
+                              "responseReference": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference"
+                              },
+                              "responseItemCodes": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                },
+                                "minItems": 1
+                              },
+                              "operator": {
+                                "type": "string",
+                                "enum": [
+                                  "equals",
+                                  "not-equals",
+                                  "greater-than",
+                                  "greater-than-or-equal",
+                                  "less-than",
+                                  "less-than-or-equal"
+                                ]
+                              },
+                              "value": {
+                                "type": "integer",
+                                "minimum": 0
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "responseReference",
+                              "operator",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "answered-count"
+                              },
+                              "responseReference": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference"
+                              },
+                              "responseItemCodes": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/3/properties/responseItemCodes"
+                              },
+                              "operator": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/3/properties/operator"
+                              },
+                              "value": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/3/properties/value"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "responseReference",
+                              "operator",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "numeric-aggregate"
+                              },
+                              "responseReference": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference"
+                              },
+                              "responseItemCodes": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/3/properties/responseItemCodes"
+                              },
+                              "operator": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/3/properties/operator"
+                              },
+                              "value": {
+                                "type": "number"
+                              },
+                              "aggregation": {
+                                "type": "string",
+                                "enum": [
+                                  "sum",
+                                  "min",
+                                  "max"
+                                ]
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "responseReference",
+                              "operator",
+                              "value",
+                              "aggregation"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "constant"
+                              },
+                              "value": {
+                                "type": "boolean"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "value"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "enum": [
+                                  "all",
+                                  "any"
+                                ]
+                              },
+                              "conditions": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition"
+                                },
+                                "minItems": 1
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "conditions"
+                            ],
+                            "additionalProperties": false
+                          },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "type": {
+                                "type": "string",
+                                "const": "not"
+                              },
+                              "condition": {
+                                "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition"
+                              }
+                            },
+                            "required": [
+                              "type",
+                              "condition"
+                            ],
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "condition"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "source": {
+                    "type": "object",
+                    "properties": {
+                      "platform": {
+                        "type": "string",
+                        "pattern": "^[a-z][a-z0-9]*(?:-[a-z0-9]+)*$"
+                      },
+                      "groupId": {
+                        "type": "string"
+                      },
+                      "originDetails": {
+                        "type": "array",
+                        "items": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "type": {
+                                  "type": "string",
+                                  "const": "limesurvey-group"
+                                },
+                                "version": {
+                                  "type": "string",
+                                  "const": "1.0.0"
+                                },
+                                "groupRelevanceExpression": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "type",
+                                "version"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "required": [
+                      "platform"
+                    ],
+                    "additionalProperties": false
+                  },
+                  "navigation": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "condition": {
+                          "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition"
+                        },
+                        "destination": {
+                          "anyOf": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "action": {
+                                  "type": "string",
+                                  "enum": [
+                                    "next",
+                                    "end",
+                                    "start"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "action"
+                              ],
+                              "additionalProperties": false
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "groupId": {
+                                  "type": "string",
+                                  "minLength": 1
+                                }
+                              },
+                              "required": [
+                                "groupId"
+                              ],
+                              "additionalProperties": false
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "condition",
+                        "destination"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "id",
+                  "order"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "fields": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "yes-no",
+                          "gender",
+                          "single-choice",
+                          "list-with-comment"
+                        ]
+                      },
+                      "label": {
+                        "type": "string"
+                      },
+                      "groupId": {
+                        "type": "string"
+                      },
+                      "parentId": {
+                        "type": "string"
+                      },
+                      "help": {
+                        "type": "string"
+                      },
+                      "images": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "url": {
+                              "type": "string",
+                              "format": "uri"
+                            },
+                            "alt": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "url",
+                            "alt"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "required": {
+                        "type": "boolean"
+                      },
+                      "grading": {
+                        "type": "object",
+                        "properties": {
+                          "points": {
+                            "type": "number",
+                            "minimum": 0
+                          },
+                          "correctAnswers": {
+                            "type": "array",
+                            "items": {
+                              "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/value"
+                            },
+                            "minItems": 1
+                          },
+                          "whenRight": {
+                            "type": "string"
+                          },
+                          "whenWrong": {
+                            "type": "string"
+                          },
+                          "generalFeedback": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "points",
+                          "correctAnswers"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "order": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "responseValidation": {
+                        "type": "object",
+                        "properties": {
+                          "min": {
+                            "type": "number"
+                          },
+                          "max": {
+                            "type": "number"
+                          },
+                          "dateMin": {
+                            "type": "string",
+                            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                          },
+                          "dateMax": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation/properties/dateMin"
+                          },
+                          "rangeBehavior": {
+                            "type": "string",
+                            "enum": [
+                              "warning",
+                              "error"
+                            ]
+                          },
+                          "minLength": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "maxLength": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "minSelections": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "maxSelections": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "minAnswers": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "maxAnswers": {
+                            "type": "integer",
+                            "minimum": 0
+                          },
+                          "integer": {
+                            "type": "boolean"
+                          },
+                          "numericText": {
+                            "type": "boolean"
+                          },
+                          "itemMin": {
+                            "type": "number"
+                          },
+                          "itemMax": {
+                            "type": "number"
+                          },
+                          "sumMin": {
+                            "type": "number"
+                          },
+                          "sumMax": {
+                            "type": "number"
+                          },
+                          "sumEquals": {
+                            "type": "number"
+                          },
+                          "itemMinReference": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "itemMaxReference": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "sumMinReference": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "sumMaxReference": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "sumEqualsReference": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "sumAllowsMissing": {
+                            "type": "boolean"
+                          },
+                          "responseFormatPattern": {
+                            "type": "string"
+                          },
+                          "patternFlags": {
+                            "type": "string",
+                            "pattern": "^(?!.*(.).*\\1)[ims]*$"
+                          },
+                          "messages": {
+                            "type": "object",
+                            "additionalProperties": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility"
+                      },
+                      "rendering": {
+                        "type": "object",
+                        "properties": {
+                          "widget": {
+                            "type": "string",
+                            "enum": [
+                              "text-input",
+                              "text-area",
+                              "date-picker",
+                              "checkbox",
+                              "slider",
+                              "radio-group",
+                              "button-group",
+                              "emoticon-slider",
+                              "dropdown",
+                              "toggle",
+                              "checkbox-group-with-comments",
+                              "gender-selector",
+                              "matrix-grid",
+                              "multiple-input-list",
+                              "rating",
+                              "numbered-radio-group",
+                              "ranking-list",
+                              "checkbox-group",
+                              "custom"
+                            ]
+                          },
+                          "placeholder": {
+                            "type": "string"
+                          },
+                          "showLabel": {
+                            "type": "boolean"
+                          },
+                          "disabled": {
+                            "type": "boolean"
+                          },
+                          "hidden": {
+                            "type": "boolean"
+                          },
+                          "inputType": {
+                            "type": "string",
+                            "enum": [
+                              "text",
+                              "email",
+                              "number",
+                              "date",
+                              "datetime",
+                              "range",
+                              "password"
+                            ]
+                          },
+                          "inputMode": {
+                            "type": "string",
+                            "enum": [
+                              "text",
+                              "numeric",
+                              "decimal",
+                              "tel",
+                              "email",
+                              "url",
+                              "search"
+                            ]
+                          },
+                          "dateOrder": {
+                            "type": "string",
+                            "enum": [
+                              "date-time",
+                              "time-date"
+                            ]
+                          },
+                          "dateFormat": {
+                            "type": "string",
+                            "enum": [
+                              "dmy",
+                              "mdy",
+                              "ymd"
+                            ]
+                          },
+                          "dateDropdowns": {
+                            "type": "boolean"
+                          },
+                          "monthLabelStyle": {
+                            "type": "string",
+                            "enum": [
+                              "short",
+                              "long",
+                              "numeric"
+                            ]
+                          },
+                          "reverseYearOrder": {
+                            "type": "boolean"
+                          },
+                          "yearMin": {
+                            "type": "integer"
+                          },
+                          "yearMax": {
+                            "type": "integer"
+                          },
+                          "randomizationGroup": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "searchable": {
+                            "type": "boolean"
+                          },
+                          "optionsLayout": {
+                            "type": "string",
+                            "enum": [
+                              "horizontal",
+                              "vertical"
+                            ]
+                          },
+                          "ratingIcon": {
+                            "type": "string",
+                            "enum": [
+                              "star",
+                              "heart",
+                              "thumb-up"
+                            ]
+                          },
+                          "scaleMinLabel": {
+                            "type": "string"
+                          },
+                          "scaleMaxLabel": {
+                            "type": "string"
+                          }
+                        },
+                        "additionalProperties": false
+                      },
+                      "responseEncoding": {
+                        "type": "object",
+                        "properties": {
+                          "selectedValue": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/value/anyOf/0"
+                          },
+                          "unselectedValue": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/value/anyOf/0"
+                          },
+                          "selectedLabel": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "unselectedLabel": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "selectedValue",
+                          "unselectedValue"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "source": {
+                        "type": "object",
+                        "properties": {
+                          "platform": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/source/properties/platform"
+                          },
+                          "surveyId": {
+                            "type": "string"
+                          },
+                          "groupId": {
+                            "type": "string"
+                          },
+                          "questionId": {
+                            "type": "string"
+                          },
+                          "nativeType": {
+                            "type": "string"
+                          },
+                          "responseAliases": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "responseItemCode": {
+                                  "type": "string",
+                                  "minLength": 1
+                                },
+                                "aliases": {
+                                  "type": "array",
+                                  "items": {
+                                    "type": "string",
+                                    "minLength": 1
+                                  },
+                                  "minItems": 1
+                                }
+                              },
+                              "required": [
+                                "aliases"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "originDetails": {
+                            "type": "array",
+                            "items": {
+                              "anyOf": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "const": "limesurvey-question"
+                                    },
+                                    "version": {
+                                      "type": "string",
+                                      "const": "1.0.0"
+                                    },
+                                    "questionRelevanceExpression": {
+                                      "type": "string"
+                                    },
+                                    "questionAndGroupRelevanceExpression": {
+                                      "type": "string"
+                                    },
+                                    "dateTimeFormat": {
+                                      "type": "string"
+                                    },
+                                    "nativeValidation": {
+                                      "type": "object",
+                                      "properties": {
+                                        "minimumNumericValueExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumNumericValueExpression": {
+                                          "type": "string"
+                                        },
+                                        "minimumAnswerExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumAnswerExpression": {
+                                          "type": "string"
+                                        },
+                                        "minimumAnswersExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumAnswersExpression": {
+                                          "type": "string"
+                                        },
+                                        "questionValidationExpression": {
+                                          "type": "string"
+                                        },
+                                        "subquestionValidationExpression": {
+                                          "type": "string"
+                                        },
+                                        "minimumCellValueExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumCellValueExpression": {
+                                          "type": "string"
+                                        },
+                                        "cellStepExpression": {
+                                          "type": "string"
+                                        },
+                                        "minimumDateExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumDateExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumCharactersExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumRankingItemsExpression": {
+                                          "type": "string"
+                                        },
+                                        "regularExpression": {
+                                          "type": "string"
+                                        },
+                                        "minimumNumericAnswerValueExpression": {
+                                          "type": "string"
+                                        },
+                                        "maximumNumericAnswerValueExpression": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "additionalProperties": false
+                                    },
+                                    "unconvertedAttributes": {
+                                      "type": "object",
+                                      "additionalProperties": {
+                                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/value"
+                                      }
+                                    }
+                                  },
+                                  "required": [
+                                    "type",
+                                    "version"
+                                  ],
+                                  "additionalProperties": false
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "type": {
+                                      "type": "string",
+                                      "const": "redcap-question"
+                                    },
+                                    "version": {
+                                      "type": "string",
+                                      "const": "1.0.0"
+                                    },
+                                    "identifier": {
+                                      "type": "boolean"
+                                    },
+                                    "customAlignment": {
+                                      "type": "string"
+                                    },
+                                    "sectionHeader": {
+                                      "type": "string"
+                                    },
+                                    "requiredField": {
+                                      "type": "string"
+                                    },
+                                    "validationType": {
+                                      "type": "string"
+                                    },
+                                    "validationMin": {
+                                      "type": "string"
+                                    },
+                                    "validationMax": {
+                                      "type": "string"
+                                    },
+                                    "branchingLogic": {
+                                      "type": "string"
+                                    },
+                                    "questionNumber": {
+                                      "type": "string"
+                                    },
+                                    "fieldAnnotation": {
+                                      "type": "string"
+                                    },
+                                    "nativeMetadata": {
+                                      "type": "object",
+                                      "additionalProperties": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  },
+                                  "required": [
+                                    "type",
+                                    "version"
+                                  ],
+                                  "additionalProperties": false
+                                }
+                              ]
+                            }
+                          }
+                        },
+                        "required": [
+                          "platform"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "options": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "code": {
+                              "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                            },
+                            "label": {
+                              "type": "string"
+                            },
+                            "commentResponseKey": {
+                              "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                            },
+                            "exclusive": {
+                              "type": "boolean"
+                            },
+                            "visibility": {
+                              "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility"
+                            },
+                            "order": {
+                              "type": "integer",
+                              "minimum": 0
+                            }
+                          },
+                          "required": [
+                            "code",
+                            "label"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "commentResponseKey": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "defaultValue": {
+                        "type": "string"
+                      },
+                      "other": {
+                        "type": "object",
+                        "properties": {
+                          "code": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                          },
+                          "label": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "textResponseKey": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                          },
+                          "commentResponseKey": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                          },
+                          "textRequired": {
+                            "type": "boolean"
+                          },
+                          "commentRequired": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "code",
+                          "label",
+                          "textResponseKey"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "options"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "multiple-choice",
+                          "multiple-choice-with-comments",
+                          "ranking"
+                        ]
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "options": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items"
+                        }
+                      },
+                      "defaultValue": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "other": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/other"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "options"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "matrix"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "matrix": {
+                        "type": "object",
+                        "properties": {
+                          "mode": {
+                            "type": "string",
+                            "const": "single"
+                          },
+                          "rows": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "code": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                },
+                                "label": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/label"
+                                },
+                                "visibility": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility"
+                                },
+                                "order": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/order"
+                                },
+                                "grading": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                                },
+                                "required": {
+                                  "type": "boolean"
+                                }
+                              },
+                              "required": [
+                                "code",
+                                "label"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "columns": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "code": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                },
+                                "label": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/label"
+                                },
+                                "visibility": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/visibility"
+                                },
+                                "order": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/order"
+                                }
+                              },
+                              "required": [
+                                "code",
+                                "label"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "cells": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "rowCode": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                },
+                                "columnCode": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                },
+                                "visibility": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility"
+                                }
+                              },
+                              "required": [
+                                "rowCode",
+                                "columnCode",
+                                "visibility"
+                              ],
+                              "additionalProperties": false
+                            }
+                          }
+                        },
+                        "required": [
+                          "mode",
+                          "rows",
+                          "columns"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "defaultValue": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "matrix"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "matrix"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "matrix": {
+                        "type": "object",
+                        "properties": {
+                          "mode": {
+                            "type": "string",
+                            "const": "multiple"
+                          },
+                          "rows": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/rows"
+                          },
+                          "columns": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/columns"
+                          },
+                          "cells": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/cells"
+                          }
+                        },
+                        "required": [
+                          "mode",
+                          "rows",
+                          "columns"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "defaultValue": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "boolean"
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "matrix"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "matrix"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "matrix": {
+                        "type": "object",
+                        "properties": {
+                          "mode": {
+                            "type": "string",
+                            "const": "text"
+                          },
+                          "rows": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/rows"
+                          },
+                          "columns": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/columns"
+                          },
+                          "cells": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/cells"
+                          }
+                        },
+                        "required": [
+                          "mode",
+                          "rows",
+                          "columns"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "defaultValue": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "matrix"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "matrix"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "matrix": {
+                        "type": "object",
+                        "properties": {
+                          "mode": {
+                            "type": "string",
+                            "const": "number"
+                          },
+                          "rows": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/rows"
+                          },
+                          "columns": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/columns"
+                          },
+                          "cells": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/cells"
+                          }
+                        },
+                        "required": [
+                          "mode",
+                          "rows",
+                          "columns"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "defaultValue": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "number"
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "matrix"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "matrix"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "matrix": {
+                        "type": "object",
+                        "properties": {
+                          "mode": {
+                            "type": "string",
+                            "const": "dual-single"
+                          },
+                          "rows": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/rows"
+                          },
+                          "columns": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "code": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                                },
+                                "label": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/label"
+                                },
+                                "visibility": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/visibility"
+                                },
+                                "order": {
+                                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/options/items/properties/order"
+                                },
+                                "options": {
+                                  "type": "array",
+                                  "items": {
+                                    "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/columns/items"
+                                  },
+                                  "minItems": 1
+                                }
+                              },
+                              "required": [
+                                "code",
+                                "label",
+                                "options"
+                              ],
+                              "additionalProperties": false
+                            },
+                            "minItems": 2,
+                            "maxItems": 2
+                          },
+                          "cells": {
+                            "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/2/properties/matrix/properties/cells"
+                          }
+                        },
+                        "required": [
+                          "mode",
+                          "rows",
+                          "columns"
+                        ],
+                        "additionalProperties": false
+                      },
+                      "defaultValue": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "type": "object",
+                          "additionalProperties": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "matrix"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "multiple-input"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "subquestions": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "string"
+                            },
+                            "code": {
+                              "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                            },
+                            "label": {
+                              "type": "string"
+                            },
+                            "order": {
+                              "type": "integer",
+                              "minimum": 0
+                            }
+                          },
+                          "required": [
+                            "code",
+                            "label"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "defaultValue": {
+                        "type": "object",
+                        "additionalProperties": {
+                          "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/value/anyOf/0"
+                        }
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "subquestions"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "short-text",
+                          "long-text"
+                        ]
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "defaultValue": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "enum": [
+                          "number",
+                          "range"
+                        ]
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "responseValueType": {
+                        "type": "string",
+                        "enum": [
+                          "number",
+                          "text"
+                        ]
+                      },
+                      "defaultValue": {
+                        "anyOf": [
+                          {
+                            "type": "number"
+                          },
+                          {
+                            "type": "string"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "date"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "dateValueType": {
+                        "type": "string",
+                        "enum": [
+                          "date",
+                          "month-year",
+                          "month-day",
+                          "date-time",
+                          "time",
+                          "year"
+                        ]
+                      },
+                      "defaultValue": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "dateValueType"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "boolean"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "defaultValue": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "display"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/id"
+                      },
+                      "code": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/visibility/properties/condition/anyOf/0/properties/responseReference/properties/fieldCode"
+                      },
+                      "type": {
+                        "type": "string",
+                        "const": "custom"
+                      },
+                      "label": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/label"
+                      },
+                      "groupId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/groupId"
+                      },
+                      "parentId": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/parentId"
+                      },
+                      "help": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/help"
+                      },
+                      "images": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/images"
+                      },
+                      "required": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/required"
+                      },
+                      "grading": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/grading"
+                      },
+                      "order": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/order"
+                      },
+                      "responseValidation": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseValidation"
+                      },
+                      "visibility": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/visibility"
+                      },
+                      "rendering": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/rendering"
+                      },
+                      "responseEncoding": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/responseEncoding"
+                      },
+                      "source": {
+                        "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items/anyOf/0/properties/source"
+                      },
+                      "childrenFields": {
+                        "type": "array",
+                        "items": {
+                          "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/fields/items"
+                        },
+                        "minItems": 1
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "code",
+                      "type",
+                      "label",
+                      "childrenFields"
+                    ],
+                    "additionalProperties": false
+                  }
+                ]
+              }
+            },
+            "settings": {
+              "type": "object",
+              "properties": {
+                "layout": {
+                  "type": "string",
+                  "enum": [
+                    "all",
+                    "group",
+                    "question"
+                  ]
+                },
+                "showWelcome": {
+                  "type": "boolean"
+                },
+                "showProgress": {
+                  "type": "boolean"
+                },
+                "allowPrevious": {
+                  "type": "boolean"
+                },
+                "showGroupName": {
+                  "type": "boolean"
+                },
+                "showGroupDescription": {
+                  "type": "boolean"
+                },
+                "questionIndex": {
+                  "type": "string",
+                  "enum": [
+                    "inherit",
+                    "disabled",
+                    "incremental",
+                    "full"
+                  ]
+                },
+                "navigationDelay": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "welcomeText": {
+                  "type": "string"
+                },
+                "endText": {
+                  "type": "string"
+                },
+                "policyNotice": {
+                  "type": "string"
+                }
+              },
+              "additionalProperties": false
+            },
+            "source": {
+              "type": "object",
+              "properties": {
+                "platform": {
+                  "$ref": "#/definitions/SurveyLoadResult/properties/survey/properties/groups/items/properties/source/properties/platform"
+                },
+                "format": {
+                  "type": "string"
+                },
+                "version": {
+                  "type": "string"
+                },
+                "importedAt": {
+                  "type": "string",
+                  "format": "date-time"
+                },
+                "originDetails": {
+                  "type": "array",
+                  "items": {
+                    "anyOf": [
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "const": "limesurvey-survey"
+                          },
+                          "version": {
+                            "type": "string",
+                            "const": "1.0.0"
+                          },
+                          "databaseSchemaVersion": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "version"
+                        ],
+                        "additionalProperties": false
+                      },
+                      {
+                        "type": "object",
+                        "properties": {
+                          "type": {
+                            "type": "string",
+                            "const": "redcap-survey"
+                          },
+                          "version": {
+                            "type": "string",
+                            "const": "1.0.0"
+                          },
+                          "targetCollectionMode": {
+                            "type": "string",
+                            "enum": [
+                              "survey",
+                              "data-entry",
+                              "unknown"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "type",
+                          "version"
+                        ],
+                        "additionalProperties": false
+                      }
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "platform"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "surveyStructureVersion",
+            "id",
+            "fields"
+          ],
+          "additionalProperties": false
+        },
+        "issues": {
+          "type": "array",
+          "items": {
+            "anyOf": [
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "type": "string",
+                    "enum": [
+                      "warning",
+                      "error"
+                    ]
+                  },
+                  "message": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "fieldId": {
+                    "type": "string"
+                  },
+                  "questionCode": {
+                    "type": "string"
+                  },
+                  "code": {
+                    "type": "string",
+                    "enum": [
+                      "UNCONVERTED_SOURCE_PROPERTY",
+                      "UNSUPPORTED_TIMER_SETTING",
+                      "UNSUPPORTED_LOCATION_SETTING"
+                    ]
+                  },
+                  "details": {
+                    "type": "object",
+                    "properties": {
+                      "propertyName": {
+                        "type": "string"
+                      },
+                      "sourceValue": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "propertyName",
+                      "sourceValue"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code",
+                  "details"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/level"
+                  },
+                  "message": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/message"
+                  },
+                  "fieldId": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/fieldId"
+                  },
+                  "questionCode": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/questionCode"
+                  },
+                  "code": {
+                    "type": "string",
+                    "const": "UNSUPPORTED_TYPE"
+                  },
+                  "details": {
+                    "type": "object",
+                    "properties": {
+                      "sourceType": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "sourceType"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code",
+                  "details"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/level"
+                  },
+                  "message": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/message"
+                  },
+                  "fieldId": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/fieldId"
+                  },
+                  "questionCode": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/questionCode"
+                  },
+                  "code": {
+                    "type": "string",
+                    "enum": [
+                      "INVALID_EXPRESSION",
+                      "MISSING_CONDITION_REFERENCE",
+                      "UNSUPPORTED_SOURCE_EXPRESSION",
+                      "SOURCE_SCRIPT_NOT_EXECUTED"
+                    ]
+                  },
+                  "details": {
+                    "type": "object",
+                    "properties": {
+                      "sourceExpression": {
+                        "type": "string"
+                      },
+                      "rule": {
+                        "type": "string"
+                      },
+                      "scope": {
+                        "type": "string",
+                        "enum": [
+                          "survey",
+                          "group",
+                          "field"
+                        ]
+                      },
+                      "rowCode": {
+                        "type": "string"
+                      },
+                      "childQuestionId": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "sourceExpression"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code",
+                  "details"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/level"
+                  },
+                  "message": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/message"
+                  },
+                  "fieldId": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/fieldId"
+                  },
+                  "questionCode": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/questionCode"
+                  },
+                  "code": {
+                    "type": "string",
+                    "const": "UNSUPPORTED_SOURCE_VERSION"
+                  },
+                  "details": {
+                    "type": "object",
+                    "properties": {
+                      "sourceVersion": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "sourceVersion"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code",
+                  "details"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/level"
+                  },
+                  "message": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/message"
+                  },
+                  "fieldId": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/fieldId"
+                  },
+                  "questionCode": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/questionCode"
+                  },
+                  "code": {
+                    "type": "string",
+                    "enum": [
+                      "INVALID_VALIDATION",
+                      "UNSUPPORTED_TIMER"
+                    ]
+                  },
+                  "details": {
+                    "type": "object",
+                    "properties": {
+                      "rule": {
+                        "type": "string"
+                      },
+                      "sourceValue": {
+                        "anyOf": [
+                          {
+                            "type": "string"
+                          },
+                          {
+                            "type": "number"
+                          },
+                          {
+                            "type": "boolean"
+                          },
+                          {
+                            "type": "null"
+                          }
+                        ]
+                      }
+                    },
+                    "required": [
+                      "rule"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code",
+                  "details"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/level"
+                  },
+                  "message": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/message"
+                  },
+                  "fieldId": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/fieldId"
+                  },
+                  "questionCode": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/questionCode"
+                  },
+                  "code": {
+                    "type": "string",
+                    "const": "EMPTY_OPTIONS"
+                  },
+                  "details": {
+                    "type": "object",
+                    "properties": {
+                      "omitted": {
+                        "type": "boolean"
+                      },
+                      "rows": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "columns": {
+                        "type": "integer",
+                        "minimum": 0
+                      }
+                    },
+                    "required": [
+                      "omitted"
+                    ],
+                    "additionalProperties": false
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code"
+                ],
+                "additionalProperties": false
+              },
+              {
+                "type": "object",
+                "properties": {
+                  "level": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/level"
+                  },
+                  "message": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/message"
+                  },
+                  "fieldId": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/fieldId"
+                  },
+                  "questionCode": {
+                    "$ref": "#/definitions/SurveyLoadResult/properties/issues/items/anyOf/0/properties/questionCode"
+                  },
+                  "code": {
+                    "type": "string",
+                    "enum": [
+                      "INVALID_SOURCE",
+                      "MISSING_QUESTION_CODE",
+                      "DUPLICATE_QUESTION_CODE",
+                      "MISSING_PARENT"
+                    ]
+                  }
+                },
+                "required": [
+                  "level",
+                  "message",
+                  "code"
+                ],
+                "additionalProperties": false
+              }
+            ]
+          }
+        },
+        "responseState": {
+          "type": "object",
+          "properties": {
+            "active": {
+              "type": "boolean"
+            },
+            "canSaveResponses": {
+              "type": "boolean"
+            },
+            "submitMode": {
+              "type": "string",
+              "enum": [
+                "submit",
+                "submit_preview"
+              ]
+            },
+            "language": {
+              "type": "string"
+            },
+            "endText": {
+              "type": "string"
+            },
+            "warningCodes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "didNotSaveCode": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "active",
+            "canSaveResponses",
+            "submitMode",
+            "warningCodes",
+            "didNotSaveCode"
+          ],
+          "additionalProperties": false
+        },
+        "sourceMetrics": {
+          "type": "object",
+          "properties": {
+            "topLevelQuestions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "childQuestions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "integratedChildren": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "detectedTypes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "conditionsDetected": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "validationQuestions": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "required": [
+            "topLevelQuestions",
+            "childQuestions",
+            "integratedChildren",
+            "detectedTypes",
+            "conditionsDetected",
+            "validationQuestions"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "survey",
+        "issues"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

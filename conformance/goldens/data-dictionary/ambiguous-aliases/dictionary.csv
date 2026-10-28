@@ -1,0 +1,5 @@
+"survey_id","qid","group_id","question_code","response_key","question_label","data_type","cardinality","aliases","value_code","value_label"
+"synthetic","","","FIRST","FIRST","Shared","string","single","Shared","",""
+"synthetic","","","SECOND","SECOND","Shared","string","single","Shared","",""
+"synthetic","","","ANSWER","ANSWER","Label","string","single","Label","",""
+"synthetic","","","A_B","A_B","A_B","string","single","A_B","",""

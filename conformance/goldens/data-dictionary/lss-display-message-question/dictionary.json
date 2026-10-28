@@ -1,0 +1,12 @@
+{
+  "fixture": "limesurvey/lss/display-message-question.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "900008",
+    "surveyTitle": "Ejemplo sintético de texto informativo",
+    "language": "es",
+    "fields": [],
+    "issues": []
+  }
+}

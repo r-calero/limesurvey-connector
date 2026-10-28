@@ -1,0 +1,9 @@
+{
+  "change": "system-columns",
+  "ok": false,
+  "error": {
+    "name": "Error",
+    "message": "CSV parsing failed: Quoted field unterminated",
+    "statusCode": 400
+  }
+}

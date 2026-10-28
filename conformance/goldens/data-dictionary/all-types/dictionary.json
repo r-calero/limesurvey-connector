@@ -1,0 +1,855 @@
+{
+  "fixture": "fixtures/dictionary/all-types.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "910001",
+    "surveyTitle": "Encuesta sintética de cuidados",
+    "language": "es",
+    "fields": [
+      {
+        "questionCode": "NOMBRE",
+        "questionLabel": "Nombre completo",
+        "responseKey": "NOMBRE",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Nombre completo",
+          "910001X10X100"
+        ],
+        "qid": "100",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "COMENTARIO",
+        "questionLabel": "Comentario libre",
+        "responseKey": "COMENTARIO",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Comentario libre",
+          "910001X10X101"
+        ],
+        "qid": "101",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "EDAD",
+        "questionLabel": "Edad en años",
+        "responseKey": "EDAD",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Edad en años",
+          "910001X10X102"
+        ],
+        "qid": "102",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "NACIMIENTO",
+        "questionLabel": "Fecha de nacimiento",
+        "responseKey": "NACIMIENTO",
+        "dataType": "date",
+        "cardinality": "single",
+        "aliases": [
+          "Fecha de nacimiento",
+          "910001X10X103"
+        ],
+        "qid": "103",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CONSIENTE",
+        "questionLabel": "¿Acepta participar?",
+        "responseKey": "CONSIENTE",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "¿Acepta participar?",
+          "910001X10X104",
+          "external_consent"
+        ],
+        "qid": "104",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "GENERO",
+        "questionLabel": "Género",
+        "responseKey": "GENERO",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "F",
+            "label": "Femenino"
+          },
+          {
+            "code": "M",
+            "label": "Masculino"
+          }
+        ],
+        "aliases": [
+          "Género",
+          "910001X10X105"
+        ],
+        "qid": "105",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "ESTADO",
+        "questionLabel": "Estado civil",
+        "responseKey": "ESTADO",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "1",
+            "label": "Soltero"
+          },
+          {
+            "code": "2",
+            "label": "Casado"
+          },
+          {
+            "code": "3",
+            "label": "Unión libre"
+          },
+          {
+            "code": "-oth-",
+            "label": "Otro"
+          }
+        ],
+        "aliases": [
+          "Estado civil",
+          "910001X10X106"
+        ],
+        "qid": "106",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "ESTADO",
+        "questionLabel": "Estado civil — Otro",
+        "responseKey": "ESTADOother",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Estado civil [Otro]"
+        ],
+        "parentCode": "ESTADO",
+        "qid": "106",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "REGION",
+        "questionLabel": "Región",
+        "responseKey": "REGION",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "N",
+            "label": "Norte"
+          },
+          {
+            "code": "C",
+            "label": "Centro"
+          },
+          {
+            "code": "S",
+            "label": "Sur"
+          }
+        ],
+        "aliases": [
+          "Región",
+          "910001X10X107"
+        ],
+        "qid": "107",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "SERVICIO",
+        "questionLabel": "Servicio principal",
+        "responseKey": "SERVICIO",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "A1",
+            "label": "Salud"
+          },
+          {
+            "code": "A2",
+            "label": "Educación"
+          }
+        ],
+        "aliases": [
+          "Servicio principal",
+          "910001X10X108"
+        ],
+        "qid": "108",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "SERVICIO",
+        "questionLabel": "Servicio principal — Comentario",
+        "responseKey": "SERVICIOcomment",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Servicio principal [Comentario]"
+        ],
+        "parentCode": "SERVICIO",
+        "qid": "108",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "APOYOS",
+        "questionLabel": "Apoyos recibidos — Económico",
+        "responseKey": "APOYOS_SQ001",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Apoyos recibidos [Económico]",
+          "910001X10X109SQ001"
+        ],
+        "parentCode": "APOYOS",
+        "qid": "109",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "APOYOS",
+        "questionLabel": "Apoyos recibidos — Alimentario",
+        "responseKey": "APOYOS_SQ002",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Apoyos recibidos [Alimentario]",
+          "910001X10X109SQ002"
+        ],
+        "parentCode": "APOYOS",
+        "qid": "109",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "APOYOS",
+        "questionLabel": "Apoyos recibidos — Psicológico",
+        "responseKey": "APOYOS_SQ003",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Apoyos recibidos [Psicológico]",
+          "910001X10X109SQ003"
+        ],
+        "parentCode": "APOYOS",
+        "qid": "109",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CUIDADOS",
+        "questionLabel": "Cuidados brindados — Higiene",
+        "responseKey": "CUIDADOS_SQ001",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Cuidados brindados [Higiene]",
+          "910001X10X110SQ001"
+        ],
+        "parentCode": "CUIDADOS",
+        "qid": "110",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CUIDADOS",
+        "questionLabel": "Cuidados brindados — Higiene — Comentario",
+        "responseKey": "CUIDADOS_SQ001comment",
+        "dataType": "string",
+        "cardinality": "multiple",
+        "aliases": [
+          "Cuidados brindados [Comentario]",
+          "910001X10X110SQ001comment"
+        ],
+        "parentCode": "CUIDADOS_SQ001",
+        "qid": "110",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CUIDADOS",
+        "questionLabel": "Cuidados brindados — Alimentación",
+        "responseKey": "CUIDADOS_SQ002",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Cuidados brindados [Alimentación]",
+          "910001X10X110SQ002"
+        ],
+        "parentCode": "CUIDADOS",
+        "qid": "110",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CUIDADOS",
+        "questionLabel": "Cuidados brindados — Alimentación — Comentario",
+        "responseKey": "CUIDADOS_SQ002comment",
+        "dataType": "string",
+        "cardinality": "multiple",
+        "aliases": [
+          "Cuidados brindados [Comentario]",
+          "910001X10X110SQ002comment"
+        ],
+        "parentCode": "CUIDADOS_SQ002",
+        "qid": "110",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CUIDADOS",
+        "questionLabel": "Cuidados brindados — Otro — Texto",
+        "responseKey": "CUIDADOSother",
+        "dataType": "string",
+        "cardinality": "multiple",
+        "aliases": [
+          "Cuidados brindados [Otro]",
+          "Cuidados brindados [Otro Texto]"
+        ],
+        "parentCode": "CUIDADOS",
+        "qid": "110",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CUIDADOS",
+        "questionLabel": "Cuidados brindados — Otro — Comentario",
+        "responseKey": "CUIDADOS_othercomment",
+        "dataType": "string",
+        "cardinality": "multiple",
+        "aliases": [
+          "Cuidados brindados [Otro Comentario]",
+          "Cuidados brindados [Otro comentario]",
+          "910001X10X110othercomment"
+        ],
+        "parentCode": "CUIDADOSother",
+        "qid": "110",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "SATISF",
+        "questionLabel": "Satisfacción — Atención",
+        "responseKey": "SATISF_R1",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "A1",
+            "label": "De acuerdo"
+          },
+          {
+            "code": "A2",
+            "label": "Neutral"
+          },
+          {
+            "code": "A3",
+            "label": "En desacuerdo"
+          }
+        ],
+        "aliases": [
+          "Satisfacción [Atención]",
+          "910001X10X111R1"
+        ],
+        "parentCode": "SATISF",
+        "qid": "111",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "SATISF",
+        "questionLabel": "Satisfacción — Tiempo de espera",
+        "responseKey": "SATISF_R2",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "A1",
+            "label": "De acuerdo"
+          },
+          {
+            "code": "A2",
+            "label": "Neutral"
+          },
+          {
+            "code": "A3",
+            "label": "En desacuerdo"
+          }
+        ],
+        "aliases": [
+          "Satisfacción [Tiempo de espera]",
+          "910001X10X111R2"
+        ],
+        "parentCode": "SATISF",
+        "qid": "111",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "HORAS",
+        "questionLabel": "Horas por día — Lunes — Mañana",
+        "responseKey": "HORAS_R1_C1",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Horas por día [Lunes] [Mañana]",
+          "Horas por día [Lunes][Mañana]",
+          "910001X10X112R1_C1"
+        ],
+        "parentCode": "HORAS_R1",
+        "qid": "112",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "HORAS",
+        "questionLabel": "Horas por día — Lunes — Tarde",
+        "responseKey": "HORAS_R1_C2",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Horas por día [Lunes] [Tarde]",
+          "Horas por día [Lunes][Tarde]",
+          "910001X10X112R1_C2"
+        ],
+        "parentCode": "HORAS_R1",
+        "qid": "112",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "HORAS",
+        "questionLabel": "Horas por día — Martes — Mañana",
+        "responseKey": "HORAS_R2_C1",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Horas por día [Martes] [Mañana]",
+          "Horas por día [Martes][Mañana]",
+          "910001X10X112R2_C1"
+        ],
+        "parentCode": "HORAS_R2",
+        "qid": "112",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "HORAS",
+        "questionLabel": "Horas por día — Martes — Tarde",
+        "responseKey": "HORAS_R2_C2",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Horas por día [Martes] [Tarde]",
+          "Horas por día [Martes][Tarde]",
+          "910001X10X112R2_C2"
+        ],
+        "parentCode": "HORAS_R2",
+        "qid": "112",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "TAREAS",
+        "questionLabel": "Tareas realizadas — Cocinar — Sola",
+        "responseKey": "TAREAS_R1_C1",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "1",
+            "label": "Sí"
+          },
+          {
+            "code": "0",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Tareas realizadas [Cocinar] [Sola]",
+          "Tareas realizadas [Cocinar][Sola]",
+          "910001X10X113R1_C1"
+        ],
+        "parentCode": "TAREAS_R1",
+        "qid": "113",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "TAREAS",
+        "questionLabel": "Tareas realizadas — Cocinar — Acompañada",
+        "responseKey": "TAREAS_R1_C2",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "1",
+            "label": "Sí"
+          },
+          {
+            "code": "0",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Tareas realizadas [Cocinar] [Acompañada]",
+          "Tareas realizadas [Cocinar][Acompañada]",
+          "910001X10X113R1_C2"
+        ],
+        "parentCode": "TAREAS_R1",
+        "qid": "113",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "NOTAS",
+        "questionLabel": "Notas por periodo — Primer periodo — Observación",
+        "responseKey": "NOTAS_R1_C1",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Notas por periodo [Primer periodo] [Observación]",
+          "Notas por periodo [Primer periodo][Observación]",
+          "910001X10X114R1_C1"
+        ],
+        "parentCode": "NOTAS_R1",
+        "qid": "114",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "DUAL",
+        "questionLabel": "Importancia y satisfacción — Transporte — Importancia",
+        "responseKey": "DUAL_R1_0",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "I1",
+            "label": "Baja",
+            "order": 0
+          },
+          {
+            "code": "I2",
+            "label": "Alta",
+            "order": 1
+          }
+        ],
+        "aliases": [
+          "Importancia y satisfacción [Transporte] [Importancia]",
+          "Importancia y satisfacción [Transporte][Importancia]",
+          "DUAL_R1#0",
+          "910001X10X115R1#0",
+          "910001X10X115R1_0"
+        ],
+        "parentCode": "DUAL_R1",
+        "qid": "115",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "DUAL",
+        "questionLabel": "Importancia y satisfacción — Transporte — Satisfacción",
+        "responseKey": "DUAL_R1_1",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "S1",
+            "label": "Poca",
+            "order": 0
+          },
+          {
+            "code": "S2",
+            "label": "Mucha",
+            "order": 1
+          }
+        ],
+        "aliases": [
+          "Importancia y satisfacción [Transporte] [Satisfacción]",
+          "Importancia y satisfacción [Transporte][Satisfacción]",
+          "DUAL_R1#1",
+          "910001X10X115R1#1",
+          "910001X10X115R1_1"
+        ],
+        "parentCode": "DUAL_R1",
+        "qid": "115",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "ESCALA",
+        "questionLabel": "Calificación del 1 al 10 — Servicio",
+        "responseKey": "ESCALA_R1",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "1",
+            "label": "1"
+          },
+          {
+            "code": "2",
+            "label": "2"
+          },
+          {
+            "code": "3",
+            "label": "3"
+          },
+          {
+            "code": "4",
+            "label": "4"
+          },
+          {
+            "code": "5",
+            "label": "5"
+          },
+          {
+            "code": "6",
+            "label": "6"
+          },
+          {
+            "code": "7",
+            "label": "7"
+          },
+          {
+            "code": "8",
+            "label": "8"
+          },
+          {
+            "code": "9",
+            "label": "9"
+          },
+          {
+            "code": "10",
+            "label": "10"
+          }
+        ],
+        "aliases": [
+          "Calificación del 1 al 10 [Servicio]",
+          "910001X10X116R1"
+        ],
+        "parentCode": "ESCALA",
+        "qid": "116",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CONTACTO",
+        "questionLabel": "Teléfono",
+        "responseKey": "CONTACTO_TEL",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Datos de contacto [Teléfono]",
+          "910001X10X117TEL"
+        ],
+        "parentCode": "CONTACTO",
+        "qid": "117",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "CONTACTO",
+        "questionLabel": "Correo",
+        "responseKey": "CONTACTO_CORREO",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Datos de contacto [Correo]",
+          "910001X10X117CORREO"
+        ],
+        "parentCode": "CONTACTO",
+        "qid": "117",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "PRIORIDAD",
+        "questionLabel": "Ordene sus prioridades — Posición 1",
+        "responseKey": "PRIORIDAD_1",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "P1",
+            "label": "Salud"
+          },
+          {
+            "code": "P2",
+            "label": "Empleo"
+          },
+          {
+            "code": "P3",
+            "label": "Vivienda"
+          }
+        ],
+        "aliases": [
+          "PRIORIDAD1",
+          "Ordene sus prioridades [Rank 1]",
+          "910001X10X1181"
+        ],
+        "parentCode": "PRIORIDAD",
+        "qid": "118",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "PRIORIDAD",
+        "questionLabel": "Ordene sus prioridades — Posición 2",
+        "responseKey": "PRIORIDAD_2",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "P1",
+            "label": "Salud"
+          },
+          {
+            "code": "P2",
+            "label": "Empleo"
+          },
+          {
+            "code": "P3",
+            "label": "Vivienda"
+          }
+        ],
+        "aliases": [
+          "PRIORIDAD2",
+          "Ordene sus prioridades [Rank 2]",
+          "910001X10X1182"
+        ],
+        "parentCode": "PRIORIDAD",
+        "qid": "118",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "PRIORIDAD",
+        "questionLabel": "Ordene sus prioridades — Posición 3",
+        "responseKey": "PRIORIDAD_3",
+        "dataType": "code",
+        "cardinality": "single",
+        "values": [
+          {
+            "code": "P1",
+            "label": "Salud"
+          },
+          {
+            "code": "P2",
+            "label": "Empleo"
+          },
+          {
+            "code": "P3",
+            "label": "Vivienda"
+          }
+        ],
+        "aliases": [
+          "PRIORIDAD3",
+          "Ordene sus prioridades [Rank 3]",
+          "910001X10X1183"
+        ],
+        "parentCode": "PRIORIDAD",
+        "qid": "118",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "HIJOS",
+        "questionLabel": "Número de hijos",
+        "responseKey": "HIJOS",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Número de hijos",
+          "910001X20X200"
+        ],
+        "qid": "200",
+        "groupId": "20"
+      },
+      {
+        "questionCode": "HIJOS_EDAD",
+        "questionLabel": "Edad del hijo menor",
+        "responseKey": "HIJOS_EDAD",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Edad del hijo menor",
+          "910001X20X201"
+        ],
+        "qid": "201",
+        "groupId": "20"
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "Unsupported LimeSurvey condition: strlen(NOMBRE) > 3",
+        "questionCode": "SERVICIO",
+        "details": {
+          "sourceCode": "UNSUPPORTED_SOURCE_EXPRESSION",
+          "fieldId": "108",
+          "sourceExpression": "strlen(NOMBRE) > 3"
+        }
+      },
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "LimeSurvey question type | is not supported and was skipped.",
+        "questionCode": "NO_SOPORTADA",
+        "details": {
+          "sourceCode": "UNSUPPORTED_TYPE",
+          "fieldId": "120",
+          "sourceType": "|"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {
+        "responseIndex": 1,
+        "fields": [
+          {
+            "responseKey": "YN",
+            "questionCode": "YN",
+            "questionLabel": "Flag YN",
+            "dataType": "boolean",
+            "sourceValue": "Y",
+            "displayValue": "Accepted",
+            "missing": false
+          },
+          {
+            "responseKey": "INVERTED",
+            "questionCode": "INVERTED",
+            "questionLabel": "Inverted",
+            "dataType": "boolean",
+            "sourceValue": false,
+            "displayValue": "Selected",
+            "missing": false
+          },
+          {
+            "responseKey": "NUMERIC",
+            "questionCode": "NUMERIC",
+            "questionLabel": "Numeric",
+            "dataType": "boolean",
+            "sourceValue": 1,
+            "displayValue": "Yes",
+            "missing": false
+          },
+          {
+            "responseKey": "PLAIN",
+            "questionCode": "PLAIN",
+            "questionLabel": "Plain",
+            "dataType": "boolean",
+            "sourceValue": true,
+            "displayValue": "Yes",
+            "missing": false
+          }
+        ],
+        "unmappedValues": [],
+        "issues": []
+      },
+      {
+        "responseIndex": 2,
+        "fields": [
+          {
+            "responseKey": "YN",
+            "questionCode": "YN",
+            "questionLabel": "Flag YN",
+            "dataType": "boolean",
+            "sourceValue": "N",
+            "displayValue": "Declined",
+            "missing": false
+          },
+          {
+            "responseKey": "INVERTED",
+            "questionCode": "INVERTED",
+            "questionLabel": "Inverted",
+            "dataType": "boolean",
+            "sourceValue": true,
+            "displayValue": "Not selected",
+            "missing": false
+          },
+          {
+            "responseKey": "NUMERIC",
+            "questionCode": "NUMERIC",
+            "questionLabel": "Numeric",
+            "dataType": "boolean",
+            "sourceValue": 0,
+            "displayValue": "No",
+            "missing": false
+          },
+          {
+            "responseKey": "PLAIN",
+            "questionCode": "PLAIN",
+            "questionLabel": "Plain",
+            "dataType": "boolean",
+            "sourceValue": false,
+            "displayValue": "No",
+            "missing": false
+          }
+        ],
+        "unmappedValues": [],
+        "issues": []
+      },
+      {
+        "responseIndex": 3,
+        "fields": [
+          {
+            "responseKey": "YN",
+            "questionCode": "YN",
+            "questionLabel": "Flag YN",
+            "dataType": "boolean",
+            "sourceValue": "maybe",
+            "displayValue": "maybe",
+            "missing": false
+          },
+          {
+            "responseKey": "INVERTED",
+            "questionCode": "INVERTED",
+            "questionLabel": "Inverted",
+            "dataType": "boolean",
+            "sourceValue": "false",
+            "displayValue": "Selected",
+            "missing": false
+          },
+          {
+            "responseKey": "NUMERIC",
+            "questionCode": "NUMERIC",
+            "questionLabel": "Numeric",
+            "dataType": "boolean",
+            "sourceValue": "1",
+            "displayValue": "Yes",
+            "missing": false
+          },
+          {
+            "responseKey": "PLAIN",
+            "questionCode": "PLAIN",
+            "questionLabel": "Plain",
+            "dataType": "boolean",
+            "sourceValue": null,
+            "displayValue": null,
+            "missing": true
+          }
+        ],
+        "unmappedValues": [],
+        "issues": [
+          {
+            "level": "warning",
+            "code": "UNKNOWN_RESPONSE_VALUE",
+            "message": "Value maybe is not defined for YN.",
+            "questionCode": "YN",
+            "responseKey": "YN",
+            "details": {
+              "sourceValue": "maybe"
+            },
+            "responseIndex": 3
+          }
+        ]
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "UNKNOWN_RESPONSE_VALUE",
+        "message": "Value maybe is not defined for YN.",
+        "questionCode": "YN",
+        "responseKey": "YN",
+        "details": {
+          "sourceValue": "maybe"
+        },
+        "responseIndex": 3
+      }
+    ]
+  }
+}

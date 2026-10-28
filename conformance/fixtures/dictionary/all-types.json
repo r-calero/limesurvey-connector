@@ -1,0 +1,221 @@
+{
+  "description": "Remote LimeSurvey payload covering every supported native type.",
+  "loadResultGolden": "limesurvey/remote/all-types.json",
+  "aliasConfiguration": {
+    "aliases": {
+      "external_consent": "CONSIENTE"
+    },
+    "ignoredHeaders": [
+      "Seed"
+    ]
+  },
+  "questionCodes": [
+    "APOYOS",
+    "SATISF",
+    "DUAL",
+    "PRIORIDAD",
+    "NOMBRE",
+    "NO_EXISTE"
+  ],
+  "translations": [
+    {
+      "name": "records",
+      "responseIdKey": "RID",
+      "responses": [
+        {
+          "RID": 101,
+          "NOMBRE": "Ana",
+          "EDAD": 34,
+          "CONSIENTE": "Y",
+          "ESTADO": "-oth-",
+          "ESTADO_OTHER_value": "Separada",
+          "APOYOS_SQ001": "Y",
+          "APOYOS_SQ002": "N",
+          "SATISF_R1": "A2",
+          "PRIORIDAD_1": "P3",
+          "EXTRA": "sin mapeo"
+        },
+        {
+          "RID": "102",
+          "NOMBRE": null,
+          "EDAD": "",
+          "CONSIENTE": "X",
+          "external_consent": "N",
+          "TAREAS_R1_C1": 1,
+          "HORAS_R1_C1": 0
+        }
+      ]
+    },
+    {
+      "name": "flattened",
+      "responses": [
+        {
+          "CONTACTO": {
+            "TEL": "555-0101",
+            "CORREO": "ana@example.org"
+          },
+          "HORAS": {
+            "R1": {
+              "C1": 4
+            }
+          }
+        },
+        {
+          "CONTACTO_TEL": "1",
+          "CONTACTO": {
+            "TEL": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "formula-values",
+      "responseIds": [
+        "a",
+        "b"
+      ],
+      "responses": [
+        {
+          "NOMBRE": "=HYPERLINK(\"http://x\")",
+          "COMENTARIO": "+1",
+          "HIJOS_EDAD": "@SUM(A1)"
+        },
+        {
+          "NOMBRE": "-5",
+          "COMENTARIO": "\ttab"
+        }
+      ]
+    },
+    {
+      "name": "records-with-system-keys",
+      "change": "system-columns",
+      "responseIdKey": "id",
+      "responses": [
+        {
+          "id": 1,
+          "submitdate": "2026-09-01 10:05:00",
+          "lastpage": 3,
+          "startlanguage": "es",
+          "token": "tk-001",
+          "NOMBRE": "Ana"
+        },
+        {
+          "id": 2,
+          "submitdate": null,
+          "lastpage": 1,
+          "startlanguage": "es",
+          "NOMBRE": "Luis"
+        }
+      ]
+    }
+  ],
+  "csv": [
+    {
+      "name": "question-code",
+      "file": "responses/all-types.question-code.csv",
+      "options": {
+        "format": "question-code"
+      }
+    },
+    {
+      "name": "full-heading",
+      "file": "responses/all-types.full-heading.csv",
+      "options": {
+        "format": "full-heading",
+        "delimiter": ";"
+      }
+    },
+    {
+      "name": "sgqa",
+      "file": "responses/all-types.sgqa.csv",
+      "options": {
+        "format": "sgqa"
+      }
+    },
+    {
+      "name": "vv",
+      "file": "responses/all-types.vv.csv",
+      "options": {
+        "format": "vv",
+        "delimiter": "\t"
+      }
+    },
+    {
+      "name": "auto-detect",
+      "file": "responses/all-types.full-heading.csv"
+    },
+    {
+      "name": "format-mismatch",
+      "file": "responses/all-types.question-code.csv",
+      "options": {
+        "format": "sgqa"
+      }
+    },
+    {
+      "name": "custom-id-and-missing",
+      "file": "responses/all-types.custom-id.csv",
+      "options": {
+        "responseIdHeader": "folio",
+        "missingValues": [
+          "N/A",
+          "-"
+        ]
+      }
+    },
+    {
+      "name": "bom",
+      "file": "responses/all-types.bom.csv"
+    },
+    {
+      "name": "malformed",
+      "file": "responses/malformed.csv"
+    }
+  ],
+  "tabular": [
+    {
+      "name": "surplus-cells",
+      "headers": [
+        "NOMBRE",
+        "EDAD"
+      ],
+      "rows": [
+        [
+          "Ana",
+          "30",
+          "extra",
+          null
+        ],
+        [
+          "Luis"
+        ]
+      ]
+    },
+    {
+      "name": "missing-and-ignored",
+      "headers": [
+        "Response ID",
+        "NOMBRE",
+        "Seed",
+        "EDAD"
+      ],
+      "rows": [
+        [
+          "7",
+          "N/A",
+          "1",
+          "40"
+        ]
+      ],
+      "ignoredHeaders": [
+        "Seed"
+      ],
+      "missingValues": [
+        "N/A"
+      ],
+      "responseIdHeaders": [
+        "Response ID"
+      ]
+    }
+  ],
+  "includeSystemFields": true
+}

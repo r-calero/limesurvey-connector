@@ -1,0 +1,3 @@
+"survey_id","qid","group_id","question_code","response_key","question_label","data_type","cardinality","aliases","value_code","value_label"
+"900005","100","10","QUESTION_1","QUESTION_1","Pregunta de encuesta 1: campo válido","string","single","Pregunta de encuesta 1: campo válido | 900005X10X100","",""
+"900005","101","10","DUPLICATE_QUESTION","DUPLICATE_QUESTION","Pregunta de encuesta 2: primera aparición del código repetido","string","single","Pregunta de encuesta 2: primera aparición del código repetido | 900005X10X101","",""

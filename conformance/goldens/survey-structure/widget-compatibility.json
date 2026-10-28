@@ -1,0 +1,67 @@
+{
+  "short-text": [
+    "text-input"
+  ],
+  "long-text": [
+    "text-area"
+  ],
+  "number": [
+    "text-input"
+  ],
+  "date": [
+    "date-picker"
+  ],
+  "yes-no": [
+    "radio-group",
+    "button-group",
+    "dropdown"
+  ],
+  "gender": [
+    "gender-selector",
+    "radio-group",
+    "button-group",
+    "dropdown"
+  ],
+  "single-choice": [
+    "radio-group",
+    "button-group",
+    "rating",
+    "emoticon-slider",
+    "dropdown",
+    "numbered-radio-group"
+  ],
+  "list-with-comment": [
+    "dropdown"
+  ],
+  "multiple-choice": [
+    "dropdown",
+    "checkbox-group",
+    "checkbox-group-with-comments"
+  ],
+  "multiple-choice-with-comments": [
+    "checkbox-group-with-comments"
+  ],
+  "matrix": [
+    "matrix-grid"
+  ],
+  "multiple-input": [
+    "multiple-input-list"
+  ],
+  "ranking": [
+    "ranking-list"
+  ],
+  "display": [
+    "text-input"
+  ],
+  "boolean": [
+    "checkbox",
+    "toggle"
+  ],
+  "range": [
+    "slider",
+    "rating"
+  ],
+  "custom": [
+    "custom"
+  ]
+}

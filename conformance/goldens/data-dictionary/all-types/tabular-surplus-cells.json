@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {
+        "NOMBRE": "Ana",
+        "EDAD": "30"
+      },
+      {
+        "NOMBRE": "Luis",
+        "EDAD": ""
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "SOURCE_PARSE_ISSUE",
+        "responseIndex": 1,
+        "message": "Dataset row 1 contains 4 cells for 2 headers. Surplus cells are preserved as unmapped values.",
+        "details": {
+          "expectedColumns": 2,
+          "actualColumns": 4
+        }
+      },
+      {
+        "level": "warning",
+        "code": "SOURCE_PARSE_ISSUE",
+        "responseIndex": 2,
+        "message": "Dataset row 2 contains 1 cells for 2 headers. Surplus cells are preserved as unmapped values.",
+        "details": {
+          "expectedColumns": 2,
+          "actualColumns": 1
+        }
+      }
+    ],
+    "columns": [
+      "NOMBRE",
+      "EDAD"
+    ],
+    "unmappedValues": [
+      [
+        {
+          "sourceKey": "[column 3]",
+          "sourceValue": "extra",
+          "columnIndex": 2
+        },
+        {
+          "sourceKey": "[column 4]",
+          "sourceValue": null,
+          "columnIndex": 3
+        }
+      ],
+      []
+    ],
+    "responseIds": [
+      null,
+      null
+    ]
+  }
+}

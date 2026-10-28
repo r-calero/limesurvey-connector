@@ -1,0 +1,74 @@
+[
+  {
+    "questionCode": "APOYOS",
+    "questionLabel": "Apoyos recibidos — Económico",
+    "responseKey": "APOYOS_SQ001",
+    "dataType": "boolean",
+    "cardinality": "multiple",
+    "values": [
+      {
+        "code": "Y",
+        "label": "Sí"
+      },
+      {
+        "code": "N",
+        "label": "No"
+      }
+    ],
+    "aliases": [
+      "Apoyos recibidos [Económico]",
+      "910001X10X109SQ001"
+    ],
+    "parentCode": "APOYOS",
+    "qid": "109",
+    "groupId": "10"
+  },
+  {
+    "questionCode": "APOYOS",
+    "questionLabel": "Apoyos recibidos — Alimentario",
+    "responseKey": "APOYOS_SQ002",
+    "dataType": "boolean",
+    "cardinality": "multiple",
+    "values": [
+      {
+        "code": "Y",
+        "label": "Sí"
+      },
+      {
+        "code": "N",
+        "label": "No"
+      }
+    ],
+    "aliases": [
+      "Apoyos recibidos [Alimentario]",
+      "910001X10X109SQ002"
+    ],
+    "parentCode": "APOYOS",
+    "qid": "109",
+    "groupId": "10"
+  },
+  {
+    "questionCode": "APOYOS",
+    "questionLabel": "Apoyos recibidos — Psicológico",
+    "responseKey": "APOYOS_SQ003",
+    "dataType": "boolean",
+    "cardinality": "multiple",
+    "values": [
+      {
+        "code": "Y",
+        "label": "Sí"
+      },
+      {
+        "code": "N",
+        "label": "No"
+      }
+    ],
+    "aliases": [
+      "Apoyos recibidos [Psicológico]",
+      "910001X10X109SQ003"
+    ],
+    "parentCode": "APOYOS",
+    "qid": "109",
+    "groupId": "10"
+  }
+]

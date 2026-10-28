@@ -1,0 +1,60 @@
+[
+  {
+    "questionCode": "DUAL",
+    "questionLabel": "Importancia y satisfacción — Transporte — Importancia",
+    "responseKey": "DUAL_R1_0",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "I1",
+        "label": "Baja",
+        "order": 0
+      },
+      {
+        "code": "I2",
+        "label": "Alta",
+        "order": 1
+      }
+    ],
+    "aliases": [
+      "Importancia y satisfacción [Transporte] [Importancia]",
+      "Importancia y satisfacción [Transporte][Importancia]",
+      "DUAL_R1#0",
+      "910001X10X115R1#0",
+      "910001X10X115R1_0"
+    ],
+    "parentCode": "DUAL_R1",
+    "qid": "115",
+    "groupId": "10"
+  },
+  {
+    "questionCode": "DUAL",
+    "questionLabel": "Importancia y satisfacción — Transporte — Satisfacción",
+    "responseKey": "DUAL_R1_1",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "S1",
+        "label": "Poca",
+        "order": 0
+      },
+      {
+        "code": "S2",
+        "label": "Mucha",
+        "order": 1
+      }
+    ],
+    "aliases": [
+      "Importancia y satisfacción [Transporte] [Satisfacción]",
+      "Importancia y satisfacción [Transporte][Satisfacción]",
+      "DUAL_R1#1",
+      "910001X10X115R1#1",
+      "910001X10X115R1_1"
+    ],
+    "parentCode": "DUAL_R1",
+    "qid": "115",
+    "groupId": "10"
+  }
+]

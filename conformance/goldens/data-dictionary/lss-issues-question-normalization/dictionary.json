@@ -1,0 +1,90 @@
+{
+  "fixture": "limesurvey/lss/issues-question-normalization.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "900005",
+    "surveyTitle": "Ejemplo sintético de diagnósticos de preguntas",
+    "language": "es",
+    "fields": [
+      {
+        "questionCode": "QUESTION_1",
+        "questionLabel": "Pregunta de encuesta 1: campo válido",
+        "responseKey": "QUESTION_1",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Pregunta de encuesta 1: campo válido",
+          "900005X10X100"
+        ],
+        "qid": "100",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "DUPLICATE_QUESTION",
+        "questionLabel": "Pregunta de encuesta 2: primera aparición del código repetido",
+        "responseKey": "DUPLICATE_QUESTION",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Pregunta de encuesta 2: primera aparición del código repetido",
+          "900005X10X101"
+        ],
+        "qid": "101",
+        "groupId": "10"
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "Subquestion 106 references missing parent 999.",
+        "details": {
+          "sourceCode": "MISSING_PARENT",
+          "fieldId": "106"
+        }
+      },
+      {
+        "level": "error",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "Question code DUPLICATE_QUESTION is duplicated and the later question was skipped.",
+        "questionCode": "DUPLICATE_QUESTION",
+        "details": {
+          "sourceCode": "DUPLICATE_QUESTION_CODE",
+          "fieldId": "102"
+        }
+      },
+      {
+        "level": "error",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "Question 103 has no code and was skipped.",
+        "details": {
+          "sourceCode": "MISSING_QUESTION_CODE",
+          "fieldId": "103"
+        }
+      },
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "LimeSurvey question type Z is not supported and was skipped.",
+        "questionCode": "UNSUPPORTED_QUESTION",
+        "details": {
+          "sourceCode": "UNSUPPORTED_TYPE",
+          "fieldId": "104",
+          "sourceType": "Z"
+        }
+      },
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "Question QUESTION_WITHOUT_OPTIONS has no answer options. It was omitted because it has no usable input.",
+        "questionCode": "QUESTION_WITHOUT_OPTIONS",
+        "details": {
+          "sourceCode": "EMPTY_OPTIONS",
+          "fieldId": "105",
+          "omitted": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+ <LimeSurveyDocType>Survey</LimeSurveyDocType>
+ <DBVersion>355</DBVersion>
+ <languages>
+  <language>es-MX</language>
+ </languages>
+ <answers>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>code</fieldname>
+   <fieldname>answer</fieldname>
+   <fieldname>sortorder</fieldname>
+   <fieldname>assessment_value</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>scale_id</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid>11</qid>
+    <code>A1</code>
+    <answer>Opción 1</answer>
+    <sortorder>1</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A2</code>
+    <answer>Opción 2</answer>
+    <sortorder>2</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A3</code>
+    <answer>Opción 3</answer>
+    <sortorder>3</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A4</code>
+    <answer>Opción 4</answer>
+    <sortorder>4</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A5</code>
+    <answer>Opción 5</answer>
+    <sortorder>5</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A6</code>
+    <answer>Opción 6</answer>
+    <sortorder>6</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A7</code>
+    <answer>Opción 7</answer>
+    <sortorder>7</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A8</code>
+    <answer>Opción 8</answer>
+    <sortorder>8</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>11</qid>
+    <code>A9</code>
+    <answer>Opción 9</answer>
+    <sortorder>9</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A1</code>
+    <answer>Opción 10</answer>
+    <sortorder>1</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A1</code>
+    <answer>Opción 11</answer>
+    <sortorder>1</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A2</code>
+    <answer>Opción 12</answer>
+    <sortorder>2</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A2</code>
+    <answer>Opción 13</answer>
+    <sortorder>2</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A3</code>
+    <answer>Opción 14</answer>
+    <sortorder>3</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A3</code>
+    <answer>Opción 15</answer>
+    <sortorder>3</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A4</code>
+    <answer>Opción 16</answer>
+    <sortorder>4</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A4</code>
+    <answer>Opción 17</answer>
+    <sortorder>4</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A5</code>
+    <answer>Opción 18</answer>
+    <sortorder>5</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>59897</qid>
+    <code>A5</code>
+    <answer>Opción 19</answer>
+    <sortorder>5</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+   </row>
+   <row>
+    <qid>79661</qid>
+    <code>A1</code>
+    <answer>Opción 20</answer>
+    <sortorder>1</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79661</qid>
+    <code>A2</code>
+    <answer>Opción 21</answer>
+    <sortorder>2</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79661</qid>
+    <code>A3</code>
+    <answer>Opción 22</answer>
+    <sortorder>3</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79647</qid>
+    <code>A1</code>
+    <answer>Opción 23</answer>
+    <sortorder>1</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79647</qid>
+    <code>A2</code>
+    <answer>Opción 24</answer>
+    <sortorder>2</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79647</qid>
+    <code>A3</code>
+    <answer>Opción 25</answer>
+    <sortorder>3</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79677</qid>
+    <code>A1</code>
+    <answer>Opción 60</answer>
+    <sortorder>1</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+   <row>
+    <qid>79677</qid>
+    <code>A2</code>
+    <answer>Opción 61</answer>
+    <sortorder>2</sortorder>
+    <assessment_value>0</assessment_value>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+   </row>
+  </rows>
+ </answers>
+ <conditions>
+  <fields>
+   <fieldname>cid</fieldname>
+   <fieldname>qid</fieldname>
+   <fieldname>cqid</fieldname>
+   <fieldname>cfieldname</fieldname>
+   <fieldname>method</fieldname>
+   <fieldname>value</fieldname>
+   <fieldname>scenario</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <cid>20097</cid>
+    <qid>79665</qid>
+    <cqid>79648</cqid>
+    <cfieldname>900355X3X79648</cfieldname>
+    <method>==</method>
+    <value>F</value>
+    <scenario>1</scenario>
+   </row>
+  </rows>
+ </conditions>
+ <groups>
+  <fields>
+   <fieldname>gid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>group_name</fieldname>
+   <fieldname>group_order</fieldname>
+   <fieldname>description</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>randomization_group</fieldname>
+   <fieldname>grelevance</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <gid>3</gid>
+    <sid>900355</sid>
+    <group_name>Grupo 26</group_name>
+    <group_order>1</group_order>
+    <description />
+    <language>es-MX</language>
+    <randomization_group />
+    <grelevance>1</grelevance>
+   </row>
+   <row>
+    <gid>991</gid>
+    <sid>900355</sid>
+    <group_name>Grupo 27</group_name>
+    <group_order>2</group_order>
+    <description>Descripción 28</description>
+    <language>es-MX</language>
+    <randomization_group />
+    <grelevance />
+   </row>
+   <row>
+    <gid>992</gid>
+    <sid>900355</sid>
+    <group_name>Grupo 29</group_name>
+    <group_order>3</group_order>
+    <description />
+    <language>es-MX</language>
+    <randomization_group />
+    <grelevance />
+   </row>
+  </rows>
+ </groups>
+ <questions>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>parent_qid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>gid</fieldname>
+   <fieldname>type</fieldname>
+   <fieldname>title</fieldname>
+   <fieldname>question</fieldname>
+   <fieldname>preg</fieldname>
+   <fieldname>help</fieldname>
+   <fieldname>other</fieldname>
+   <fieldname>mandatory</fieldname>
+   <fieldname>question_order</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>scale_id</fieldname>
+   <fieldname>same_default</fieldname>
+   <fieldname>relevance</fieldname>
+   <fieldname>modulename</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid>11</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>F</type>
+    <title>Q1</title>
+    <question>Pregunta 30</question>
+    <preg />
+    <help>Ayuda 31</help>
+    <other>N</other>
+    <mandatory>Y</mandatory>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>59897</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>1</type>
+    <title>Q2</title>
+    <question>Pregunta 32</question>
+    <preg />
+    <help>Ayuda 33</help>
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance />
+    <modulename />
+   </row>
+   <row>
+    <qid>79647</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>R</type>
+    <title>Q3</title>
+    <question>Pregunta 34</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79648</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>G</type>
+    <title>Q4</title>
+    <question>Pregunta 35</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79649</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>N</type>
+    <title>Q5</title>
+    <question>Pregunta 36</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79650</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>E</type>
+    <title>Q6</title>
+    <question>Pregunta 37</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79654</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>:</type>
+    <title>Q7</title>
+    <question>Pregunta 38</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>4</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79661</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>H</type>
+    <title>Q8</title>
+    <question>Pregunta 39</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>5</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79665</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>992</gid>
+    <type>Y</type>
+    <title>Q9</title>
+    <question>Pregunta 40</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>((900355X3X79648.NAOK == "F"))</relevance>
+   </row>
+   <row>
+    <qid>79666</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>992</gid>
+    <type>M</type>
+    <title>Q10</title>
+    <question>Pregunta 41</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>Q9.NAOK=="Y"</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79673</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>992</gid>
+    <type>P</type>
+    <title>Q11</title>
+    <question>Pregunta 42</question>
+    <preg />
+    <help />
+    <other>N</other>
+    <mandatory>N</mandatory>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79677</qid>
+    <parent_qid>0</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>!</type>
+    <title>Q12</title>
+    <question>Pregunta 62</question>
+    <preg />
+    <help />
+    <other>Y</other>
+    <mandatory>N</mandatory>
+    <question_order>7</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+  </rows>
+ </questions>
+ <subquestions>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>parent_qid</fieldname>
+   <fieldname>sid</fieldname>
+   <fieldname>gid</fieldname>
+   <fieldname>type</fieldname>
+   <fieldname>title</fieldname>
+   <fieldname>question</fieldname>
+   <fieldname>preg</fieldname>
+   <fieldname>help</fieldname>
+   <fieldname>other</fieldname>
+   <fieldname>mandatory</fieldname>
+   <fieldname>question_order</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>scale_id</fieldname>
+   <fieldname>same_default</fieldname>
+   <fieldname>relevance</fieldname>
+   <fieldname>modulename</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid>12</qid>
+    <parent_qid>11</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>F</type>
+    <title>SQ001</title>
+    <question>Pregunta 43</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>13</qid>
+    <parent_qid>11</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>F</type>
+    <title>SQ002</title>
+    <question>Pregunta 44</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>14</qid>
+    <parent_qid>11</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>F</type>
+    <title>SQ003</title>
+    <question>Pregunta 45</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>15</qid>
+    <parent_qid>11</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>F</type>
+    <title>SQ004</title>
+    <question>Pregunta 46</question>
+    <other>N</other>
+    <question_order>4</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79644</qid>
+    <parent_qid>59897</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 47</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79645</qid>
+    <parent_qid>59897</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 48</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79646</qid>
+    <parent_qid>59897</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 49</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79651</qid>
+    <parent_qid>79650</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 50</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79652</qid>
+    <parent_qid>79650</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 51</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79653</qid>
+    <parent_qid>79650</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 52</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79655</qid>
+    <parent_qid>79654</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 53</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79656</qid>
+    <parent_qid>79654</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 54</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+    <same_default>0</same_default>
+    <relevance />
+   </row>
+   <row>
+    <qid>79657</qid>
+    <parent_qid>79654</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 55</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79658</qid>
+    <parent_qid>79654</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 56</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79659</qid>
+    <parent_qid>79654</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 57</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+    <same_default>0</same_default>
+    <relevance />
+   </row>
+   <row>
+    <qid>79660</qid>
+    <parent_qid>79654</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 58</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>1</scale_id>
+    <same_default>0</same_default>
+    <relevance />
+   </row>
+   <row>
+    <qid>79662</qid>
+    <parent_qid>79661</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 59</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79663</qid>
+    <parent_qid>79661</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 60</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79664</qid>
+    <parent_qid>79661</parent_qid>
+    <sid>900355</sid>
+    <gid>991</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 61</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+   </row>
+   <row>
+    <qid>79667</qid>
+    <parent_qid>79666</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 62</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79668</qid>
+    <parent_qid>79666</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 63</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79669</qid>
+    <parent_qid>79666</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 64</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79670</qid>
+    <parent_qid>79666</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ004</title>
+    <question>Pregunta 65</question>
+    <other>N</other>
+    <question_order>4</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79671</qid>
+    <parent_qid>79666</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ005</title>
+    <question>Pregunta 66</question>
+    <other>N</other>
+    <question_order>5</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79672</qid>
+    <parent_qid>79666</parent_qid>
+    <sid>900355</sid>
+    <gid>3</gid>
+    <type>T</type>
+    <title>SQ006</title>
+    <question>Pregunta 67</question>
+    <other>N</other>
+    <question_order>6</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79674</qid>
+    <parent_qid>79673</parent_qid>
+    <sid>900355</sid>
+    <gid>992</gid>
+    <type>T</type>
+    <title>SQ001</title>
+    <question>Pregunta 68</question>
+    <other>N</other>
+    <question_order>1</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79675</qid>
+    <parent_qid>79673</parent_qid>
+    <sid>900355</sid>
+    <gid>992</gid>
+    <type>T</type>
+    <title>SQ002</title>
+    <question>Pregunta 69</question>
+    <other>N</other>
+    <question_order>2</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+   <row>
+    <qid>79676</qid>
+    <parent_qid>79673</parent_qid>
+    <sid>900355</sid>
+    <gid>992</gid>
+    <type>T</type>
+    <title>SQ003</title>
+    <question>Pregunta 70</question>
+    <other>N</other>
+    <question_order>3</question_order>
+    <language>es-MX</language>
+    <scale_id>0</scale_id>
+    <same_default>0</same_default>
+    <relevance>1</relevance>
+    <modulename />
+   </row>
+  </rows>
+ </subquestions>
+ <question_attributes>
+  <fields>
+   <fieldname>qid</fieldname>
+   <fieldname>attribute</fieldname>
+   <fieldname>value</fieldname>
+   <fieldname>language</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <qid>11</qid>
+    <attribute>statistics_showgraph</attribute>
+    <value>0</value>
+   </row>
+   <row>
+    <qid>79647</qid>
+    <attribute>max_subquestions</attribute>
+    <value>3</value>
+   </row>
+  </rows>
+ </question_attributes>
+ <surveys>
+  <fields>
+   <fieldname>sid</fieldname>
+   <fieldname>gsid</fieldname>
+   <fieldname>admin</fieldname>
+   <fieldname>expires</fieldname>
+   <fieldname>startdate</fieldname>
+   <fieldname>adminemail</fieldname>
+   <fieldname>anonymized</fieldname>
+   <fieldname>faxto</fieldname>
+   <fieldname>format</fieldname>
+   <fieldname>savetimings</fieldname>
+   <fieldname>template</fieldname>
+   <fieldname>language</fieldname>
+   <fieldname>additional_languages</fieldname>
+   <fieldname>datestamp</fieldname>
+   <fieldname>usecookie</fieldname>
+   <fieldname>allowregister</fieldname>
+   <fieldname>allowsave</fieldname>
+   <fieldname>autonumber_start</fieldname>
+   <fieldname>autoredirect</fieldname>
+   <fieldname>allowprev</fieldname>
+   <fieldname>printanswers</fieldname>
+   <fieldname>ipaddr</fieldname>
+   <fieldname>refurl</fieldname>
+   <fieldname>showsurveypolicynotice</fieldname>
+   <fieldname>publicstatistics</fieldname>
+   <fieldname>publicgraphs</fieldname>
+   <fieldname>listpublic</fieldname>
+   <fieldname>htmlemail</fieldname>
+   <fieldname>sendconfirmation</fieldname>
+   <fieldname>tokenanswerspersistence</fieldname>
+   <fieldname>assessments</fieldname>
+   <fieldname>usecaptcha</fieldname>
+   <fieldname>usetokens</fieldname>
+   <fieldname>bounce_email</fieldname>
+   <fieldname>attributedescriptions</fieldname>
+   <fieldname>emailresponseto</fieldname>
+   <fieldname>emailnotificationto</fieldname>
+   <fieldname>tokenlength</fieldname>
+   <fieldname>showxquestions</fieldname>
+   <fieldname>showgroupinfo</fieldname>
+   <fieldname>shownoanswer</fieldname>
+   <fieldname>showqnumcode</fieldname>
+   <fieldname>bouncetime</fieldname>
+   <fieldname>bounceprocessing</fieldname>
+   <fieldname>bounceaccounttype</fieldname>
+   <fieldname>bounceaccounthost</fieldname>
+   <fieldname>bounceaccountpass</fieldname>
+   <fieldname>bounceaccountencryption</fieldname>
+   <fieldname>bounceaccountuser</fieldname>
+   <fieldname>showwelcome</fieldname>
+   <fieldname>showprogress</fieldname>
+   <fieldname>questionindex</fieldname>
+   <fieldname>navigationdelay</fieldname>
+   <fieldname>nokeyboard</fieldname>
+   <fieldname>alloweditaftercompletion</fieldname>
+   <fieldname>googleanalyticsstyle</fieldname>
+   <fieldname>googleanalyticsapikey</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <sid>900355</sid>
+    <gsid>1</gsid>
+    <admin />
+    <adminemail />
+    <anonymized>N</anonymized>
+    <faxto />
+    <format>G</format>
+    <savetimings>Y</savetimings>
+    <template>fruity</template>
+    <language>es-MX</language>
+    <additional_languages />
+    <datestamp>Y</datestamp>
+    <usecookie>N</usecookie>
+    <allowregister>N</allowregister>
+    <allowsave>Y</allowsave>
+    <autonumber_start>0</autonumber_start>
+    <autoredirect>N</autoredirect>
+    <allowprev>N</allowprev>
+    <printanswers>N</printanswers>
+    <ipaddr>Y</ipaddr>
+    <refurl>Y</refurl>
+    <showsurveypolicynotice>0</showsurveypolicynotice>
+    <publicstatistics>N</publicstatistics>
+    <publicgraphs>N</publicgraphs>
+    <listpublic>N</listpublic>
+    <htmlemail>Y</htmlemail>
+    <sendconfirmation>Y</sendconfirmation>
+    <tokenanswerspersistence>N</tokenanswerspersistence>
+    <assessments>N</assessments>
+    <usecaptcha>N</usecaptcha>
+    <usetokens>N</usetokens>
+    <bounce_email />
+    <emailresponseto />
+    <emailnotificationto />
+    <tokenlength>15</tokenlength>
+    <showxquestions>Y</showxquestions>
+    <showgroupinfo>B</showgroupinfo>
+    <shownoanswer>N</shownoanswer>
+    <showqnumcode>X</showqnumcode>
+    <bounceprocessing>N</bounceprocessing>
+    <showwelcome>Y</showwelcome>
+    <showprogress>Y</showprogress>
+    <questionindex>0</questionindex>
+    <navigationdelay>0</navigationdelay>
+    <nokeyboard>N</nokeyboard>
+    <alloweditaftercompletion>N</alloweditaftercompletion>
+   </row>
+  </rows>
+ </surveys>
+ <surveys_languagesettings>
+  <fields>
+   <fieldname>surveyls_survey_id</fieldname>
+   <fieldname>surveyls_language</fieldname>
+   <fieldname>surveyls_title</fieldname>
+   <fieldname>surveyls_description</fieldname>
+   <fieldname>surveyls_welcometext</fieldname>
+   <fieldname>surveyls_endtext</fieldname>
+   <fieldname>surveyls_policy_notice</fieldname>
+   <fieldname>surveyls_policy_error</fieldname>
+   <fieldname>surveyls_policy_notice_label</fieldname>
+   <fieldname>surveyls_url</fieldname>
+   <fieldname>surveyls_urldescription</fieldname>
+   <fieldname>surveyls_email_invite_subj</fieldname>
+   <fieldname>surveyls_email_invite</fieldname>
+   <fieldname>surveyls_email_remind_subj</fieldname>
+   <fieldname>surveyls_email_remind</fieldname>
+   <fieldname>surveyls_email_register_subj</fieldname>
+   <fieldname>surveyls_email_register</fieldname>
+   <fieldname>surveyls_email_confirm_subj</fieldname>
+   <fieldname>surveyls_email_confirm</fieldname>
+   <fieldname>surveyls_dateformat</fieldname>
+   <fieldname>surveyls_attributecaptions</fieldname>
+   <fieldname>email_admin_notification_subj</fieldname>
+   <fieldname>email_admin_notification</fieldname>
+   <fieldname>email_admin_responses_subj</fieldname>
+   <fieldname>email_admin_responses</fieldname>
+   <fieldname>surveyls_numberformat</fieldname>
+   <fieldname>attachments</fieldname>
+  </fields>
+  <rows>
+   <row>
+    <surveyls_survey_id>900355</surveyls_survey_id>
+    <surveyls_language>es-MX</surveyls_language>
+    <surveyls_title>Encuesta 71</surveyls_title>
+    <surveyls_description />
+    <surveyls_welcometext />
+    <surveyls_endtext />
+    <surveyls_url />
+    <surveyls_urldescription />
+    <surveyls_email_invite_subj />
+    <surveyls_email_invite />
+    <surveyls_email_remind_subj />
+    <surveyls_email_remind />
+    <surveyls_email_register_subj />
+    <surveyls_email_register />
+    <surveyls_email_confirm_subj />
+    <surveyls_email_confirm />
+    <surveyls_dateformat>1</surveyls_dateformat>
+    <email_admin_notification_subj />
+    <email_admin_notification />
+    <email_admin_responses_subj />
+    <email_admin_responses />
+    <surveyls_numberformat>0</surveyls_numberformat>
+   </row>
+  </rows>
+ </surveys_languagesettings>
+ <themes>
+  <theme>
+   <sid>900355</sid>
+   <template_name>fruity</template_name>
+   <config>
+    <options>inherit</options>
+   </config>
+  </theme>
+ </themes>
+ <themes_inherited>
+  <theme>
+   <sid>900355</sid>
+   <template_name>fruity</template_name>
+   <config>
+    <options>
+     <font>noto</font>
+     <bodybackgroundcolor>#ffffff</bodybackgroundcolor>
+     <fontcolor>#444444</fontcolor>
+     <questionbackgroundcolor>#ffffff</questionbackgroundcolor>
+     <checkicon>f00c</checkicon>
+     <bodyanimation>fadeInRight</bodyanimation>
+     <bodyanimationduration>500</bodyanimationduration>
+     <questionanimation>flipInX</questionanimation>
+     <questionanimationduration>500</questionanimationduration>
+     <alertanimation>shake</alertanimation>
+     <alertanimationduration>500</alertanimationduration>
+     <checkboxanimation>rubberBand</checkboxanimation>
+     <checkboxanimationduration>500</checkboxanimationduration>
+     <radioanimation>zoomIn</radioanimation>
+     <radioanimationduration>500</radioanimationduration>
+     <ajaxmode>on</ajaxmode>
+     <container>on</container>
+     <questionborder>on</questionborder>
+     <questioncontainershadow>on</questioncontainershadow>
+     <showpopups>1</showpopups>
+     <zebrastriping>off</zebrastriping>
+     <stickymatrixheaders>off</stickymatrixheaders>
+     <greyoutselected>off</greyoutselected>
+     <hideprivacyinfo>off</hideprivacyinfo>
+     <crosshover>off</crosshover>
+     <backgroundimage>off</backgroundimage>
+     <brandlogo>off</brandlogo>
+     <animatebody>on</animatebody>
+     <animatequestion>off</animatequestion>
+     <animatealert>off</animatealert>
+     <animatecheckbox>on</animatecheckbox>
+     <animateradio>on</animateradio>
+    </options>
+   </config>
+  </theme>
+ </themes_inherited>
+</document>

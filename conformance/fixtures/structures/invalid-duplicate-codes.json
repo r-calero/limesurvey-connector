@@ -1,0 +1,22 @@
+{
+  "description": "Two fields share a code.",
+  "valid": false,
+  "value": {
+    "surveyStructureVersion": "2.1.0",
+    "id": "dup",
+    "fields": [
+      {
+        "id": "a",
+        "code": "Q1",
+        "type": "short-text",
+        "label": "First"
+      },
+      {
+        "id": "b",
+        "code": "Q1",
+        "type": "short-text",
+        "label": "Second"
+      }
+    ]
+  }
+}

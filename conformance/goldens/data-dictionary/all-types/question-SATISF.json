@@ -1,0 +1,58 @@
+[
+  {
+    "questionCode": "SATISF",
+    "questionLabel": "Satisfacción — Atención",
+    "responseKey": "SATISF_R1",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "A1",
+        "label": "De acuerdo"
+      },
+      {
+        "code": "A2",
+        "label": "Neutral"
+      },
+      {
+        "code": "A3",
+        "label": "En desacuerdo"
+      }
+    ],
+    "aliases": [
+      "Satisfacción [Atención]",
+      "910001X10X111R1"
+    ],
+    "parentCode": "SATISF",
+    "qid": "111",
+    "groupId": "10"
+  },
+  {
+    "questionCode": "SATISF",
+    "questionLabel": "Satisfacción — Tiempo de espera",
+    "responseKey": "SATISF_R2",
+    "dataType": "code",
+    "cardinality": "single",
+    "values": [
+      {
+        "code": "A1",
+        "label": "De acuerdo"
+      },
+      {
+        "code": "A2",
+        "label": "Neutral"
+      },
+      {
+        "code": "A3",
+        "label": "En desacuerdo"
+      }
+    ],
+    "aliases": [
+      "Satisfacción [Tiempo de espera]",
+      "910001X10X111R2"
+    ],
+    "parentCode": "SATISF",
+    "qid": "111",
+    "groupId": "10"
+  }
+]

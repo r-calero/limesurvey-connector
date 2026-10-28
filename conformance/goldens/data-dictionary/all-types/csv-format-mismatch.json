@@ -1,0 +1,1661 @@
+{
+  "change": "system-columns",
+  "ok": true,
+  "result": {
+    "canonical": {
+      "responses": [
+        {
+          "submitdate": "2026-09-01 10:00:00",
+          "lastpage": "3",
+          "startlanguage": "es",
+          "NOMBRE": "Ana López",
+          "COMENTARIO": "",
+          "EDAD": "34",
+          "NACIMIENTO": "1991-05-02",
+          "CONSIENTE": "Y",
+          "GENERO": "F",
+          "ESTADO": "2",
+          "APOYOS_SQ001": "Y",
+          "APOYOS_SQ002": "N",
+          "APOYOS_SQ003": "",
+          "CUIDADOS_SQ001": "",
+          "SATISF_R1": "A1",
+          "SATISF_R2": "A3",
+          "HORAS_R1_C1": "4",
+          "HORAS_R1_C2": "0",
+          "TAREAS_R1_C1": "",
+          "TAREAS_R1_C2": "",
+          "NOTAS_R1_C1": "",
+          "DUAL_R1_0": "I2",
+          "DUAL_R1_1": "S1",
+          "ESCALA_R1": "8",
+          "CONTACTO_TEL": "",
+          "PRIORIDAD_1": "P2",
+          "PRIORIDAD_2": "P1",
+          "PRIORIDAD_3": "P3",
+          "HIJOS": "2",
+          "HIJOS_EDAD": "5"
+        },
+        {
+          "submitdate": "2026-09-01 10:00:00",
+          "lastpage": "3",
+          "startlanguage": "es",
+          "NOMBRE": "Luis",
+          "COMENTARIO": "",
+          "EDAD": null,
+          "NACIMIENTO": "",
+          "CONSIENTE": "N",
+          "GENERO": "M",
+          "ESTADO": "-oth-",
+          "APOYOS_SQ001": "N",
+          "APOYOS_SQ002": "",
+          "APOYOS_SQ003": "",
+          "CUIDADOS_SQ001": "",
+          "SATISF_R1": "A9",
+          "SATISF_R2": "",
+          "HORAS_R1_C1": "",
+          "HORAS_R1_C2": "",
+          "TAREAS_R1_C1": "",
+          "TAREAS_R1_C2": "",
+          "NOTAS_R1_C1": "",
+          "DUAL_R1_0": "",
+          "DUAL_R1_1": "",
+          "ESCALA_R1": "11",
+          "CONTACTO_TEL": "",
+          "PRIORIDAD_1": "",
+          "PRIORIDAD_2": "",
+          "PRIORIDAD_3": "",
+          "HIJOS": "0",
+          "HIJOS_EDAD": ""
+        },
+        {
+          "submitdate": "2026-09-01 10:00:00",
+          "lastpage": "3",
+          "startlanguage": "es",
+          "NOMBRE": "=1+1",
+          "COMENTARIO": "",
+          "EDAD": "",
+          "NACIMIENTO": "",
+          "CONSIENTE": "Y",
+          "GENERO": "",
+          "ESTADO": "",
+          "APOYOS_SQ001": "",
+          "APOYOS_SQ002": "",
+          "APOYOS_SQ003": "",
+          "CUIDADOS_SQ001": "Y",
+          "SATISF_R1": "",
+          "SATISF_R2": "",
+          "HORAS_R1_C1": "",
+          "HORAS_R1_C2": "",
+          "TAREAS_R1_C1": "1",
+          "TAREAS_R1_C2": "0",
+          "NOTAS_R1_C1": "Sin cambios",
+          "DUAL_R1_0": "",
+          "DUAL_R1_1": "",
+          "ESCALA_R1": "",
+          "CONTACTO_TEL": "555-0101",
+          "PRIORIDAD_1": "",
+          "PRIORIDAD_2": "",
+          "PRIORIDAD_3": "",
+          "HIJOS": "",
+          "HIJOS_EDAD": ""
+        }
+      ],
+      "issues": [
+        {
+          "level": "error",
+          "code": "EXPORT_FORMAT_MISMATCH",
+          "message": "The CSV headers do not match the declared sgqa LimeSurvey export format.",
+          "details": {
+            "format": "sgqa",
+            "headers": [
+              "Response ID",
+              "Submit date",
+              "Last page",
+              "Start language",
+              "Seed",
+              "NOMBRE",
+              "COMENTARIO",
+              "EDAD",
+              "NACIMIENTO",
+              "CONSIENTE",
+              "GENERO",
+              "ESTADO",
+              "ESTADO_OTHER_value",
+              "APOYOS_SQ001",
+              "APOYOS_SQ002",
+              "APOYOS_SQ003",
+              "CUIDADOS_SQ001",
+              "CUIDADOS_SQ001_comment",
+              "CUIDADOS_OTHER_value",
+              "SATISF_R1"
+            ]
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header ESTADO_OTHER_value could not be mapped to a canonical response key.",
+          "responseKey": "ESTADO_OTHER_value",
+          "details": {
+            "columnIndex": 12
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header CUIDADOS_SQ001_comment could not be mapped to a canonical response key.",
+          "responseKey": "CUIDADOS_SQ001_comment",
+          "details": {
+            "columnIndex": 17
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header CUIDADOS_OTHER_value could not be mapped to a canonical response key.",
+          "responseKey": "CUIDADOS_OTHER_value",
+          "details": {
+            "columnIndex": 18
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header COLUMNA_EXTERNA could not be mapped to a canonical response key.",
+          "responseKey": "COLUMNA_EXTERNA",
+          "details": {
+            "columnIndex": 35
+          }
+        }
+      ],
+      "columns": [
+        null,
+        "submitdate",
+        "lastpage",
+        "startlanguage",
+        null,
+        "NOMBRE",
+        "COMENTARIO",
+        "EDAD",
+        "NACIMIENTO",
+        "CONSIENTE",
+        "GENERO",
+        "ESTADO",
+        null,
+        "APOYOS_SQ001",
+        "APOYOS_SQ002",
+        "APOYOS_SQ003",
+        "CUIDADOS_SQ001",
+        null,
+        null,
+        "SATISF_R1",
+        "SATISF_R2",
+        "HORAS_R1_C1",
+        "HORAS_R1_C2",
+        "TAREAS_R1_C1",
+        "TAREAS_R1_C2",
+        "NOTAS_R1_C1",
+        "DUAL_R1_0",
+        "DUAL_R1_1",
+        "ESCALA_R1",
+        "CONTACTO_TEL",
+        "PRIORIDAD_1",
+        "PRIORIDAD_2",
+        "PRIORIDAD_3",
+        "HIJOS",
+        "HIJOS_EDAD",
+        null
+      ],
+      "unmappedValues": [
+        [
+          {
+            "sourceKey": "ESTADO_OTHER_value",
+            "sourceValue": "",
+            "columnIndex": 12
+          },
+          {
+            "sourceKey": "CUIDADOS_SQ001_comment",
+            "sourceValue": "",
+            "columnIndex": 17
+          },
+          {
+            "sourceKey": "CUIDADOS_OTHER_value",
+            "sourceValue": "",
+            "columnIndex": 18
+          },
+          {
+            "sourceKey": "COLUMNA_EXTERNA",
+            "sourceValue": "x",
+            "columnIndex": 35
+          }
+        ],
+        [
+          {
+            "sourceKey": "ESTADO_OTHER_value",
+            "sourceValue": "Separado",
+            "columnIndex": 12
+          },
+          {
+            "sourceKey": "CUIDADOS_SQ001_comment",
+            "sourceValue": "",
+            "columnIndex": 17
+          },
+          {
+            "sourceKey": "CUIDADOS_OTHER_value",
+            "sourceValue": "",
+            "columnIndex": 18
+          },
+          {
+            "sourceKey": "COLUMNA_EXTERNA",
+            "sourceValue": "x",
+            "columnIndex": 35
+          }
+        ],
+        [
+          {
+            "sourceKey": "ESTADO_OTHER_value",
+            "sourceValue": "",
+            "columnIndex": 12
+          },
+          {
+            "sourceKey": "CUIDADOS_SQ001_comment",
+            "sourceValue": "Diario",
+            "columnIndex": 17
+          },
+          {
+            "sourceKey": "CUIDADOS_OTHER_value",
+            "sourceValue": "Acompañamiento",
+            "columnIndex": 18
+          },
+          {
+            "sourceKey": "COLUMNA_EXTERNA",
+            "sourceValue": "x",
+            "columnIndex": 35
+          }
+        ]
+      ],
+      "responseIds": [
+        "1",
+        "2",
+        "3"
+      ],
+      "headers": [
+        "Response ID",
+        "Submit date",
+        "Last page",
+        "Start language",
+        "Seed",
+        "NOMBRE",
+        "COMENTARIO",
+        "EDAD",
+        "NACIMIENTO",
+        "CONSIENTE",
+        "GENERO",
+        "ESTADO",
+        "ESTADO_OTHER_value",
+        "APOYOS_SQ001",
+        "APOYOS_SQ002",
+        "APOYOS_SQ003",
+        "CUIDADOS_SQ001",
+        "CUIDADOS_SQ001_comment",
+        "CUIDADOS_OTHER_value",
+        "SATISF_R1",
+        "SATISF_R2",
+        "HORAS_R1_C1",
+        "HORAS_R1_C2",
+        "TAREAS_R1_C1",
+        "TAREAS_R1_C2",
+        "NOTAS_R1_C1",
+        "DUAL_R1_0",
+        "DUAL_R1_1",
+        "ESCALA_R1",
+        "CONTACTO_TEL",
+        "PRIORIDAD_1",
+        "PRIORIDAD_2",
+        "PRIORIDAD_3",
+        "HIJOS",
+        "HIJOS_EDAD",
+        "COLUMNA_EXTERNA"
+      ]
+    },
+    "translated": {
+      "responses": [
+        {
+          "responseIndex": 1,
+          "responseId": "1",
+          "fields": [
+            {
+              "responseKey": "submitdate",
+              "questionCode": "submitdate",
+              "questionLabel": "Fecha de envío",
+              "dataType": "date",
+              "sourceValue": "2026-09-01 10:00:00",
+              "displayValue": "2026-09-01 10:00:00",
+              "missing": false
+            },
+            {
+              "responseKey": "lastpage",
+              "questionCode": "lastpage",
+              "questionLabel": "Última página",
+              "dataType": "number",
+              "sourceValue": "3",
+              "displayValue": "3",
+              "missing": false
+            },
+            {
+              "responseKey": "startlanguage",
+              "questionCode": "startlanguage",
+              "questionLabel": "Idioma de inicio",
+              "dataType": "string",
+              "sourceValue": "es",
+              "displayValue": "es",
+              "missing": false
+            },
+            {
+              "responseKey": "NOMBRE",
+              "questionCode": "NOMBRE",
+              "questionLabel": "Nombre completo",
+              "dataType": "string",
+              "sourceValue": "Ana López",
+              "displayValue": "Ana López",
+              "missing": false
+            },
+            {
+              "responseKey": "COMENTARIO",
+              "questionCode": "COMENTARIO",
+              "questionLabel": "Comentario libre",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "EDAD",
+              "questionCode": "EDAD",
+              "questionLabel": "Edad en años",
+              "dataType": "number",
+              "sourceValue": "34",
+              "displayValue": "34",
+              "missing": false
+            },
+            {
+              "responseKey": "NACIMIENTO",
+              "questionCode": "NACIMIENTO",
+              "questionLabel": "Fecha de nacimiento",
+              "dataType": "date",
+              "sourceValue": "1991-05-02",
+              "displayValue": "1991-05-02",
+              "missing": false
+            },
+            {
+              "responseKey": "CONSIENTE",
+              "questionCode": "CONSIENTE",
+              "questionLabel": "¿Acepta participar?",
+              "dataType": "code",
+              "sourceValue": "Y",
+              "displayValue": "Sí",
+              "missing": false
+            },
+            {
+              "responseKey": "GENERO",
+              "questionCode": "GENERO",
+              "questionLabel": "Género",
+              "dataType": "code",
+              "sourceValue": "F",
+              "displayValue": "Femenino",
+              "missing": false
+            },
+            {
+              "responseKey": "ESTADO",
+              "questionCode": "ESTADO",
+              "questionLabel": "Estado civil",
+              "dataType": "code",
+              "sourceValue": "2",
+              "displayValue": "Casado",
+              "missing": false
+            },
+            {
+              "responseKey": "APOYOS_SQ001",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Económico",
+              "dataType": "boolean",
+              "sourceValue": "Y",
+              "displayValue": "Sí",
+              "missing": false
+            },
+            {
+              "responseKey": "APOYOS_SQ002",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Alimentario",
+              "dataType": "boolean",
+              "sourceValue": "N",
+              "displayValue": "No",
+              "missing": false
+            },
+            {
+              "responseKey": "APOYOS_SQ003",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Psicológico",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ001",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Higiene",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "SATISF_R1",
+              "questionCode": "SATISF",
+              "questionLabel": "Satisfacción — Atención",
+              "dataType": "code",
+              "sourceValue": "A1",
+              "displayValue": "De acuerdo",
+              "missing": false
+            },
+            {
+              "responseKey": "SATISF_R2",
+              "questionCode": "SATISF",
+              "questionLabel": "Satisfacción — Tiempo de espera",
+              "dataType": "code",
+              "sourceValue": "A3",
+              "displayValue": "En desacuerdo",
+              "missing": false
+            },
+            {
+              "responseKey": "HORAS_R1_C1",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Lunes — Mañana",
+              "dataType": "number",
+              "sourceValue": "4",
+              "displayValue": "4",
+              "missing": false
+            },
+            {
+              "responseKey": "HORAS_R1_C2",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Lunes — Tarde",
+              "dataType": "number",
+              "sourceValue": "0",
+              "displayValue": "0",
+              "missing": false
+            },
+            {
+              "responseKey": "TAREAS_R1_C1",
+              "questionCode": "TAREAS",
+              "questionLabel": "Tareas realizadas — Cocinar — Sola",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "TAREAS_R1_C2",
+              "questionCode": "TAREAS",
+              "questionLabel": "Tareas realizadas — Cocinar — Acompañada",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "NOTAS_R1_C1",
+              "questionCode": "NOTAS",
+              "questionLabel": "Notas por periodo — Primer periodo — Observación",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "DUAL_R1_0",
+              "questionCode": "DUAL",
+              "questionLabel": "Importancia y satisfacción — Transporte — Importancia",
+              "dataType": "code",
+              "sourceValue": "I2",
+              "displayValue": "Alta",
+              "missing": false
+            },
+            {
+              "responseKey": "DUAL_R1_1",
+              "questionCode": "DUAL",
+              "questionLabel": "Importancia y satisfacción — Transporte — Satisfacción",
+              "dataType": "code",
+              "sourceValue": "S1",
+              "displayValue": "Poca",
+              "missing": false
+            },
+            {
+              "responseKey": "ESCALA_R1",
+              "questionCode": "ESCALA",
+              "questionLabel": "Calificación del 1 al 10 — Servicio",
+              "dataType": "code",
+              "sourceValue": "8",
+              "displayValue": "8",
+              "missing": false
+            },
+            {
+              "responseKey": "CONTACTO_TEL",
+              "questionCode": "CONTACTO",
+              "questionLabel": "Teléfono",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "PRIORIDAD_1",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 1",
+              "dataType": "code",
+              "sourceValue": "P2",
+              "displayValue": "Empleo",
+              "missing": false
+            },
+            {
+              "responseKey": "PRIORIDAD_2",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 2",
+              "dataType": "code",
+              "sourceValue": "P1",
+              "displayValue": "Salud",
+              "missing": false
+            },
+            {
+              "responseKey": "PRIORIDAD_3",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 3",
+              "dataType": "code",
+              "sourceValue": "P3",
+              "displayValue": "Vivienda",
+              "missing": false
+            },
+            {
+              "responseKey": "HIJOS",
+              "questionCode": "HIJOS",
+              "questionLabel": "Número de hijos",
+              "dataType": "number",
+              "sourceValue": "2",
+              "displayValue": "2",
+              "missing": false
+            },
+            {
+              "responseKey": "HIJOS_EDAD",
+              "questionCode": "HIJOS_EDAD",
+              "questionLabel": "Edad del hijo menor",
+              "dataType": "string",
+              "sourceValue": "5",
+              "displayValue": "5",
+              "missing": false
+            },
+            {
+              "responseKey": "ESTADOother",
+              "questionCode": "ESTADO",
+              "questionLabel": "Estado civil — Otro",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "REGION",
+              "questionCode": "REGION",
+              "questionLabel": "Región",
+              "dataType": "code",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "SERVICIO",
+              "questionCode": "SERVICIO",
+              "questionLabel": "Servicio principal",
+              "dataType": "code",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "SERVICIOcomment",
+              "questionCode": "SERVICIO",
+              "questionLabel": "Servicio principal — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ001comment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Higiene — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ002",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Alimentación",
+              "dataType": "boolean",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ002comment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Alimentación — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOSother",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Otro — Texto",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_othercomment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Otro — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R2_C1",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Martes — Mañana",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R2_C2",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Martes — Tarde",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CONTACTO_CORREO",
+              "questionCode": "CONTACTO",
+              "questionLabel": "Correo",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            }
+          ],
+          "unmappedValues": [
+            {
+              "sourceKey": "ESTADO_OTHER_value",
+              "sourceValue": "",
+              "columnIndex": 12
+            },
+            {
+              "sourceKey": "CUIDADOS_SQ001_comment",
+              "sourceValue": "",
+              "columnIndex": 17
+            },
+            {
+              "sourceKey": "CUIDADOS_OTHER_value",
+              "sourceValue": "",
+              "columnIndex": 18
+            },
+            {
+              "sourceKey": "COLUMNA_EXTERNA",
+              "sourceValue": "x",
+              "columnIndex": 35
+            }
+          ],
+          "issues": []
+        },
+        {
+          "responseIndex": 2,
+          "responseId": "2",
+          "fields": [
+            {
+              "responseKey": "submitdate",
+              "questionCode": "submitdate",
+              "questionLabel": "Fecha de envío",
+              "dataType": "date",
+              "sourceValue": "2026-09-01 10:00:00",
+              "displayValue": "2026-09-01 10:00:00",
+              "missing": false
+            },
+            {
+              "responseKey": "lastpage",
+              "questionCode": "lastpage",
+              "questionLabel": "Última página",
+              "dataType": "number",
+              "sourceValue": "3",
+              "displayValue": "3",
+              "missing": false
+            },
+            {
+              "responseKey": "startlanguage",
+              "questionCode": "startlanguage",
+              "questionLabel": "Idioma de inicio",
+              "dataType": "string",
+              "sourceValue": "es",
+              "displayValue": "es",
+              "missing": false
+            },
+            {
+              "responseKey": "NOMBRE",
+              "questionCode": "NOMBRE",
+              "questionLabel": "Nombre completo",
+              "dataType": "string",
+              "sourceValue": "Luis",
+              "displayValue": "Luis",
+              "missing": false
+            },
+            {
+              "responseKey": "COMENTARIO",
+              "questionCode": "COMENTARIO",
+              "questionLabel": "Comentario libre",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "EDAD",
+              "questionCode": "EDAD",
+              "questionLabel": "Edad en años",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "NACIMIENTO",
+              "questionCode": "NACIMIENTO",
+              "questionLabel": "Fecha de nacimiento",
+              "dataType": "date",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "CONSIENTE",
+              "questionCode": "CONSIENTE",
+              "questionLabel": "¿Acepta participar?",
+              "dataType": "code",
+              "sourceValue": "N",
+              "displayValue": "No",
+              "missing": false
+            },
+            {
+              "responseKey": "GENERO",
+              "questionCode": "GENERO",
+              "questionLabel": "Género",
+              "dataType": "code",
+              "sourceValue": "M",
+              "displayValue": "Masculino",
+              "missing": false
+            },
+            {
+              "responseKey": "ESTADO",
+              "questionCode": "ESTADO",
+              "questionLabel": "Estado civil",
+              "dataType": "code",
+              "sourceValue": "-oth-",
+              "displayValue": "Otro",
+              "missing": false
+            },
+            {
+              "responseKey": "APOYOS_SQ001",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Económico",
+              "dataType": "boolean",
+              "sourceValue": "N",
+              "displayValue": "No",
+              "missing": false
+            },
+            {
+              "responseKey": "APOYOS_SQ002",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Alimentario",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "APOYOS_SQ003",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Psicológico",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ001",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Higiene",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "SATISF_R1",
+              "questionCode": "SATISF",
+              "questionLabel": "Satisfacción — Atención",
+              "dataType": "code",
+              "sourceValue": "A9",
+              "displayValue": "A9",
+              "missing": false
+            },
+            {
+              "responseKey": "SATISF_R2",
+              "questionCode": "SATISF",
+              "questionLabel": "Satisfacción — Tiempo de espera",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R1_C1",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Lunes — Mañana",
+              "dataType": "number",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R1_C2",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Lunes — Tarde",
+              "dataType": "number",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "TAREAS_R1_C1",
+              "questionCode": "TAREAS",
+              "questionLabel": "Tareas realizadas — Cocinar — Sola",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "TAREAS_R1_C2",
+              "questionCode": "TAREAS",
+              "questionLabel": "Tareas realizadas — Cocinar — Acompañada",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "NOTAS_R1_C1",
+              "questionCode": "NOTAS",
+              "questionLabel": "Notas por periodo — Primer periodo — Observación",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "DUAL_R1_0",
+              "questionCode": "DUAL",
+              "questionLabel": "Importancia y satisfacción — Transporte — Importancia",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "DUAL_R1_1",
+              "questionCode": "DUAL",
+              "questionLabel": "Importancia y satisfacción — Transporte — Satisfacción",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "ESCALA_R1",
+              "questionCode": "ESCALA",
+              "questionLabel": "Calificación del 1 al 10 — Servicio",
+              "dataType": "code",
+              "sourceValue": "11",
+              "displayValue": "11",
+              "missing": false
+            },
+            {
+              "responseKey": "CONTACTO_TEL",
+              "questionCode": "CONTACTO",
+              "questionLabel": "Teléfono",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "PRIORIDAD_1",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 1",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "PRIORIDAD_2",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 2",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "PRIORIDAD_3",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 3",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HIJOS",
+              "questionCode": "HIJOS",
+              "questionLabel": "Número de hijos",
+              "dataType": "number",
+              "sourceValue": "0",
+              "displayValue": "0",
+              "missing": false
+            },
+            {
+              "responseKey": "HIJOS_EDAD",
+              "questionCode": "HIJOS_EDAD",
+              "questionLabel": "Edad del hijo menor",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "ESTADOother",
+              "questionCode": "ESTADO",
+              "questionLabel": "Estado civil — Otro",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "REGION",
+              "questionCode": "REGION",
+              "questionLabel": "Región",
+              "dataType": "code",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "SERVICIO",
+              "questionCode": "SERVICIO",
+              "questionLabel": "Servicio principal",
+              "dataType": "code",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "SERVICIOcomment",
+              "questionCode": "SERVICIO",
+              "questionLabel": "Servicio principal — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ001comment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Higiene — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ002",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Alimentación",
+              "dataType": "boolean",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ002comment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Alimentación — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOSother",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Otro — Texto",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_othercomment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Otro — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R2_C1",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Martes — Mañana",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R2_C2",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Martes — Tarde",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CONTACTO_CORREO",
+              "questionCode": "CONTACTO",
+              "questionLabel": "Correo",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            }
+          ],
+          "unmappedValues": [
+            {
+              "sourceKey": "ESTADO_OTHER_value",
+              "sourceValue": "Separado",
+              "columnIndex": 12
+            },
+            {
+              "sourceKey": "CUIDADOS_SQ001_comment",
+              "sourceValue": "",
+              "columnIndex": 17
+            },
+            {
+              "sourceKey": "CUIDADOS_OTHER_value",
+              "sourceValue": "",
+              "columnIndex": 18
+            },
+            {
+              "sourceKey": "COLUMNA_EXTERNA",
+              "sourceValue": "x",
+              "columnIndex": 35
+            }
+          ],
+          "issues": [
+            {
+              "level": "warning",
+              "code": "UNKNOWN_RESPONSE_VALUE",
+              "message": "Value A9 is not defined for SATISF_R1.",
+              "questionCode": "SATISF",
+              "responseKey": "SATISF_R1",
+              "details": {
+                "sourceValue": "A9"
+              },
+              "responseIndex": 2
+            },
+            {
+              "level": "warning",
+              "code": "UNKNOWN_RESPONSE_VALUE",
+              "message": "Value 11 is not defined for ESCALA_R1.",
+              "questionCode": "ESCALA",
+              "responseKey": "ESCALA_R1",
+              "details": {
+                "sourceValue": "11"
+              },
+              "responseIndex": 2
+            }
+          ]
+        },
+        {
+          "responseIndex": 3,
+          "responseId": "3",
+          "fields": [
+            {
+              "responseKey": "submitdate",
+              "questionCode": "submitdate",
+              "questionLabel": "Fecha de envío",
+              "dataType": "date",
+              "sourceValue": "2026-09-01 10:00:00",
+              "displayValue": "2026-09-01 10:00:00",
+              "missing": false
+            },
+            {
+              "responseKey": "lastpage",
+              "questionCode": "lastpage",
+              "questionLabel": "Última página",
+              "dataType": "number",
+              "sourceValue": "3",
+              "displayValue": "3",
+              "missing": false
+            },
+            {
+              "responseKey": "startlanguage",
+              "questionCode": "startlanguage",
+              "questionLabel": "Idioma de inicio",
+              "dataType": "string",
+              "sourceValue": "es",
+              "displayValue": "es",
+              "missing": false
+            },
+            {
+              "responseKey": "NOMBRE",
+              "questionCode": "NOMBRE",
+              "questionLabel": "Nombre completo",
+              "dataType": "string",
+              "sourceValue": "=1+1",
+              "displayValue": "=1+1",
+              "missing": false
+            },
+            {
+              "responseKey": "COMENTARIO",
+              "questionCode": "COMENTARIO",
+              "questionLabel": "Comentario libre",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "EDAD",
+              "questionCode": "EDAD",
+              "questionLabel": "Edad en años",
+              "dataType": "number",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "NACIMIENTO",
+              "questionCode": "NACIMIENTO",
+              "questionLabel": "Fecha de nacimiento",
+              "dataType": "date",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "CONSIENTE",
+              "questionCode": "CONSIENTE",
+              "questionLabel": "¿Acepta participar?",
+              "dataType": "code",
+              "sourceValue": "Y",
+              "displayValue": "Sí",
+              "missing": false
+            },
+            {
+              "responseKey": "GENERO",
+              "questionCode": "GENERO",
+              "questionLabel": "Género",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "ESTADO",
+              "questionCode": "ESTADO",
+              "questionLabel": "Estado civil",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "APOYOS_SQ001",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Económico",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "APOYOS_SQ002",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Alimentario",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "APOYOS_SQ003",
+              "questionCode": "APOYOS",
+              "questionLabel": "Apoyos recibidos — Psicológico",
+              "dataType": "boolean",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ001",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Higiene",
+              "dataType": "boolean",
+              "sourceValue": "Y",
+              "displayValue": "Sí",
+              "missing": false
+            },
+            {
+              "responseKey": "SATISF_R1",
+              "questionCode": "SATISF",
+              "questionLabel": "Satisfacción — Atención",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "SATISF_R2",
+              "questionCode": "SATISF",
+              "questionLabel": "Satisfacción — Tiempo de espera",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R1_C1",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Lunes — Mañana",
+              "dataType": "number",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R1_C2",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Lunes — Tarde",
+              "dataType": "number",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "TAREAS_R1_C1",
+              "questionCode": "TAREAS",
+              "questionLabel": "Tareas realizadas — Cocinar — Sola",
+              "dataType": "boolean",
+              "sourceValue": "1",
+              "displayValue": "Sí",
+              "missing": false
+            },
+            {
+              "responseKey": "TAREAS_R1_C2",
+              "questionCode": "TAREAS",
+              "questionLabel": "Tareas realizadas — Cocinar — Acompañada",
+              "dataType": "boolean",
+              "sourceValue": "0",
+              "displayValue": "No",
+              "missing": false
+            },
+            {
+              "responseKey": "NOTAS_R1_C1",
+              "questionCode": "NOTAS",
+              "questionLabel": "Notas por periodo — Primer periodo — Observación",
+              "dataType": "string",
+              "sourceValue": "Sin cambios",
+              "displayValue": "Sin cambios",
+              "missing": false
+            },
+            {
+              "responseKey": "DUAL_R1_0",
+              "questionCode": "DUAL",
+              "questionLabel": "Importancia y satisfacción — Transporte — Importancia",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "DUAL_R1_1",
+              "questionCode": "DUAL",
+              "questionLabel": "Importancia y satisfacción — Transporte — Satisfacción",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "ESCALA_R1",
+              "questionCode": "ESCALA",
+              "questionLabel": "Calificación del 1 al 10 — Servicio",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "CONTACTO_TEL",
+              "questionCode": "CONTACTO",
+              "questionLabel": "Teléfono",
+              "dataType": "string",
+              "sourceValue": "555-0101",
+              "displayValue": "555-0101",
+              "missing": false
+            },
+            {
+              "responseKey": "PRIORIDAD_1",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 1",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "PRIORIDAD_2",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 2",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "PRIORIDAD_3",
+              "questionCode": "PRIORIDAD",
+              "questionLabel": "Ordene sus prioridades — Posición 3",
+              "dataType": "code",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HIJOS",
+              "questionCode": "HIJOS",
+              "questionLabel": "Número de hijos",
+              "dataType": "number",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "HIJOS_EDAD",
+              "questionCode": "HIJOS_EDAD",
+              "questionLabel": "Edad del hijo menor",
+              "dataType": "string",
+              "sourceValue": "",
+              "displayValue": "",
+              "missing": true
+            },
+            {
+              "responseKey": "ESTADOother",
+              "questionCode": "ESTADO",
+              "questionLabel": "Estado civil — Otro",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "REGION",
+              "questionCode": "REGION",
+              "questionLabel": "Región",
+              "dataType": "code",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "SERVICIO",
+              "questionCode": "SERVICIO",
+              "questionLabel": "Servicio principal",
+              "dataType": "code",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "SERVICIOcomment",
+              "questionCode": "SERVICIO",
+              "questionLabel": "Servicio principal — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ001comment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Higiene — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ002",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Alimentación",
+              "dataType": "boolean",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_SQ002comment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Alimentación — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOSother",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Otro — Texto",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CUIDADOS_othercomment",
+              "questionCode": "CUIDADOS",
+              "questionLabel": "Cuidados brindados — Otro — Comentario",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R2_C1",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Martes — Mañana",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "HORAS_R2_C2",
+              "questionCode": "HORAS",
+              "questionLabel": "Horas por día — Martes — Tarde",
+              "dataType": "number",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            },
+            {
+              "responseKey": "CONTACTO_CORREO",
+              "questionCode": "CONTACTO",
+              "questionLabel": "Correo",
+              "dataType": "string",
+              "sourceValue": null,
+              "displayValue": null,
+              "missing": true
+            }
+          ],
+          "unmappedValues": [
+            {
+              "sourceKey": "ESTADO_OTHER_value",
+              "sourceValue": "",
+              "columnIndex": 12
+            },
+            {
+              "sourceKey": "CUIDADOS_SQ001_comment",
+              "sourceValue": "Diario",
+              "columnIndex": 17
+            },
+            {
+              "sourceKey": "CUIDADOS_OTHER_value",
+              "sourceValue": "Acompañamiento",
+              "columnIndex": 18
+            },
+            {
+              "sourceKey": "COLUMNA_EXTERNA",
+              "sourceValue": "x",
+              "columnIndex": 35
+            }
+          ],
+          "issues": []
+        }
+      ],
+      "issues": [
+        {
+          "level": "error",
+          "code": "EXPORT_FORMAT_MISMATCH",
+          "message": "The CSV headers do not match the declared sgqa LimeSurvey export format.",
+          "details": {
+            "format": "sgqa",
+            "headers": [
+              "Response ID",
+              "Submit date",
+              "Last page",
+              "Start language",
+              "Seed",
+              "NOMBRE",
+              "COMENTARIO",
+              "EDAD",
+              "NACIMIENTO",
+              "CONSIENTE",
+              "GENERO",
+              "ESTADO",
+              "ESTADO_OTHER_value",
+              "APOYOS_SQ001",
+              "APOYOS_SQ002",
+              "APOYOS_SQ003",
+              "CUIDADOS_SQ001",
+              "CUIDADOS_SQ001_comment",
+              "CUIDADOS_OTHER_value",
+              "SATISF_R1"
+            ]
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header ESTADO_OTHER_value could not be mapped to a canonical response key.",
+          "responseKey": "ESTADO_OTHER_value",
+          "details": {
+            "columnIndex": 12
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header CUIDADOS_SQ001_comment could not be mapped to a canonical response key.",
+          "responseKey": "CUIDADOS_SQ001_comment",
+          "details": {
+            "columnIndex": 17
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header CUIDADOS_OTHER_value could not be mapped to a canonical response key.",
+          "responseKey": "CUIDADOS_OTHER_value",
+          "details": {
+            "columnIndex": 18
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "Dataset header COLUMNA_EXTERNA could not be mapped to a canonical response key.",
+          "responseKey": "COLUMNA_EXTERNA",
+          "details": {
+            "columnIndex": 35
+          }
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_VALUE",
+          "message": "Value A9 is not defined for SATISF_R1.",
+          "questionCode": "SATISF",
+          "responseKey": "SATISF_R1",
+          "details": {
+            "sourceValue": "A9"
+          },
+          "responseIndex": 2
+        },
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_VALUE",
+          "message": "Value 11 is not defined for ESCALA_R1.",
+          "questionCode": "ESCALA",
+          "responseKey": "ESCALA_R1",
+          "details": {
+            "sourceValue": "11"
+          },
+          "responseIndex": 2
+        }
+      ]
+    }
+  }
+}

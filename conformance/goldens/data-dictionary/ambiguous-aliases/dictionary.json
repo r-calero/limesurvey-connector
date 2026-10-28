@@ -1,0 +1,51 @@
+{
+  "fixture": "fixtures/dictionary/ambiguous-aliases.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "synthetic",
+    "fields": [
+      {
+        "questionCode": "FIRST",
+        "questionLabel": "Shared",
+        "responseKey": "FIRST",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Shared"
+        ]
+      },
+      {
+        "questionCode": "SECOND",
+        "questionLabel": "Shared",
+        "responseKey": "SECOND",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Shared"
+        ]
+      },
+      {
+        "questionCode": "ANSWER",
+        "questionLabel": "Label",
+        "responseKey": "ANSWER",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "Label"
+        ]
+      },
+      {
+        "questionCode": "A_B",
+        "questionLabel": "A_B",
+        "responseKey": "A_B",
+        "dataType": "string",
+        "cardinality": "single",
+        "aliases": [
+          "A_B"
+        ]
+      }
+    ],
+    "issues": []
+  }
+}

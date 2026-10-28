@@ -16,7 +16,4 @@ conformance/.work/
 conformance/private/*
 !conformance/private/README.md
 s3_test.py
-conformance/*
-docs/*
-tests/*
 scripts/*

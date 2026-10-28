@@ -1,0 +1,4 @@
+{
+  "description": "An invalid SurveyStructure is rejected instead of producing a partial dictionary.",
+  "structureFixture": "structures/invalid-duplicate-codes.json"
+}

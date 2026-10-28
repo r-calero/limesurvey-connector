@@ -1,0 +1,490 @@
+{
+  "responses": [
+    {
+      "responseIndex": 1,
+      "responseId": "1",
+      "fields": [
+        {
+          "responseKey": "submitdate",
+          "questionCode": "submitdate",
+          "questionLabel": "Fecha de envío",
+          "dataType": "date",
+          "sourceValue": "2026-01-01 10:00:00",
+          "displayValue": "2026-01-01 10:00:00",
+          "missing": false
+        },
+        {
+          "responseKey": "lastpage",
+          "questionCode": "lastpage",
+          "questionLabel": "Última página",
+          "dataType": "number",
+          "sourceValue": "3",
+          "displayValue": "3",
+          "missing": false
+        },
+        {
+          "responseKey": "startlanguage",
+          "questionCode": "startlanguage",
+          "questionLabel": "Idioma de inicio",
+          "dataType": "string",
+          "sourceValue": "es-MX",
+          "displayValue": "es-MX",
+          "missing": false
+        },
+        {
+          "responseKey": "seed",
+          "questionCode": "seed",
+          "questionLabel": "Semilla",
+          "dataType": "string",
+          "sourceValue": "123456",
+          "displayValue": "123456",
+          "missing": false
+        },
+        {
+          "responseKey": "startdate",
+          "questionCode": "startdate",
+          "questionLabel": "Fecha de inicio",
+          "dataType": "date",
+          "sourceValue": "2026-01-01 10:00:00",
+          "displayValue": "2026-01-01 10:00:00",
+          "missing": false
+        },
+        {
+          "responseKey": "datestamp",
+          "questionCode": "datestamp",
+          "questionLabel": "Fecha de la última acción",
+          "dataType": "date",
+          "sourceValue": "2026-01-01 10:00:00",
+          "displayValue": "2026-01-01 10:00:00",
+          "missing": false
+        },
+        {
+          "responseKey": "ipaddr",
+          "questionCode": "ipaddr",
+          "questionLabel": "Dirección IP",
+          "dataType": "string",
+          "sourceValue": "192.0.2.10",
+          "displayValue": "192.0.2.10",
+          "missing": false
+        },
+        {
+          "responseKey": "refurl",
+          "questionCode": "refurl",
+          "questionLabel": "URL de referencia",
+          "dataType": "string",
+          "sourceValue": "https://surveys.example.org/",
+          "displayValue": "https://surveys.example.org/",
+          "missing": false
+        },
+        {
+          "responseKey": "Q3_1",
+          "questionCode": "Q3",
+          "questionLabel": "Pregunta 34 — Posición 1",
+          "dataType": "code",
+          "sourceValue": "A1",
+          "displayValue": "Opción 23",
+          "missing": false
+        },
+        {
+          "responseKey": "Q3_2",
+          "questionCode": "Q3",
+          "questionLabel": "Pregunta 34 — Posición 2",
+          "dataType": "code",
+          "sourceValue": "A3",
+          "displayValue": "Opción 25",
+          "missing": false
+        },
+        {
+          "responseKey": "Q3_3",
+          "questionCode": "Q3",
+          "questionLabel": "Pregunta 34 — Posición 3",
+          "dataType": "code",
+          "sourceValue": "A2",
+          "displayValue": "Opción 24",
+          "missing": false
+        },
+        {
+          "responseKey": "Q4",
+          "questionCode": "Q4",
+          "questionLabel": "Pregunta 35",
+          "dataType": "code",
+          "sourceValue": "F",
+          "displayValue": "Femenino",
+          "missing": false
+        },
+        {
+          "responseKey": "Q5",
+          "questionCode": "Q5",
+          "questionLabel": "Pregunta 36",
+          "dataType": "number",
+          "sourceValue": "20",
+          "displayValue": "20",
+          "missing": false
+        },
+        {
+          "responseKey": "Q12",
+          "questionCode": "Q12",
+          "questionLabel": "Pregunta 62",
+          "dataType": "code",
+          "sourceValue": "-oth-",
+          "displayValue": "Otro",
+          "missing": false
+        },
+        {
+          "responseKey": "Q12_other",
+          "questionCode": "Q12",
+          "questionLabel": "Pregunta 62 — Otro",
+          "dataType": "string",
+          "sourceValue": "Texto 63",
+          "displayValue": "Texto 63",
+          "missing": false
+        },
+        {
+          "responseKey": "Q1_SQ001",
+          "questionCode": "Q1",
+          "questionLabel": "Pregunta 30 — Pregunta 43",
+          "dataType": "code",
+          "sourceValue": "A5",
+          "displayValue": "Opción 5",
+          "missing": false
+        },
+        {
+          "responseKey": "Q1_SQ002",
+          "questionCode": "Q1",
+          "questionLabel": "Pregunta 30 — Pregunta 44",
+          "dataType": "code",
+          "sourceValue": "A3",
+          "displayValue": "Opción 3",
+          "missing": false
+        },
+        {
+          "responseKey": "Q1_SQ003",
+          "questionCode": "Q1",
+          "questionLabel": "Pregunta 30 — Pregunta 45",
+          "dataType": "code",
+          "sourceValue": "A4",
+          "displayValue": "Opción 4",
+          "missing": false
+        },
+        {
+          "responseKey": "Q1_SQ004",
+          "questionCode": "Q1",
+          "questionLabel": "Pregunta 30 — Pregunta 46",
+          "dataType": "code",
+          "sourceValue": "A3",
+          "displayValue": "Opción 3",
+          "missing": false
+        },
+        {
+          "responseKey": "Q2_SQ001_0",
+          "questionCode": "Q2",
+          "questionLabel": "Pregunta 32 — Pregunta 47 — Escala 1",
+          "dataType": "code",
+          "sourceValue": "A1",
+          "displayValue": "Opción 10",
+          "missing": false
+        },
+        {
+          "responseKey": "Q2_SQ001_1",
+          "questionCode": "Q2",
+          "questionLabel": "Pregunta 32 — Pregunta 47 — Escala 2",
+          "dataType": "code",
+          "sourceValue": "A2",
+          "displayValue": "Opción 13",
+          "missing": false
+        },
+        {
+          "responseKey": "Q2_SQ002_0",
+          "questionCode": "Q2",
+          "questionLabel": "Pregunta 32 — Pregunta 48 — Escala 1",
+          "dataType": "code",
+          "sourceValue": "A4",
+          "displayValue": "Opción 16",
+          "missing": false
+        },
+        {
+          "responseKey": "Q2_SQ002_1",
+          "questionCode": "Q2",
+          "questionLabel": "Pregunta 32 — Pregunta 48 — Escala 2",
+          "dataType": "code",
+          "sourceValue": "A3",
+          "displayValue": "Opción 15",
+          "missing": false
+        },
+        {
+          "responseKey": "Q2_SQ003_0",
+          "questionCode": "Q2",
+          "questionLabel": "Pregunta 32 — Pregunta 49 — Escala 1",
+          "dataType": "code",
+          "sourceValue": "A5",
+          "displayValue": "Opción 18",
+          "missing": false
+        },
+        {
+          "responseKey": "Q2_SQ003_1",
+          "questionCode": "Q2",
+          "questionLabel": "Pregunta 32 — Pregunta 49 — Escala 2",
+          "dataType": "code",
+          "sourceValue": "A5",
+          "displayValue": "Opción 19",
+          "missing": false
+        },
+        {
+          "responseKey": "Q6_SQ001",
+          "questionCode": "Q6",
+          "questionLabel": "Pregunta 37 — Pregunta 50",
+          "dataType": "code",
+          "sourceValue": "I",
+          "displayValue": "Aumenta",
+          "missing": false
+        },
+        {
+          "responseKey": "Q6_SQ002",
+          "questionCode": "Q6",
+          "questionLabel": "Pregunta 37 — Pregunta 51",
+          "dataType": "code",
+          "sourceValue": "S",
+          "displayValue": "Igual",
+          "missing": false
+        },
+        {
+          "responseKey": "Q6_SQ003",
+          "questionCode": "Q6",
+          "questionLabel": "Pregunta 37 — Pregunta 52",
+          "dataType": "code",
+          "sourceValue": "D",
+          "displayValue": "Disminuye",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ001_SQ001",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 53 — Pregunta 54",
+          "dataType": "number",
+          "sourceValue": "9",
+          "displayValue": "9",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ001_SQ002",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 53 — Pregunta 57",
+          "dataType": "number",
+          "sourceValue": "2",
+          "displayValue": "2",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ001_SQ003",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 53 — Pregunta 58",
+          "dataType": "number",
+          "sourceValue": "10",
+          "displayValue": "10",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ002_SQ001",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 55 — Pregunta 54",
+          "dataType": "number",
+          "sourceValue": "7",
+          "displayValue": "7",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ002_SQ002",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 55 — Pregunta 57",
+          "dataType": "number",
+          "sourceValue": "9",
+          "displayValue": "9",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ002_SQ003",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 55 — Pregunta 58",
+          "dataType": "number",
+          "sourceValue": "8",
+          "displayValue": "8",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ003_SQ001",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 56 — Pregunta 54",
+          "dataType": "number",
+          "sourceValue": "1",
+          "displayValue": "1",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ003_SQ002",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 56 — Pregunta 57",
+          "dataType": "number",
+          "sourceValue": "1",
+          "displayValue": "1",
+          "missing": false
+        },
+        {
+          "responseKey": "Q7_SQ003_SQ003",
+          "questionCode": "Q7",
+          "questionLabel": "Pregunta 38 — Pregunta 56 — Pregunta 58",
+          "dataType": "number",
+          "sourceValue": "1",
+          "displayValue": "1",
+          "missing": false
+        },
+        {
+          "responseKey": "Q8_SQ001",
+          "questionCode": "Q8",
+          "questionLabel": "Pregunta 39 — Pregunta 59",
+          "dataType": "code",
+          "sourceValue": "A1",
+          "displayValue": "Opción 20",
+          "missing": false
+        },
+        {
+          "responseKey": "Q8_SQ002",
+          "questionCode": "Q8",
+          "questionLabel": "Pregunta 39 — Pregunta 60",
+          "dataType": "code",
+          "sourceValue": "A2",
+          "displayValue": "Opción 21",
+          "missing": false
+        },
+        {
+          "responseKey": "Q8_SQ003",
+          "questionCode": "Q8",
+          "questionLabel": "Pregunta 39 — Pregunta 61",
+          "dataType": "code",
+          "sourceValue": "A3",
+          "displayValue": "Opción 22",
+          "missing": false
+        },
+        {
+          "responseKey": "Q9",
+          "questionCode": "Q9",
+          "questionLabel": "Pregunta 40",
+          "dataType": "code",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q10_SQ001",
+          "questionCode": "Q10",
+          "questionLabel": "Pregunta 41 — Pregunta 62",
+          "dataType": "boolean",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q10_SQ002",
+          "questionCode": "Q10",
+          "questionLabel": "Pregunta 41 — Pregunta 63",
+          "dataType": "boolean",
+          "sourceValue": null,
+          "displayValue": null,
+          "missing": true
+        },
+        {
+          "responseKey": "Q10_SQ003",
+          "questionCode": "Q10",
+          "questionLabel": "Pregunta 41 — Pregunta 64",
+          "dataType": "boolean",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q10_SQ004",
+          "questionCode": "Q10",
+          "questionLabel": "Pregunta 41 — Pregunta 65",
+          "dataType": "boolean",
+          "sourceValue": null,
+          "displayValue": null,
+          "missing": true
+        },
+        {
+          "responseKey": "Q10_SQ005",
+          "questionCode": "Q10",
+          "questionLabel": "Pregunta 41 — Pregunta 66",
+          "dataType": "boolean",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q10_SQ006",
+          "questionCode": "Q10",
+          "questionLabel": "Pregunta 41 — Pregunta 67",
+          "dataType": "boolean",
+          "sourceValue": null,
+          "displayValue": null,
+          "missing": true
+        },
+        {
+          "responseKey": "Q11_SQ001",
+          "questionCode": "Q11",
+          "questionLabel": "Pregunta 42 — Pregunta 68",
+          "dataType": "boolean",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q11_SQ001comment",
+          "questionCode": "Q11",
+          "questionLabel": "Pregunta 42 — Pregunta 68 — Comentario",
+          "dataType": "string",
+          "sourceValue": "25",
+          "displayValue": "25",
+          "missing": false
+        },
+        {
+          "responseKey": "Q11_SQ002",
+          "questionCode": "Q11",
+          "questionLabel": "Pregunta 42 — Pregunta 69",
+          "dataType": "boolean",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q11_SQ002comment",
+          "questionCode": "Q11",
+          "questionLabel": "Pregunta 42 — Pregunta 69 — Comentario",
+          "dataType": "string",
+          "sourceValue": "50",
+          "displayValue": "50",
+          "missing": false
+        },
+        {
+          "responseKey": "Q11_SQ003",
+          "questionCode": "Q11",
+          "questionLabel": "Pregunta 42 — Pregunta 70",
+          "dataType": "boolean",
+          "sourceValue": "Y",
+          "displayValue": "Sí",
+          "missing": false
+        },
+        {
+          "responseKey": "Q11_SQ003comment",
+          "questionCode": "Q11",
+          "questionLabel": "Pregunta 42 — Pregunta 70 — Comentario",
+          "dataType": "string",
+          "sourceValue": "100",
+          "displayValue": "100",
+          "missing": false
+        }
+      ],
+      "unmappedValues": [],
+      "issues": []
+    }
+  ],
+  "issues": []
+}

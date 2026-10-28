@@ -1,0 +1,63 @@
+{
+  "fixture": "limesurvey/lss/warning-dynamic-validation.json",
+  "ok": true,
+  "result": {
+    "surveyStructureVersion": "2.1.0",
+    "surveyId": "900006",
+    "surveyTitle": "Ejemplo sintético de validación dinámica",
+    "language": "es",
+    "fields": [
+      {
+        "questionCode": "QUESTION_1",
+        "questionLabel": "Pregunta de encuesta 1: indique la cantidad mínima requerida",
+        "responseKey": "QUESTION_1",
+        "dataType": "number",
+        "cardinality": "single",
+        "aliases": [
+          "Pregunta de encuesta 1: indique la cantidad mínima requerida",
+          "900006X10X200"
+        ],
+        "qid": "200",
+        "groupId": "10"
+      },
+      {
+        "questionCode": "QUESTION_2",
+        "questionLabel": "Pregunta de encuesta 2: seleccione opciones de respuesta — Opción 1 de respuesta",
+        "responseKey": "QUESTION_2_RESPONSE_OPTION_1",
+        "dataType": "boolean",
+        "cardinality": "multiple",
+        "values": [
+          {
+            "code": "Y",
+            "label": "Sí"
+          },
+          {
+            "code": "N",
+            "label": "No"
+          }
+        ],
+        "aliases": [
+          "Pregunta de encuesta 2: seleccione opciones de respuesta [Opción 1 de respuesta]",
+          "900006X10X201RESPONSE_OPTION_1"
+        ],
+        "parentCode": "QUESTION_2",
+        "qid": "201",
+        "groupId": "10"
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "SOURCE_ADAPTATION_ISSUE",
+        "message": "Question QUESTION_2 uses a dynamic min_answers expression that cannot be represented as a fixed numeric SurveyStructure validation.",
+        "questionCode": "QUESTION_2",
+        "details": {
+          "sourceCode": "INVALID_VALIDATION",
+          "fieldId": "201",
+          "rule": "min_answers",
+          "sourceValue": "QUESTION_1.NAOK"
+        }
+      }
+    ]
+  }
+}

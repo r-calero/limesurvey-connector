@@ -1,0 +1,12 @@
+[
+  {
+    "questionCode": "SIZE",
+    "questionLabel": "Size",
+    "responseKey": "HOUSEHOLD_SIZE",
+    "dataType": "number",
+    "cardinality": "single",
+    "aliases": [
+      "Size"
+    ]
+  }
+]

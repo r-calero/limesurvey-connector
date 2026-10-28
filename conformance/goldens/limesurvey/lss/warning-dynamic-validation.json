@@ -1,0 +1,122 @@
+{
+  "input": "lss/warning-dynamic-validation.lss",
+  "ok": true,
+  "result": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "900006",
+      "fields": [
+        {
+          "id": "200",
+          "code": "QUESTION_1",
+          "type": "number",
+          "label": "Pregunta de encuesta 1: indique la cantidad mínima requerida",
+          "required": false,
+          "order": 0,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900006",
+            "groupId": "10",
+            "questionId": "200",
+            "nativeType": "N"
+          },
+          "groupId": "10"
+        },
+        {
+          "id": "201",
+          "code": "QUESTION_2",
+          "type": "multiple-choice",
+          "label": "Pregunta de encuesta 2: seleccione opciones de respuesta",
+          "required": false,
+          "order": 1,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900006",
+            "groupId": "10",
+            "questionId": "201",
+            "nativeType": "M",
+            "originDetails": [
+              {
+                "type": "limesurvey-question",
+                "version": "1.0.0",
+                "nativeValidation": {
+                  "minimumAnswersExpression": "QUESTION_1.NAOK"
+                }
+              }
+            ]
+          },
+          "groupId": "10",
+          "responseEncoding": {
+            "selectedValue": "Y",
+            "unselectedValue": "N",
+            "selectedLabel": "Sí",
+            "unselectedLabel": "No"
+          },
+          "options": [
+            {
+              "code": "RESPONSE_OPTION_1",
+              "label": "Opción 1 de respuesta",
+              "order": 0
+            }
+          ]
+        }
+      ],
+      "source": {
+        "platform": "limesurvey",
+        "format": "lss",
+        "originDetails": [
+          {
+            "type": "limesurvey-survey",
+            "version": "1.0.0",
+            "databaseSchemaVersion": "708"
+          }
+        ]
+      },
+      "title": "Ejemplo sintético de validación dinámica",
+      "language": "es",
+      "availableLanguages": [
+        "es"
+      ],
+      "groups": [
+        {
+          "id": "10",
+          "order": 0,
+          "title": "Grupo de encuesta 1",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "10"
+          }
+        }
+      ],
+      "settings": {
+        "layout": "group",
+        "questionIndex": "disabled",
+        "navigationDelay": 0
+      }
+    },
+    "issues": [
+      {
+        "level": "warning",
+        "code": "INVALID_VALIDATION",
+        "message": "Question QUESTION_2 uses a dynamic min_answers expression that cannot be represented as a fixed numeric SurveyStructure validation.",
+        "fieldId": "201",
+        "questionCode": "QUESTION_2",
+        "details": {
+          "rule": "min_answers",
+          "sourceValue": "QUESTION_1.NAOK"
+        }
+      }
+    ],
+    "sourceMetrics": {
+      "topLevelQuestions": 2,
+      "childQuestions": 1,
+      "integratedChildren": 1,
+      "detectedTypes": [
+        "M",
+        "N"
+      ],
+      "conditionsDetected": 0,
+      "validationQuestions": 1
+    }
+  }
+}

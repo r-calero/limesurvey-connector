@@ -1,0 +1,22 @@
+{
+  "survey-structure": {
+    "path": "../survey-structure",
+    "remote": "https://github.com/JJKid/survey-structure.git",
+    "commit": "0148e3f7779b86a6b43b68e682da648fe296bc96"
+  },
+  "survey-data-dictionary": {
+    "path": "../survey-data-dictionary",
+    "remote": "https://github.com/JJKid/survey-data-dictionary.git",
+    "commit": "99b1bd12fd1dee1562c3a5480289db13e45b2dd5"
+  },
+  "limesurvey-rc2-api": {
+    "path": "../limesurvey-rc2-api",
+    "remote": "https://github.com/JJKid/limesurvey-rc2-api.git",
+    "commit": "72ffcd79958e1e1719a853f890cbda9900fc6570"
+  },
+  "limesurvey-dictionary-api": {
+    "path": "../limesurvey-dictionary-api",
+    "remote": "https://github.com/JJKid/limesurvey-dictionary-api.git",
+    "commit": "a1840cc02593cde0751c500ea99397825cc509fe"
+  }
+}

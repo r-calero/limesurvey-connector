@@ -1,0 +1,130 @@
+{
+  "input": "lss/issues-question-normalization.lss",
+  "ok": true,
+  "result": {
+    "survey": {
+      "surveyStructureVersion": "2.1.0",
+      "id": "900005",
+      "fields": [
+        {
+          "id": "100",
+          "code": "QUESTION_1",
+          "type": "short-text",
+          "label": "Pregunta de encuesta 1: campo válido",
+          "required": false,
+          "order": 0,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900005",
+            "groupId": "10",
+            "questionId": "100",
+            "nativeType": "S"
+          },
+          "groupId": "10"
+        },
+        {
+          "id": "101",
+          "code": "DUPLICATE_QUESTION",
+          "type": "short-text",
+          "label": "Pregunta de encuesta 2: primera aparición del código repetido",
+          "required": false,
+          "order": 1,
+          "source": {
+            "platform": "limesurvey",
+            "surveyId": "900005",
+            "groupId": "10",
+            "questionId": "101",
+            "nativeType": "S"
+          },
+          "groupId": "10"
+        }
+      ],
+      "source": {
+        "platform": "limesurvey",
+        "format": "lss",
+        "originDetails": [
+          {
+            "type": "limesurvey-survey",
+            "version": "1.0.0",
+            "databaseSchemaVersion": "708"
+          }
+        ]
+      },
+      "title": "Ejemplo sintético de diagnósticos de preguntas",
+      "language": "es",
+      "availableLanguages": [
+        "es"
+      ],
+      "groups": [
+        {
+          "id": "10",
+          "order": 0,
+          "title": "Grupo de encuesta 1",
+          "source": {
+            "platform": "limesurvey",
+            "groupId": "10"
+          }
+        }
+      ],
+      "settings": {
+        "layout": "group",
+        "questionIndex": "disabled",
+        "navigationDelay": 0
+      }
+    },
+    "issues": [
+      {
+        "level": "warning",
+        "code": "MISSING_PARENT",
+        "message": "Subquestion 106 references missing parent 999.",
+        "fieldId": "106"
+      },
+      {
+        "level": "error",
+        "code": "DUPLICATE_QUESTION_CODE",
+        "message": "Question code DUPLICATE_QUESTION is duplicated and the later question was skipped.",
+        "fieldId": "102",
+        "questionCode": "DUPLICATE_QUESTION"
+      },
+      {
+        "level": "error",
+        "code": "MISSING_QUESTION_CODE",
+        "message": "Question 103 has no code and was skipped.",
+        "fieldId": "103"
+      },
+      {
+        "level": "warning",
+        "code": "UNSUPPORTED_TYPE",
+        "message": "LimeSurvey question type Z is not supported and was skipped.",
+        "fieldId": "104",
+        "questionCode": "UNSUPPORTED_QUESTION",
+        "details": {
+          "sourceType": "Z"
+        }
+      },
+      {
+        "level": "warning",
+        "code": "EMPTY_OPTIONS",
+        "message": "Question QUESTION_WITHOUT_OPTIONS has no answer options. It was omitted because it has no usable input.",
+        "fieldId": "105",
+        "questionCode": "QUESTION_WITHOUT_OPTIONS",
+        "details": {
+          "omitted": true
+        }
+      }
+    ],
+    "sourceMetrics": {
+      "topLevelQuestions": 6,
+      "childQuestions": 1,
+      "integratedChildren": 0,
+      "detectedTypes": [
+        "L",
+        "S",
+        "T",
+        "Z"
+      ],
+      "conditionsDetected": 0,
+      "validationQuestions": 0
+    }
+  }
+}

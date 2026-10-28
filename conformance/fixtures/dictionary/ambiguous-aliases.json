@@ -1,0 +1,92 @@
+{
+  "description": "Duplicate labels, canonical headers and flattened key collisions are preserved without guessing.",
+  "structure": {
+    "surveyStructureVersion": "2.1.0",
+    "id": "synthetic",
+    "fields": [
+      {
+        "id": "FIRST",
+        "code": "FIRST",
+        "type": "short-text",
+        "label": "Shared"
+      },
+      {
+        "id": "SECOND",
+        "code": "SECOND",
+        "type": "short-text",
+        "label": "Shared"
+      },
+      {
+        "id": "ANSWER",
+        "code": "ANSWER",
+        "type": "short-text",
+        "label": "Label"
+      },
+      {
+        "id": "A_B",
+        "code": "A_B",
+        "type": "short-text",
+        "label": "A_B"
+      }
+    ]
+  },
+  "translations": [
+    {
+      "name": "records",
+      "responses": [
+        {
+          "Shared": "who?",
+          "Label": "alias answer",
+          "ANSWER": "canonical answer"
+        },
+        {
+          "A_B": "flat",
+          "A": {
+            "B": "nested"
+          }
+        }
+      ]
+    }
+  ],
+  "tabular": [
+    {
+      "name": "shared-label",
+      "headers": [
+        "Shared",
+        "Shared"
+      ],
+      "rows": [
+        [
+          "first",
+          "second"
+        ]
+      ]
+    },
+    {
+      "name": "canonical-wins",
+      "headers": [
+        "Label",
+        "ANSWER"
+      ],
+      "rows": [
+        [
+          "alias answer",
+          "canonical answer"
+        ]
+      ]
+    },
+    {
+      "name": "duplicate-canonical",
+      "headers": [
+        "ANSWER",
+        "ANSWER"
+      ],
+      "rows": [
+        [
+          "one",
+          "two"
+        ]
+      ]
+    }
+  ]
+}

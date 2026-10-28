@@ -1,0 +1,40 @@
+{
+  "ok": true,
+  "result": {
+    "responses": [
+      {
+        "ANSWER": "canonical answer"
+      }
+    ],
+    "issues": [
+      {
+        "level": "warning",
+        "code": "AMBIGUOUS_RESPONSE_ALIAS",
+        "message": "Dataset header Label has an ambiguous or conflicting mapping. Its values were preserved without choosing by position.",
+        "responseKey": "Label",
+        "details": {
+          "columnIndex": 0,
+          "candidates": [
+            "ANSWER"
+          ]
+        }
+      }
+    ],
+    "columns": [
+      null,
+      "ANSWER"
+    ],
+    "unmappedValues": [
+      [
+        {
+          "sourceKey": "Label",
+          "sourceValue": "alias answer",
+          "columnIndex": 0
+        }
+      ]
+    ],
+    "responseIds": [
+      null
+    ]
+  }
+}

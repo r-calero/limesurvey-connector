@@ -1,0 +1,74 @@
+{
+  "description": "Explicit selected/unselected encodings on boolean fields.",
+  "structure": {
+    "surveyStructureVersion": "2.1.0",
+    "id": "synthetic",
+    "fields": [
+      {
+        "id": "b1",
+        "code": "YN",
+        "type": "boolean",
+        "label": "Flag YN",
+        "responseEncoding": {
+          "selectedValue": "Y",
+          "unselectedValue": "N",
+          "selectedLabel": "Accepted",
+          "unselectedLabel": "Declined"
+        }
+      },
+      {
+        "id": "b2",
+        "code": "INVERTED",
+        "type": "boolean",
+        "label": "Inverted",
+        "responseEncoding": {
+          "selectedValue": false,
+          "unselectedValue": true,
+          "selectedLabel": "Selected",
+          "unselectedLabel": "Not selected"
+        }
+      },
+      {
+        "id": "b3",
+        "code": "NUMERIC",
+        "type": "boolean",
+        "label": "Numeric",
+        "responseEncoding": {
+          "selectedValue": 1,
+          "unselectedValue": 0
+        }
+      },
+      {
+        "id": "b4",
+        "code": "PLAIN",
+        "type": "boolean",
+        "label": "Plain"
+      }
+    ]
+  },
+  "translations": [
+    {
+      "name": "records",
+      "responses": [
+        {
+          "YN": "Y",
+          "INVERTED": false,
+          "NUMERIC": 1,
+          "PLAIN": true
+        },
+        {
+          "YN": "N",
+          "INVERTED": true,
+          "NUMERIC": 0,
+          "PLAIN": false
+        },
+        {
+          "YN": "maybe",
+          "INVERTED": "false",
+          "NUMERIC": "1",
+          "PLAIN": null
+        }
+      ]
+    }
+  ]
+}

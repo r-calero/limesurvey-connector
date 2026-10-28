@@ -1,0 +1,20 @@
+--- a/services/survey_structure/field_normalizer.py
++++ b/services/survey_structure/field_normalizer.py
+@@ -1,6 +1,7 @@
+ """Convert one LimeSurvey question, its options and field rules into SurveyStructure."""
+ 
+ from typing import Any, Dict, List, Optional
++import os
+ import re
+ from .source_values import _clean_html, _issue, _record, _text, _number, _optional_number, _yes, _compact
+ from .field_values import (_native_validation, _validation, _validation_number, _options,
+@@ -307,7 +308,8 @@
+         elif original_type in {";", ":"}:
+             columns = columns_from_children
+         elif original_type == "1":
+-            scales = result.get("answeroptions_multiscale") or result.get("answeroptions") or question.get("answeroptions") or {}
++            question_level = question.get("answeroptions_multiscale") if os.environ.get("CONFORMANCE_QUESTION_LEVEL_MULTISCALE") == "1" else None
++            scales = result.get("answeroptions_multiscale") or question_level or result.get("answeroptions") or question.get("answeroptions") or {}
+             if isinstance(scales, list):
+                 scales = {str(index): scale for index, scale in enumerate(scales)}
+             columns = [{"code": str(scale), "label": _clean_html(attributes.get("dualscale_headerA" if scale == 0 else "dualscale_headerB") or f"{'Escala' if language.startswith('es') else 'Scale'} {scale + 1}"),

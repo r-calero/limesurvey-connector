@@ -1,0 +1,1727 @@
+[
+  {
+    "name": "valid dictionary",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": true,
+    "data": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  },
+  {
+    "name": "issues default",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ]
+    },
+    "success": true,
+    "data": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  },
+  {
+    "name": "duplicate response key",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        },
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "custom",
+        "path": [
+          "fields",
+          4,
+          "responseKey"
+        ],
+        "message": "Duplicate response key \"YN\" would overwrite another dictionary field."
+      }
+    ]
+  },
+  {
+    "name": "wrong version",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": true,
+    "data": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    }
+  },
+  {
+    "name": "field extra key",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ],
+          "extra": 1
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "unrecognized_keys",
+        "keys": [
+          "extra"
+        ],
+        "path": [
+          "fields",
+          0
+        ],
+        "message": "Unrecognized key(s) in object: 'extra'"
+      }
+    ]
+  },
+  {
+    "name": "empty response key",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "too_small",
+        "minimum": 1,
+        "type": "string",
+        "inclusive": true,
+        "exact": false,
+        "message": "String must contain at least 1 character(s)",
+        "path": [
+          "fields",
+          0,
+          "responseKey"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "bad data type",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "text",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": false,
+    "issues": [
+      {
+        "received": "text",
+        "code": "invalid_enum_value",
+        "options": [
+          "string",
+          "number",
+          "date",
+          "boolean",
+          "code"
+        ],
+        "path": [
+          "fields",
+          0,
+          "dataType"
+        ],
+        "message": "Invalid enum value. Expected 'string' | 'number' | 'date' | 'boolean' | 'code', received 'text'"
+      }
+    ]
+  },
+  {
+    "name": "issue index zero",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "m",
+          "responseIndex": 0
+        }
+      ]
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "too_small",
+        "minimum": 0,
+        "type": "number",
+        "inclusive": false,
+        "exact": false,
+        "message": "Number must be greater than 0",
+        "path": [
+          "issues",
+          0,
+          "responseIndex"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "issue index fractional",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "level": "warning",
+          "code": "UNKNOWN_RESPONSE_KEY",
+          "message": "m",
+          "responseIndex": 1.5,
+          "details": {
+            "a": [
+              1,
+              {
+                "b": null
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "integer",
+        "received": "float",
+        "message": "Expected integer, received float",
+        "path": [
+          "issues",
+          0,
+          "responseIndex"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "issue bad enums",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "Y",
+              "label": "Accepted"
+            },
+            {
+              "code": "N",
+              "label": "Declined"
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": [
+        {
+          "level": "fatal",
+          "code": "NOPE",
+          "message": 1
+        }
+      ]
+    },
+    "success": false,
+    "issues": [
+      {
+        "received": "fatal",
+        "code": "invalid_enum_value",
+        "options": [
+          "warning",
+          "error"
+        ],
+        "path": [
+          "issues",
+          0,
+          "level"
+        ],
+        "message": "Invalid enum value. Expected 'warning' | 'error', received 'fatal'"
+      },
+      {
+        "received": "NOPE",
+        "code": "invalid_enum_value",
+        "options": [
+          "MISSING_QUESTION_CODE",
+          "DUPLICATE_QUESTION_CODE",
+          "DUPLICATE_RESPONSE_KEY",
+          "MISSING_OPTION_CODE",
+          "MISSING_MATRIX_ROW_CODE",
+          "MISSING_MATRIX_COLUMN_CODE",
+          "UNKNOWN_RESPONSE_KEY",
+          "UNKNOWN_RESPONSE_VALUE",
+          "UNKNOWN_RESPONSE_ALIAS",
+          "AMBIGUOUS_RESPONSE_ALIAS",
+          "EXPORT_FORMAT_MISMATCH",
+          "SOURCE_ADAPTATION_ISSUE",
+          "SOURCE_PARSE_ISSUE"
+        ],
+        "path": [
+          "issues",
+          0,
+          "code"
+        ],
+        "message": "Invalid enum value. Expected 'MISSING_QUESTION_CODE' | 'DUPLICATE_QUESTION_CODE' | 'DUPLICATE_RESPONSE_KEY' | 'MISSING_OPTION_CODE' | 'MISSING_MATRIX_ROW_CODE' | 'MISSING_MATRIX_COLUMN_CODE' | 'UNKNOWN_RESPONSE_KEY' | 'UNKNOWN_RESPONSE_VALUE' | 'UNKNOWN_RESPONSE_ALIAS' | 'AMBIGUOUS_RESPONSE_ALIAS' | 'EXPORT_FORMAT_MISMATCH' | 'SOURCE_ADAPTATION_ISSUE' | 'SOURCE_PARSE_ISSUE', received 'NOPE'"
+      },
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "number",
+        "path": [
+          "issues",
+          0,
+          "message"
+        ],
+        "message": "Expected string, received number"
+      }
+    ]
+  },
+  {
+    "name": "bad values",
+    "contract": "SurveyDictionary",
+    "value": {
+      "surveyStructureVersion": "2.1.0",
+      "surveyId": "synthetic",
+      "fields": [
+        {
+          "questionCode": "YN",
+          "questionLabel": "Flag YN",
+          "responseKey": "YN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": 1,
+              "label": "x",
+              "x": 2
+            }
+          ],
+          "aliases": [
+            "Flag YN"
+          ]
+        },
+        {
+          "questionCode": "INVERTED",
+          "questionLabel": "Inverted",
+          "responseKey": "INVERTED",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "false",
+              "label": "Selected"
+            },
+            {
+              "code": "true",
+              "label": "Not selected"
+            }
+          ],
+          "aliases": [
+            "Inverted"
+          ]
+        },
+        {
+          "questionCode": "NUMERIC",
+          "questionLabel": "Numeric",
+          "responseKey": "NUMERIC",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "1",
+              "label": "Yes"
+            },
+            {
+              "code": "0",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Numeric"
+          ]
+        },
+        {
+          "questionCode": "PLAIN",
+          "questionLabel": "Plain",
+          "responseKey": "PLAIN",
+          "dataType": "boolean",
+          "cardinality": "single",
+          "values": [
+            {
+              "code": "true",
+              "label": "Yes"
+            },
+            {
+              "code": "false",
+              "label": "No"
+            }
+          ],
+          "aliases": [
+            "Plain"
+          ]
+        }
+      ],
+      "issues": []
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "number",
+        "path": [
+          "fields",
+          0,
+          "values",
+          0,
+          "code"
+        ],
+        "message": "Expected string, received number"
+      },
+      {
+        "code": "unrecognized_keys",
+        "keys": [
+          "x"
+        ],
+        "path": [
+          "fields",
+          0,
+          "values",
+          0
+        ],
+        "message": "Unrecognized key(s) in object: 'x'"
+      }
+    ]
+  },
+  {
+    "name": "dictionary not object",
+    "contract": "SurveyDictionary",
+    "value": [],
+    "success": false,
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "object",
+        "received": "array",
+        "path": [],
+        "message": "Expected object, received array"
+      }
+    ]
+  },
+  {
+    "name": "valid dataset",
+    "contract": "SurveyResponseDataset",
+    "value": {
+      "surveyId": "s",
+      "language": null,
+      "responses": [
+        {
+          "Q1": "A1",
+          "Q2": [
+            1,
+            {
+              "a": true
+            }
+          ]
+        }
+      ],
+      "responseIds": [
+        "r1"
+      ]
+    },
+    "success": true,
+    "data": {
+      "surveyId": "s",
+      "language": null,
+      "responses": [
+        {
+          "Q1": "A1",
+          "Q2": [
+            1,
+            {
+              "a": true
+            }
+          ]
+        }
+      ],
+      "responseIds": [
+        "r1"
+      ]
+    }
+  },
+  {
+    "name": "dataset ids mismatch",
+    "contract": "SurveyResponseDataset",
+    "value": {
+      "surveyId": "s",
+      "responses": [
+        {},
+        {}
+      ],
+      "responseIds": [
+        "r1"
+      ]
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "custom",
+        "path": [
+          "responseIds"
+        ],
+        "message": "Each response must have a corresponding source identifier."
+      }
+    ]
+  },
+  {
+    "name": "dataset bad value",
+    "contract": "SurveyResponseDataset",
+    "value": {
+      "surveyId": "s",
+      "responses": [
+        {
+          "Q1": {
+            "x": [
+              1,
+              "a",
+              null,
+              {
+                "y": false
+              }
+            ]
+          }
+        },
+        {
+          "Q2": "not-a-number"
+        }
+      ]
+    },
+    "success": true,
+    "data": {
+      "surveyId": "s",
+      "responses": [
+        {
+          "Q1": {
+            "x": [
+              1,
+              "a",
+              null,
+              {
+                "y": false
+              }
+            ]
+          }
+        },
+        {
+          "Q2": "not-a-number"
+        }
+      ]
+    }
+  },
+  {
+    "name": "dataset language number",
+    "contract": "SurveyResponseDataset",
+    "value": {
+      "surveyId": "s",
+      "language": 1,
+      "responses": []
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "string",
+        "received": "number",
+        "path": [
+          "language"
+        ],
+        "message": "Expected string, received number"
+      }
+    ]
+  },
+  {
+    "name": "dataset extra",
+    "contract": "SurveyResponseDataset",
+    "value": {
+      "surveyId": "s",
+      "responses": [],
+      "extra": true
+    },
+    "success": false,
+    "issues": [
+      {
+        "code": "unrecognized_keys",
+        "keys": [
+          "extra"
+        ],
+        "path": [],
+        "message": "Unrecognized key(s) in object: 'extra'"
+      }
+    ]
+  },
+  {
+    "name": "record valid",
+    "contract": "SurveyResponseRecord",
+    "value": {
+      "a": 1,
+      "b": [
+        null,
+        "x"
+      ],
+      "c": {
+        "d": {
+          "e": true
+        }
+      }
+    },
+    "success": true,
+    "data": {
+      "a": 1,
+      "b": [
+        null,
+        "x"
+      ],
+      "c": {
+        "d": {
+          "e": true
+        }
+      }
+    }
+  },
+  {
+    "name": "record nested invalid",
+    "contract": "SurveyResponseRecord",
+    "value": {
+      "a": {
+        "b": [
+          1,
+          {
+            "c": "x"
+          }
+        ]
+      },
+      "z": {
+        "q": 1
+      }
+    },
+    "success": true,
+    "data": {
+      "a": {
+        "b": [
+          1,
+          {
+            "c": "x"
+          }
+        ]
+      },
+      "z": {
+        "q": 1
+      }
+    }
+  },
+  {
+    "name": "record not object",
+    "contract": "SurveyResponseRecord",
+    "value": "x",
+    "success": false,
+    "issues": [
+      {
+        "code": "invalid_type",
+        "expected": "object",
+        "received": "string",
+        "path": [],
+        "message": "Expected object, received string"
+      }
+    ]
+  }
+]
