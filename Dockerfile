@@ -1,5 +1,5 @@
 FROM python:3.12-slim-bookworm AS build
-COPY --from=ghcr.io/astral-sh/uv:0.8 /uv /usr/local/bin/uv
+COPY --from=ghcr.io/astral-sh/uv:0.13.4 /uv /usr/local/bin/uv
 # Empty builds the wheels from this checkout; a version installs that release from PyPI.
 ARG PYPI_VERSION=""
 WORKDIR /src
